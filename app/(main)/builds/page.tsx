@@ -1,6 +1,7 @@
 'use client';
 
 import { useBuilds } from '@/lib/hooks/useBuilds';
+import { Build } from '@/lib/types';
 import { BuildPreview } from '@/components/build/BuildPreview';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { Configuration01Icon } from '@hugeicons/core-free-icons';
@@ -39,7 +40,7 @@ export default function BuildsPage() {
 
             {builds && (
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    {builds.map((build) => (
+                    {builds.map((build: Build) => (
                         <BuildPreview key={build.id} build={build} />
                     ))}
                 </div>
