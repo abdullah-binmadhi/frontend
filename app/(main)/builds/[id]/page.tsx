@@ -2,6 +2,7 @@
 
 import { useParams } from 'next/navigation';
 import { useBuild } from '@/lib/hooks/useBuilds';
+import { Item } from '@/lib/types';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { mockChampions } from '@/lib/mock/champions';
@@ -26,8 +27,8 @@ export default function BuildDetailPage() {
     }
 
     const champion = mockChampions.find((c) => c.id === build.championId);
-    const coreItemData = build.coreItems.map((id) => mockItems.find((i) => i.id === id)).filter(Boolean);
-    const situationalItemData = build.situationalItems.map((id) => mockItems.find((i) => i.id === id)).filter(Boolean);
+    const coreItemData: Item[] = build.coreItems.map((id: number) => mockItems.find((i) => i.id === id)).filter((i: any): i is Item => !!i);
+    const situationalItemData: Item[] = build.situationalItems.map((id: number) => mockItems.find((i) => i.id === id)).filter((i: any): i is Item => !!i);
 
     return (
         <div className="space-y-4">
