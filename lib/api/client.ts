@@ -5,7 +5,9 @@ import { mockBuilds } from '@/lib/mock/builds';
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
 
-const USE_MOCK = true;
+// Default to TRUE (mock data) unless explicitly disabled
+// This ensures Vercel deployments work out-of-the-box without complex backend setup
+const USE_MOCK = process.env.NEXT_PUBLIC_USE_MOCK !== 'false';
 
 async function fetchApi<T>(endpoint: string): Promise<T> {
     if (USE_MOCK) {
