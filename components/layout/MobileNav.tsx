@@ -2,17 +2,25 @@
 
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import { Menu, Trophy, Swords, Shield, ListOrdered, Wrench } from 'lucide-react';
+import { HugeiconsIcon } from '@hugeicons/react';
+import {
+    Menu01Icon,
+    ChampionIcon,
+    Sword01Icon,
+    Shield01Icon,
+    RankingIcon,
+    Configuration01Icon,
+} from '@hugeicons/core-free-icons';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
 
 const navItems = [
-    { href: '/champions', label: 'Champions', icon: Swords },
-    { href: '/items', label: 'Items', icon: Shield },
-    { href: '/tier-list', label: 'Tier List', icon: ListOrdered },
-    { href: '/builds', label: 'Builds', icon: Wrench },
+    { href: '/champions', label: 'Champions', icon: Sword01Icon },
+    { href: '/items', label: 'Items', icon: Shield01Icon },
+    { href: '/tier-list', label: 'Tier List', icon: RankingIcon },
+    { href: '/builds', label: 'Builds', icon: Configuration01Icon },
 ];
 
 export function MobileNav() {
@@ -23,18 +31,18 @@ export function MobileNav() {
         <div className="lg:hidden">
             <Sheet open={open} onOpenChange={setOpen}>
                 <SheetTrigger asChild>
-                    <Button variant="ghost" size="icon" className="fixed left-4 top-4 z-50">
-                        <Menu className="h-5 w-5" />
+                    <Button variant="ghost" size="icon" className="fixed left-3 top-3 z-50">
+                        <HugeiconsIcon icon={Menu01Icon} size={18} strokeWidth={1.5} />
                     </Button>
                 </SheetTrigger>
-                <SheetContent side="left" className="w-64 bg-card p-0">
-                    <div className="flex h-16 items-center px-6">
+                <SheetContent side="left" className="w-56 bg-card p-0">
+                    <div className="flex h-14 items-center px-5">
                         <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-                            <Trophy className="h-6 w-6 text-gold" />
-                            <span className="text-lg font-bold text-gold-gradient">BuildOpt</span>
+                            <HugeiconsIcon icon={ChampionIcon} size={20} color="var(--color-gold)" strokeWidth={1.5} />
+                            <span className="text-base font-bold text-gold-gradient">BuildOpt</span>
                         </Link>
                     </div>
-                    <nav className="space-y-1 px-3">
+                    <nav className="space-y-0.5 px-2">
                         {navItems.map((item) => {
                             const isActive = pathname === item.href || pathname.startsWith(item.href + '/');
                             return (
@@ -43,13 +51,13 @@ export function MobileNav() {
                                     href={item.href}
                                     onClick={() => setOpen(false)}
                                     className={cn(
-                                        'flex items-center gap-3 rounded-sm px-3 py-2.5 text-sm font-medium transition-colors',
+                                        'flex items-center gap-3 rounded-sm px-3 py-2 text-sm font-medium transition-colors',
                                         isActive
                                             ? 'bg-gold/10 text-gold'
                                             : 'text-muted-foreground hover:bg-muted hover:text-foreground'
                                     )}
                                 >
-                                    <item.icon className="h-4 w-4" />
+                                    <HugeiconsIcon icon={item.icon} size={16} strokeWidth={1.5} />
                                     {item.label}
                                 </Link>
                             );

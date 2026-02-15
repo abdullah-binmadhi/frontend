@@ -1,54 +1,122 @@
 'use client';
 
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from '@/components/ui/select';
+import { Role, Item } from '@/lib/types';
+
 import { useItems } from '@/lib/hooks/useItems';
 import { useState, useMemo } from 'react';
-import { Shield, Search } from 'lucide-react';
+import { HugeiconsIcon } from '@hugeicons/react';
+import { Shield01Icon, Search01Icon } from '@hugeicons/core-free-icons';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { Item } from '@/lib/types';
 
 const ITEM_CATEGORIES = ['All', 'Damage', 'AttackSpeed', 'SpellDamage', 'Health', 'Armor', 'CriticalStrike'];
+
+type ItemCategory = 'Starter' | 'Boots' | 'Component' | 'Legendary';
+
+function getItemCategory(item: Item): ItemCategory {
+    if (item.tags.includes('Boots')) return 'Boots';
+
+    const lowerName = item.name.toLowerCase();
+    // Consumables & Starters
+    if (
+        lowerName.includes('doran') || lowerName.includes('cull') || lowerName.includes('dark seal') ||
+        lowerName.includes('world atlas') || lowerName.includes('potion') || lowerName.includes('ward') ||
+        lowerName.includes('elixir') || lowerName.includes('biscuit') ||
+        lowerName.includes('scorchclaw') || lowerName.includes('gustwalker') || lowerName.includes('mosstomper')
+    ) {
+        return 'Starter';
+    }
+
+    // Components (builds into something)
+    // Exception: Tier 2 boots are boots, handled above.
+    if (item.buildsInto && item.buildsInto.length > 0) return 'Component';
+
+    return 'Legendary';
+}
 
 export default function ItemsPage() {
     const { data: items, isLoading } = useItems();
     const [search, setSearch] = useState('');
     const [category, setCategory] = useState('All');
+    const [role, setRole] = useState<Role | 'All'>('All');
 
-    const filtered = useMemo(() => {
-        if (!items) return [];
-        return items.filter((item) => {
+    const sections = useMemo(() => {
+        if (!items) return { Starter: [], Boots: [], Component: [], Legendary: [] };
+
+        const filtered = items.filter((item) => {
             const matchesSearch = item.name.toLowerCase().includes(search.toLowerCase());
             const matchesCat = category === 'All' || item.tags.includes(category);
-            return matchesSearch && matchesCat;
+            const matchesRole = role === 'All' || (item.roles && item.roles.includes(role));
+            return matchesSearch && matchesCat && matchesRole;
         });
-    }, [items, search, category]);
+
+        const grouped: Record<ItemCategory, Item[]> = {
+            Starter: [],
+            Boots: [],
+            Component: [],
+            Legendary: []
+        };
+
+        filtered.forEach(item => {
+            grouped[getItemCategory(item)].push(item);
+        });
+
+        return grouped;
+    }, [items, search, category, role]);
+
+    const hasAnyItems = Object.values(sections).some(arr => arr.length > 0);
 
     return (
         <div className="space-y-6">
             <div>
                 <div className="flex items-center gap-2">
-                    <Shield className="h-5 w-5 text-gold" />
-                    <h1 className="text-xl font-bold font-[var(--font-outfit)]">Items</h1>
+                    <HugeiconsIcon icon={Shield01Icon} size={18} color="var(--color-gold)" strokeWidth={1.5} />
+                    <h1 className="text-lg font-bold font-[var(--font-outfit)]">Items</h1>
                 </div>
                 <p className="mt-1 text-sm text-muted-foreground">
-                    Browse all items with cost, stats, and build paths
+                    Browse all items — categorized by type
                 </p>
             </div>
 
             {/* Filters */}
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-                <div className="relative max-w-xs flex-1">
-                    <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                    <Input
-                        placeholder="Search items..."
-                        value={search}
-                        onChange={(e) => setSearch(e.target.value)}
-                        className="h-9 bg-muted/50 pl-9 text-sm"
-                    />
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center justify-between">
+                <div className="flex flex-1 flex-col gap-3 sm:flex-row sm:items-center">
+                    <div className="relative max-w-xs flex-1 sm:flex-initial sm:w-[240px]">
+                        <div className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">
+                            <HugeiconsIcon icon={Search01Icon} size={15} strokeWidth={1.5} />
+                        </div>
+                        <Input
+                            placeholder="Find an item…"
+                            value={search}
+                            onChange={(e) => setSearch(e.target.value)}
+                            className="h-9 bg-muted/50 pl-9 text-sm"
+                        />
+                    </div>
+
+                    <Select value={role} onValueChange={(v) => setRole(v as Role | 'All')}>
+                        <SelectTrigger className="h-9 w-full sm:w-[140px] bg-muted/50 text-sm">
+                            <SelectValue placeholder="Role" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            <SelectItem value="All">All Roles</SelectItem>
+                            <SelectItem value="Top">Top</SelectItem>
+                            <SelectItem value="Jungle">Jungle</SelectItem>
+                            <SelectItem value="Mid">Mid</SelectItem>
+                            <SelectItem value="ADC">ADC</SelectItem>
+                            <SelectItem value="Support">Support</SelectItem>
+                        </SelectContent>
+                    </Select>
                 </div>
+
                 <div className="flex flex-wrap gap-1.5">
                     {ITEM_CATEGORIES.map((cat) => (
                         <Badge
@@ -66,47 +134,62 @@ export default function ItemsPage() {
 
             {/* Loading */}
             {isLoading && (
-                <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
+                <div className="grid grid-cols-3 gap-2.5 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
                     {Array.from({ length: 16 }).map((_, i) => (
                         <div key={i} className="aspect-square animate-pulse rounded-sm bg-muted" />
                     ))}
                 </div>
             )}
 
-            {/* Grid */}
-            {filtered && (
-                <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
-                    {filtered.map((item, i) => (
-                        <ItemGridCard key={item.id} item={item} index={i} />
-                    ))}
+            {/* Valid Content */}
+            {!isLoading && hasAnyItems && (
+                <div className="space-y-8">
+                    {sections.Starter.length > 0 && (
+                        <ItemSection title="Starter & Consumables" items={sections.Starter} />
+                    )}
+                    {sections.Boots.length > 0 && (
+                        <ItemSection title="Boots" items={sections.Boots} />
+                    )}
+                    {sections.Component.length > 0 && (
+                        <ItemSection title="Components" items={sections.Component} />
+                    )}
+                    {sections.Legendary.length > 0 && (
+                        <ItemSection title="Legendaries & Mythics" items={sections.Legendary} />
+                    )}
                 </div>
             )}
 
-            {filtered.length === 0 && !isLoading && (
-                <div className="py-12 text-center text-muted-foreground">No items found</div>
+            {!isLoading && !hasAnyItems && (
+                <div className="py-10 text-center text-sm text-muted-foreground">No items found</div>
             )}
         </div>
     );
 }
 
-function ItemGridCard({ item, index }: { item: Item; index: number }) {
+function ItemSection({ title, items }: { title: string, items: Item[] }) {
     return (
-        <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: index * 0.02, type: 'spring', stiffness: 400, damping: 25 }}
-            whileHover={{ scale: 1.08, transition: { duration: 0.15 } }}
+        <div className="space-y-3">
+            <h2 className="text-sm font-semibold text-foreground/90 border-b border-border/50 pb-1">{title}</h2>
+            <div className="grid grid-cols-3 gap-2.5 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
+                {items.map((item) => (
+                    <ItemGridCard key={item.id} item={item} />
+                ))}
+            </div>
+        </div>
+    );
+}
+
+function ItemGridCard({ item }: { item: Item }) {
+    return (
+        <Link
+            href={`/items/${item.id}`}
+            className="flex flex-col items-center gap-1.5 rounded-sm border border-border bg-card p-2.5 transition-colors duration-150 hover:border-primary/25"
         >
-            <Link
-                href={`/items/${item.id}`}
-                className="flex flex-col items-center gap-2 rounded-sm border border-border bg-card p-3 transition-colors hover:border-gold/30"
-            >
-                <div className="relative h-12 w-12">
-                    <Image src={item.imageUrl} alt={item.name} fill sizes="48px" className="rounded-sm object-cover" />
-                </div>
-                <span className="text-[11px] font-medium text-center leading-tight line-clamp-2">{item.name}</span>
-                <span className="text-[10px] text-gold">{item.totalCost}g</span>
-            </Link>
-        </motion.div>
+            <div className="relative h-11 w-11">
+                <Image src={item.imageUrl} alt={item.name} fill sizes="44px" className="rounded-sm object-cover" />
+            </div>
+            <span className="text-[11px] font-medium text-center leading-tight line-clamp-2">{item.name}</span>
+            <span className="text-[10px] text-gold">{item.totalCost}g</span>
+        </Link>
     );
 }

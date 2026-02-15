@@ -19,6 +19,8 @@ export interface ChampionStats {
     avgKda: number;
 }
 
+export type Role = 'Top' | 'Jungle' | 'Mid' | 'ADC' | 'Support';
+
 export interface Item {
     id: number;
     name: string;
@@ -28,6 +30,7 @@ export interface Item {
     mythic: boolean;
     stats: Record<string, number>;
     tags: string[];
+    roles: Role[];
     buildsFrom: number[];
     buildsInto: number[];
     imageUrl: string;

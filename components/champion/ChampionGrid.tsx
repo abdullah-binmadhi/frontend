@@ -3,7 +3,8 @@
 import { useState, useMemo } from 'react';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
-import { Search } from 'lucide-react';
+import { HugeiconsIcon } from '@hugeicons/react';
+import { Search01Icon } from '@hugeicons/core-free-icons';
 import { ChampionCard } from './ChampionCard';
 import { Champion } from '@/lib/types';
 
@@ -26,16 +27,18 @@ export function ChampionGrid({ champions }: ChampionGridProps) {
     }, [champions, search, selectedRole]);
 
     return (
-        <div className="space-y-6">
+        <div className="space-y-4">
             {/* Filters */}
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                 <div className="relative max-w-xs flex-1">
-                    <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                    <div className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">
+                        <HugeiconsIcon icon={Search01Icon} size={15} strokeWidth={1.5} />
+                    </div>
                     <Input
-                        placeholder="Search champions..."
+                        placeholder="Find a champion…"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
-                        className="h-9 bg-muted/50 pl-9 text-sm"
+                        className="h-8 bg-muted/50 pl-9 text-sm"
                     />
                 </div>
                 <div className="flex flex-wrap gap-1.5">
@@ -44,8 +47,8 @@ export function ChampionGrid({ champions }: ChampionGridProps) {
                             key={role}
                             variant={selectedRole === role ? 'default' : 'outline'}
                             className={`cursor-pointer text-xs transition-colors ${selectedRole === role
-                                    ? 'bg-gold text-navy hover:bg-gold/90'
-                                    : 'hover:bg-muted'
+                                ? 'bg-gold text-navy hover:bg-gold/90'
+                                : 'hover:bg-muted'
                                 }`}
                             onClick={() => setSelectedRole(role)}
                         >
@@ -56,15 +59,15 @@ export function ChampionGrid({ champions }: ChampionGridProps) {
             </div>
 
             {/* Grid */}
-            <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8">
-                {filtered.map((champion, i) => (
-                    <ChampionCard key={champion.id} champion={champion} index={i} />
+            <div className="grid grid-cols-3 gap-2.5 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8">
+                {filtered.map((champion) => (
+                    <ChampionCard key={champion.id} champion={champion} />
                 ))}
             </div>
 
             {filtered.length === 0 && (
-                <div className="py-12 text-center text-muted-foreground">
-                    No champions found matching &ldquo;{search}&rdquo;
+                <div className="py-10 text-center text-sm text-muted-foreground">
+                    No champions match &ldquo;{search}&rdquo;
                 </div>
             )}
         </div>
