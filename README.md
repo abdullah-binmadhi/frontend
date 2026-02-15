@@ -53,3 +53,28 @@ To configure the environment:
 * **Language**: TypeScript
 * **Styling**: Tailwind CSS + Shadcn UI
 * **Icons**: HugeIcons
+
+## ⚡ Supabase Setup (Backend)
+
+We use **Supabase** for Auth, Database, Vector Search, and Realtime features.
+
+### 1. Create a Project
+1.  Go to [database.new](https://database.new) and create a new project.
+2.  Save your `Project URL` and `Anon Key`.
+
+### 2. Configure Environment
+Create a `.env.local` file in `frontend/`:
+```bash
+NEXT_PUBLIC_SUPABASE_URL=your_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+```
+
+### 3. Deploy Database Schema
+Run the migration script in `supabase/migrations/20260216000000_init_schema.sql` via the Supabase SQL Editor.
+
+**Features Enabled:**
+*   `profiles`: Linked to Auth users.
+*   `builds`: Store user builds (with Vector Search support).
+*   `matches`: Store match history & analysis.
+*   `pgvector`: Enabled for AI similarity search.
+*   `Realtime`: Enabled for `match_events`.

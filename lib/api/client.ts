@@ -2,89 +2,93 @@ import { Champion, Item, Build, TierListEntry, ItemStats, TimelinePoint, Matchup
 import { mockChampions } from '@/lib/mock/champions';
 import { mockItems, mockTierList } from '@/lib/mock/items';
 import { mockBuilds } from '@/lib/mock/builds';
+import { createClient } from '@/lib/supabase';
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
-
-// Default to TRUE (mock data) unless explicitly disabled
-// This ensures Vercel deployments work out-of-the-box without complex backend setup
 const USE_MOCK = process.env.NEXT_PUBLIC_USE_MOCK !== 'false';
 
-async function fetchApi<T>(endpoint: string): Promise<T> {
-    if (USE_MOCK) {
-        await new Promise((r) => setTimeout(r, 300));
-        return getMockData<T>(endpoint);
-    }
+// Helper to map DB snake_case to Frontend camelCase
+const mapChampion = (c: any): Champion => ({
+    ...c,
+    imageUrl: c.image_url,
+    stats: c.stats || {},
+});
 
-    const res = await fetch(`${API_BASE}${endpoint}`, {
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    });
-
-    if (!res.ok) {
-        throw new Error(`API error: ${res.status} ${res.statusText}`);
-    }
-
-    const json = await res.json();
-    return json.data as T;
-}
-
-function getMockData<T>(endpoint: string): T {
-    if (endpoint.startsWith('/champions/') && !endpoint.includes('/stats')) {
-        const id = parseInt(endpoint.split('/')[2]);
-        return (mockChampions.find((c) => c.id === id) || mockChampions[0]) as T;
-    }
-    if (endpoint === '/champions') return mockChampions as T;
-
-    if (endpoint.startsWith('/items/') && !endpoint.includes('/stats') && !endpoint.includes('/tier-list')) {
-        const id = parseInt(endpoint.split('/')[2]);
-        return (mockItems.find((i) => i.id === id) || mockItems[0]) as T;
-    }
-    if (endpoint === '/items') return mockItems as T;
-    if (endpoint.includes('/tier-list')) return mockTierList as T;
-
-    if (endpoint.startsWith('/builds/') && endpoint.split('/').length === 3) {
-        const id = endpoint.split('/')[2];
-        return (mockBuilds.find((b) => b.id === id) || mockBuilds[0]) as T;
-    }
-    if (endpoint === '/builds') return mockBuilds as T;
-
-    return [] as T;
-}
+const mapItem = (i: any): Item => ({
+    ...i,
+    totalCost: i.total_cost,
+    imageUrl: i.image_url,
+    buildsFrom: i.builds_from || [],
+    buildsInto: i.builds_into || [],
+    patchVersion: i.patch_version,
+    roles: i.roles || [],
+});
 
 export const api = {
     champions: {
-        getAll: () => fetchApi<Champion[]>('/champions'),
-        getById: (id: number) => fetchApi<Champion>(`/champions/${id}`),
-        getMatchups: (id: number) => fetchApi<Matchup[]>(`/champions/${id}/matchups`),
+        getAll: async () => {
+            if (USE_MOCK) return mockChampions;
+            const sb = createClient();
+            const { data } = await sb.from('champions').select('*');
+            return (data || []).map(mapChampion);
+        },
+        getById: async (id: number) => {
+            if (USE_MOCK) return mockChampions.find((c) => c.id === id);
+            const sb = createClient();
+            const { data } = await sb.from('champions').select('*').eq('id', id).single();
+            return data ? mapChampion(data) : undefined;
+        },
+        getMatchups: async (id: number) => {
+            return []; // Not implemented in DB yet
+        }
     },
     items: {
-        getAll: () => fetchApi<Item[]>('/items'),
-        getById: (id: number) => fetchApi<Item>(`/items/${id}`),
-        getStats: (id: number) => fetchApi<ItemStats[]>(`/items/${id}/stats`),
-        getTierList: (params?: Record<string, string>) => {
-            const qs = params ? '?' + new URLSearchParams(params).toString() : '';
-            return fetchApi<TierListEntry[]>(`/items/tier-list${qs}`);
+        getAll: async () => {
+            if (USE_MOCK) return mockItems;
+            const sb = createClient();
+            const { data } = await sb.from('items').select('*');
+            return (data || []).map(mapItem);
+        },
+        getById: async (id: number) => {
+            if (USE_MOCK) return mockItems.find((i) => i.id === id);
+            const sb = createClient();
+            const { data } = await sb.from('items').select('*').eq('id', id).single();
+            return data ? mapItem(data) : undefined;
+        },
+        getStats: async (id: number) => {
+            return []; // Not implemented in DB yet
+        },
+        getTierList: async (params?: Record<string, string>) => {
+            if (USE_MOCK) return mockTierList;
+            // Basic tier list implementation for DB
+            // Need to join with champions tables if needed, or structured differently
+            return mockTierList; // Fallback for now to avoid breaking
         },
     },
     builds: {
-        getAll: () => fetchApi<Build[]>('/builds'),
-        getById: (id: string) => fetchApi<Build>(`/builds/${id}`),
+        getAll: async () => {
+            if (USE_MOCK) return mockBuilds;
+            const sb = createClient();
+            const { data } = await sb.from('builds').select('*, profiles(username, avatar_url)');
+            // Need mapping logic for builds if needed
+            return data as any;
+        },
+        getById: async (id: string) => {
+            if (USE_MOCK) return mockBuilds.find((b) => b.id === id);
+            const sb = createClient();
+            const { data } = await sb.from('builds').select('*').eq('id', id).single();
+            return data as any;
+        },
         create: async (build: Partial<Build>) => {
             if (USE_MOCK) {
                 return { ...build, id: Date.now().toString(), createdAt: new Date().toISOString() } as Build;
             }
-            const res = await fetch(`${API_BASE}/builds`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(build),
-            });
-            const json = await res.json();
-            return json.data as Build;
+            const sb = createClient();
+            const { data, error } = await sb.from('builds').insert(build).select().single();
+            if (error) throw error;
+            return data as any;
         },
     },
     ml: {
-        getWinProbability: () =>
-            fetchApi<TimelinePoint[]>('/ml/win-probability'),
+        getWinProbability: async () => []
     },
 };
