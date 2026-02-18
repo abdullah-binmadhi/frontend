@@ -12,6 +12,7 @@ import {
     Configuration01Icon,
     ArrowLeft01Icon,
     ArrowRight01Icon,
+    SparklesIcon,
 } from '@hugeicons/core-free-icons';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
@@ -23,6 +24,7 @@ const navItems = [
     { href: '/items', label: 'Items', icon: Shield01Icon },
     { href: '/tier-list', label: 'Tier List', icon: RankingIcon },
     { href: '/builds', label: 'Builds', icon: Configuration01Icon },
+    { href: '/recommend', label: 'Recommend', icon: SparklesIcon },
 ];
 
 export function Sidebar() {

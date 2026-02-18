@@ -10,6 +10,7 @@ import {
     Shield01Icon,
     RankingIcon,
     Configuration01Icon,
+    SparklesIcon,
 } from '@hugeicons/core-free-icons';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -21,6 +22,7 @@ const navItems = [
     { href: '/items', label: 'Items', icon: Shield01Icon },
     { href: '/tier-list', label: 'Tier List', icon: RankingIcon },
     { href: '/builds', label: 'Builds', icon: Configuration01Icon },
+    { href: '/recommend', label: 'Recommend', icon: SparklesIcon },
 ];
 
 export function MobileNav() {

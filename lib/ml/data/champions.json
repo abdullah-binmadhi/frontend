@@ -1,0 +1,2066 @@
+{
+    "Jinx": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 6,
+        "damage": 9,
+        "toughness": 2,
+        "control": 7,
+        "mobility": 6,
+        "utility": 6,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Jinx.png",
+        "stats": {
+            "winRate": 51.8,
+            "pickRate": 12.3,
+            "banRate": 4.2,
+            "tier": "A",
+            "trend": "stable"
+        }
+    },
+    "Ashe": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 4,
+        "damage": 7,
+        "toughness": 3,
+        "control": 8,
+        "mobility": 4,
+        "utility": 8,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Ashe.png",
+        "stats": {
+            "winRate": 50.9,
+            "pickRate": 8.7,
+            "banRate": 1.8,
+            "tier": "B+",
+            "trend": "rising"
+        }
+    },
+    "Yasuo": {
+        "role": "Fighter",
+        "positions": [
+            "Mid",
+            "Top"
+        ],
+        "difficulty": 10,
+        "damage": 8,
+        "toughness": 4,
+        "control": 6,
+        "mobility": 8,
+        "utility": 4,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Yasuo.png",
+        "stats": {
+            "winRate": 49.2,
+            "pickRate": 15.6,
+            "banRate": 28.4,
+            "tier": "B",
+            "trend": "falling"
+        }
+    },
+    "Lux": {
+        "role": "Mage",
+        "positions": [
+            "Mid",
+            "Support"
+        ],
+        "difficulty": 5,
+        "damage": 7,
+        "toughness": 2,
+        "control": 8,
+        "mobility": 4,
+        "utility": 7,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Lux.png",
+        "stats": {
+            "winRate": 52.3,
+            "pickRate": 9.1,
+            "banRate": 3.7,
+            "tier": "A",
+            "trend": "stable"
+        }
+    },
+    "Garen": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 2,
+        "damage": 6,
+        "toughness": 7,
+        "control": 5,
+        "mobility": 5,
+        "utility": 5,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Garen.png",
+        "stats": {
+            "winRate": 53.1,
+            "pickRate": 6.8,
+            "banRate": 2.3,
+            "tier": "A+",
+            "trend": "rising"
+        }
+    },
+    "Thresh": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 7,
+        "damage": 6,
+        "toughness": 6,
+        "control": 9,
+        "mobility": 5,
+        "utility": 9,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Thresh.png",
+        "stats": {
+            "winRate": 50.2,
+            "pickRate": 11.4,
+            "banRate": 6.8,
+            "tier": "B+",
+            "trend": "stable"
+        }
+    },
+    "Ahri": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 5,
+        "damage": 8,
+        "toughness": 3,
+        "control": 5,
+        "mobility": 7,
+        "utility": 6,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Ahri.png",
+        "stats": {
+            "winRate": 52.1,
+            "pickRate": 8.4,
+            "banRate": 2.1,
+            "tier": "A",
+            "trend": "stable"
+        }
+    },
+    "Darius": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 4,
+        "damage": 9,
+        "toughness": 6,
+        "control": 5,
+        "mobility": 4,
+        "utility": 4,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Darius.png",
+        "stats": {
+            "winRate": 47.8,
+            "pickRate": 5.4,
+            "banRate": 7.2,
+            "tier": "C",
+            "trend": "falling"
+        }
+    },
+    "Zed": {
+        "role": "Assassin",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 8,
+        "damage": 9,
+        "toughness": 2,
+        "control": 5,
+        "mobility": 8,
+        "utility": 4,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Zed.png",
+        "stats": {
+            "winRate": 49.5,
+            "pickRate": 7.8,
+            "banRate": 12.4,
+            "tier": "B",
+            "trend": "stable"
+        }
+    },
+    "Leona": {
+        "role": "Tank",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 4,
+        "damage": 4,
+        "toughness": 9,
+        "control": 9,
+        "mobility": 4,
+        "utility": 8,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Leona.png",
+        "stats": {
+            "winRate": 48.7,
+            "pickRate": 9.2,
+            "banRate": 4.1,
+            "tier": "C+",
+            "trend": "stable"
+        }
+    },
+    "Ezreal": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 7,
+        "damage": 7,
+        "toughness": 2,
+        "control": 4,
+        "mobility": 7,
+        "utility": 5,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Ezreal.png"
+    },
+    "Annie": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 3,
+        "damage": 8,
+        "toughness": 2,
+        "control": 6,
+        "mobility": 3,
+        "utility": 5,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Annie.png"
+    },
+    "Master Yi": {
+        "role": "Assassin",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 4,
+        "damage": 10,
+        "toughness": 4,
+        "control": 2,
+        "mobility": 7,
+        "utility": 2,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/MasterYi.png"
+    },
+    "Soraka": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 3,
+        "damage": 3,
+        "toughness": 2,
+        "control": 4,
+        "mobility": 3,
+        "utility": 10,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Soraka.png"
+    },
+    "Malphite": {
+        "role": "Tank",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 2,
+        "damage": 4,
+        "toughness": 9,
+        "control": 7,
+        "mobility": 5,
+        "utility": 7,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Malphite.png"
+    },
+    "Katarina": {
+        "role": "Assassin",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 8,
+        "damage": 9,
+        "toughness": 2,
+        "control": 4,
+        "mobility": 8,
+        "utility": 4,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Katarina.png"
+    },
+    "Jhin": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 6,
+        "damage": 9,
+        "toughness": 2,
+        "control": 8,
+        "mobility": 4,
+        "utility": 7,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Jhin.png"
+    },
+    "Blitzcrank": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 4,
+        "damage": 5,
+        "toughness": 8,
+        "control": 9,
+        "mobility": 5,
+        "utility": 7,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Blitzcrank.png"
+    },
+    "Vayne": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 8,
+        "damage": 10,
+        "toughness": 1,
+        "control": 5,
+        "mobility": 6,
+        "utility": 4,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Vayne.png"
+    },
+    "Riven": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 8,
+        "damage": 8,
+        "toughness": 5,
+        "control": 6,
+        "mobility": 8,
+        "utility": 4,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Riven.png"
+    },
+    "Akali": {
+        "role": "Assassin",
+        "positions": [
+            "Mid",
+            "Top"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 3,
+        "control": 5,
+        "mobility": 9,
+        "utility": 4,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Akali.png"
+    },
+    "Braum": {
+        "role": "Tank",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 4,
+        "damage": 4,
+        "toughness": 9,
+        "control": 8,
+        "mobility": 4,
+        "utility": 9,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Braum.png"
+    },
+    "Caitlyn": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 6,
+        "damage": 8,
+        "toughness": 2,
+        "control": 6,
+        "mobility": 4,
+        "utility": 6,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Caitlyn.png"
+    },
+    "Diana": {
+        "role": "Fighter",
+        "positions": [
+            "Mid",
+            "Jungle"
+        ],
+        "difficulty": 4,
+        "damage": 8,
+        "toughness": 6,
+        "control": 6,
+        "mobility": 7,
+        "utility": 4,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Diana.png"
+    },
+    "Fiora": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 4,
+        "control": 4,
+        "mobility": 7,
+        "utility": 3,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Fiora.png"
+    },
+    "Jax": {
+        "role": "Fighter",
+        "positions": [
+            "Top",
+            "Jungle"
+        ],
+        "difficulty": 5,
+        "damage": 7,
+        "toughness": 5,
+        "control": 4,
+        "mobility": 5,
+        "utility": 4,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Jax.png"
+    },
+    "LeBlanc": {
+        "role": "Assassin",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 9,
+        "damage": 8,
+        "toughness": 2,
+        "control": 6,
+        "mobility": 8,
+        "utility": 5,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Leblanc.png"
+    },
+    "Lucian": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 6,
+        "damage": 8,
+        "toughness": 3,
+        "control": 4,
+        "mobility": 7,
+        "utility": 4,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Lucian.png"
+    },
+    "Nami": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 5,
+        "damage": 4,
+        "toughness": 3,
+        "control": 7,
+        "mobility": 4,
+        "utility": 10,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Nami.png"
+    },
+    "Orianna": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 7,
+        "damage": 7,
+        "toughness": 4,
+        "control": 8,
+        "mobility": 4,
+        "utility": 9,
+        "image": "https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Orianna.png"
+    },
+    "Renekton": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 3,
+        "damage": 8,
+        "toughness": 5,
+        "control": 5,
+        "mobility": 5,
+        "utility": 4
+    },
+    "Syndra": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 8,
+        "damage": 9,
+        "toughness": 2,
+        "control": 8,
+        "mobility": 3,
+        "utility": 5
+    },
+    "Tristana": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 4,
+        "damage": 8,
+        "toughness": 3,
+        "control": 5,
+        "mobility": 8,
+        "utility": 5
+    },
+    "Viktor": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 9,
+        "damage": 8,
+        "toughness": 2,
+        "control": 7,
+        "mobility": 4,
+        "utility": 6
+    },
+    "Wukong": {
+        "role": "Fighter",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 3,
+        "damage": 8,
+        "toughness": 5,
+        "control": 6,
+        "mobility": 7,
+        "utility": 5
+    },
+    "Xerath": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 8,
+        "damage": 8,
+        "toughness": 2,
+        "control": 8,
+        "mobility": 3,
+        "utility": 6
+    },
+    "Ziggs": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 4,
+        "damage": 9,
+        "toughness": 2,
+        "control": 6,
+        "mobility": 3,
+        "utility": 5
+    },
+    "Brand": {
+        "role": "Mage",
+        "positions": [
+            "Mid",
+            "Support"
+        ],
+        "difficulty": 4,
+        "damage": 9,
+        "toughness": 2,
+        "control": 6,
+        "mobility": 2,
+        "utility": 4
+    },
+    "Graves": {
+        "role": "Marksman",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 3,
+        "damage": 8,
+        "toughness": 5,
+        "control": 4,
+        "mobility": 6,
+        "utility": 4
+    },
+    "Irelia": {
+        "role": "Fighter",
+        "positions": [
+            "Top",
+            "Mid"
+        ],
+        "difficulty": 5,
+        "damage": 7,
+        "toughness": 4,
+        "control": 5,
+        "mobility": 7,
+        "utility": 4
+    },
+    "Kassadin": {
+        "role": "Assassin",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 8,
+        "damage": 8,
+        "toughness": 4,
+        "control": 5,
+        "mobility": 9,
+        "utility": 4
+    },
+    "Miss Fortune": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 1,
+        "damage": 8,
+        "toughness": 2,
+        "control": 5,
+        "mobility": 5,
+        "utility": 5
+    },
+    "Nautilus": {
+        "role": "Tank",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 6,
+        "damage": 6,
+        "toughness": 8,
+        "control": 9,
+        "mobility": 4,
+        "utility": 7
+    },
+    "Pyke": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 3,
+        "control": 8,
+        "mobility": 8,
+        "utility": 9
+    },
+    "Senna": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 2,
+        "control": 7,
+        "mobility": 2,
+        "utility": 8
+    },
+    "Twitch": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 6,
+        "damage": 9,
+        "toughness": 2,
+        "control": 3,
+        "mobility": 4,
+        "utility": 7
+    },
+    "Veigar": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 7,
+        "damage": 10,
+        "toughness": 1,
+        "control": 8,
+        "mobility": 2,
+        "utility": 5
+    },
+    "Vladimir": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 7,
+        "control": 5,
+        "mobility": 4,
+        "utility": 4
+    },
+    "Xayah": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 5,
+        "damage": 8,
+        "toughness": 3,
+        "control": 7,
+        "mobility": 6,
+        "utility": 6
+    },
+    "Yone": {
+        "role": "Assassin",
+        "positions": [
+            "Top",
+            "Mid"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 4,
+        "control": 6,
+        "mobility": 7,
+        "utility": 4
+    },
+    "Zoe": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 1,
+        "control": 9,
+        "mobility": 5,
+        "utility": 8
+    },
+    "Aatrox": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 4,
+        "damage": 8,
+        "toughness": 4,
+        "control": 5,
+        "mobility": 5,
+        "utility": 6
+    },
+    "Akshan": {
+        "role": "Marksman",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 3,
+        "control": 5,
+        "mobility": 8,
+        "utility": 7
+    },
+    "Alistar": {
+        "role": "Tank",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 3,
+        "damage": 6,
+        "toughness": 9,
+        "control": 8,
+        "mobility": 6,
+        "utility": 8
+    },
+    "Ammu": {
+        "role": "Tank",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 3,
+        "damage": 6,
+        "toughness": 6,
+        "control": 8,
+        "mobility": 5,
+        "utility": 6
+    },
+    "Anivia": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 10,
+        "damage": 8,
+        "toughness": 4,
+        "control": 9,
+        "mobility": 1,
+        "utility": 7
+    },
+    "Aphelios": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 10,
+        "damage": 9,
+        "toughness": 2,
+        "control": 6,
+        "mobility": 4,
+        "utility": 6
+    },
+    "Aurelion Sol": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 2,
+        "control": 7,
+        "mobility": 5,
+        "utility": 6
+    },
+    "Azir": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 9,
+        "damage": 8,
+        "toughness": 2,
+        "control": 6,
+        "mobility": 4,
+        "utility": 6
+    },
+    "Bard": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 9,
+        "damage": 4,
+        "toughness": 4,
+        "control": 7,
+        "mobility": 5,
+        "utility": 10
+    },
+    "Bel'Veth": {
+        "role": "Fighter",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 8,
+        "damage": 8,
+        "toughness": 4,
+        "control": 5,
+        "mobility": 8,
+        "utility": 5
+    },
+    "Briar": {
+        "role": "Fighter",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 6,
+        "damage": 8,
+        "toughness": 4,
+        "control": 4,
+        "mobility": 7,
+        "utility": 4
+    },
+    "Camille": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 6,
+        "damage": 7,
+        "toughness": 6,
+        "control": 6,
+        "mobility": 8,
+        "utility": 6
+    },
+    "Cassiopeia": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 10,
+        "damage": 9,
+        "toughness": 3,
+        "control": 7,
+        "mobility": 3,
+        "utility": 5
+    },
+    "Cho'Gath": {
+        "role": "Tank",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 5,
+        "damage": 7,
+        "toughness": 7,
+        "control": 8,
+        "mobility": 3,
+        "utility": 6
+    },
+    "Corki": {
+        "role": "Marksman",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 6,
+        "damage": 8,
+        "toughness": 3,
+        "control": 6,
+        "mobility": 6,
+        "utility": 5
+    },
+    "Dr. Mundo": {
+        "role": "Tank",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 3,
+        "damage": 5,
+        "toughness": 9,
+        "control": 4,
+        "mobility": 5,
+        "utility": 4
+    },
+    "Draven": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 8,
+        "damage": 9,
+        "toughness": 3,
+        "control": 4,
+        "mobility": 5,
+        "utility": 4
+    },
+    "Ekko": {
+        "role": "Assassin",
+        "positions": [
+            "Mid",
+            "Jungle"
+        ],
+        "difficulty": 8,
+        "damage": 7,
+        "toughness": 3,
+        "control": 7,
+        "mobility": 9,
+        "utility": 6
+    },
+    "Elise": {
+        "role": "Mage",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 9,
+        "damage": 6,
+        "toughness": 3,
+        "control": 8,
+        "mobility": 7,
+        "utility": 6
+    },
+    "Evelynn": {
+        "role": "Assassin",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 10,
+        "damage": 4,
+        "toughness": 2,
+        "control": 3,
+        "mobility": 4,
+        "utility": 8
+    },
+    "Fiddlesticks": {
+        "role": "Mage",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 9,
+        "damage": 8,
+        "toughness": 3,
+        "control": 8,
+        "mobility": 2,
+        "utility": 7
+    },
+    "Fizz": {
+        "role": "Assassin",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 6,
+        "damage": 8,
+        "toughness": 4,
+        "control": 5,
+        "mobility": 9,
+        "utility": 4
+    },
+    "Galio": {
+        "role": "Tank",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 5,
+        "damage": 6,
+        "toughness": 8,
+        "control": 8,
+        "mobility": 6,
+        "utility": 8
+    },
+    "Gangplank": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 9,
+        "damage": 8,
+        "toughness": 4,
+        "control": 7,
+        "mobility": 5,
+        "utility": 6
+    },
+    "Gnar": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 8,
+        "damage": 6,
+        "toughness": 5,
+        "control": 8,
+        "mobility": 7,
+        "utility": 5
+    },
+    "Gragas": {
+        "role": "Fighter",
+        "positions": [
+            "Top",
+            "Jungle"
+        ],
+        "difficulty": 4,
+        "damage": 7,
+        "toughness": 7,
+        "control": 8,
+        "mobility": 6,
+        "utility": 6
+    },
+    "Gwen": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 7,
+        "damage": 7,
+        "toughness": 4,
+        "control": 3,
+        "mobility": 5,
+        "utility": 4
+    },
+    "Hecarim": {
+        "role": "Fighter",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 6,
+        "damage": 8,
+        "toughness": 6,
+        "control": 6,
+        "mobility": 8,
+        "utility": 5
+    },
+    "Heimerdinger": {
+        "role": "Mage",
+        "positions": [
+            "Mid",
+            "Support"
+        ],
+        "difficulty": 8,
+        "damage": 8,
+        "toughness": 3,
+        "control": 8,
+        "mobility": 2,
+        "utility": 8
+    },
+    "Hwei": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 8,
+        "damage": 8,
+        "toughness": 2,
+        "control": 8,
+        "mobility": 3,
+        "utility": 7
+    },
+    "Illaoi": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 4,
+        "damage": 8,
+        "toughness": 6,
+        "control": 6,
+        "mobility": 4,
+        "utility": 4
+    },
+    "Ivern": {
+        "role": "Support",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 7,
+        "damage": 3,
+        "toughness": 5,
+        "control": 7,
+        "mobility": 4,
+        "utility": 10
+    },
+    "Janna": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 5,
+        "damage": 3,
+        "toughness": 5,
+        "control": 8,
+        "mobility": 6,
+        "utility": 10
+    },
+    "Jarvan IV": {
+        "role": "Tank",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 5,
+        "damage": 6,
+        "toughness": 8,
+        "control": 8,
+        "mobility": 6,
+        "utility": 7
+    },
+    "Jayce": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 4,
+        "control": 6,
+        "mobility": 6,
+        "utility": 5
+    },
+    "Kai'Sa": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 6,
+        "damage": 8,
+        "toughness": 3,
+        "control": 4,
+        "mobility": 7,
+        "utility": 5
+    },
+    "Kalista": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 2,
+        "control": 7,
+        "mobility": 9,
+        "utility": 7
+    },
+    "Karma": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 5,
+        "damage": 7,
+        "toughness": 7,
+        "control": 7,
+        "mobility": 5,
+        "utility": 8
+    },
+    "Karthus": {
+        "role": "Mage",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 7,
+        "damage": 10,
+        "toughness": 2,
+        "control": 7,
+        "mobility": 2,
+        "utility": 7
+    },
+    "Kayle": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 6,
+        "damage": 8,
+        "toughness": 4,
+        "control": 4,
+        "mobility": 4,
+        "utility": 7
+    },
+    "Kayn": {
+        "role": "Fighter",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 8,
+        "damage": 8,
+        "toughness": 4,
+        "control": 5,
+        "mobility": 8,
+        "utility": 5
+    },
+    "Kennen": {
+        "role": "Mage",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 4,
+        "damage": 7,
+        "toughness": 2,
+        "control": 8,
+        "mobility": 8,
+        "utility": 5
+    },
+    "Kha'Zix": {
+        "role": "Assassin",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 6,
+        "damage": 9,
+        "toughness": 4,
+        "control": 3,
+        "mobility": 6,
+        "utility": 4
+    },
+    "Kindred": {
+        "role": "Marksman",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 4,
+        "damage": 8,
+        "toughness": 3,
+        "control": 7,
+        "mobility": 7,
+        "utility": 7
+    },
+    "Kled": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 6,
+        "control": 5,
+        "mobility": 7,
+        "utility": 5
+    },
+    "Kog'Maw": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 6,
+        "damage": 8,
+        "toughness": 2,
+        "control": 5,
+        "mobility": 3,
+        "utility": 5
+    },
+    "Lee Sin": {
+        "role": "Fighter",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 6,
+        "damage": 8,
+        "toughness": 4,
+        "control": 6,
+        "mobility": 9,
+        "utility": 6
+    },
+    "Lillia": {
+        "role": "Fighter",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 8,
+        "damage": 7,
+        "toughness": 4,
+        "control": 7,
+        "mobility": 7,
+        "utility": 6
+    },
+    "Lissandra": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 6,
+        "damage": 7,
+        "toughness": 5,
+        "control": 8,
+        "mobility": 5,
+        "utility": 7
+    },
+    "Lulu": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 5,
+        "damage": 6,
+        "toughness": 5,
+        "control": 7,
+        "mobility": 2,
+        "utility": 10
+    },
+    "Malzahar": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 6,
+        "damage": 7,
+        "toughness": 2,
+        "control": 9,
+        "mobility": 2,
+        "utility": 7
+    },
+    "Maokai": {
+        "role": "Tank",
+        "positions": [
+            "Jungle",
+            "Support"
+        ],
+        "difficulty": 3,
+        "damage": 5,
+        "toughness": 8,
+        "control": 8,
+        "mobility": 5,
+        "utility": 7
+    },
+    "Mordekaiser": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 4,
+        "damage": 8,
+        "toughness": 6,
+        "control": 5,
+        "mobility": 4,
+        "utility": 6
+    },
+    "Nasus": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 2,
+        "damage": 8,
+        "toughness": 5,
+        "control": 5,
+        "mobility": 4,
+        "utility": 5
+    },
+    "Neeko": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 5,
+        "damage": 7,
+        "toughness": 1,
+        "control": 8,
+        "mobility": 5,
+        "utility": 8
+    },
+    "Nidalee": {
+        "role": "Assassin",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 8,
+        "damage": 7,
+        "toughness": 4,
+        "control": 4,
+        "mobility": 8,
+        "utility": 7
+    },
+    "Nilah": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 9,
+        "damage": 8,
+        "toughness": 3,
+        "control": 4,
+        "mobility": 7,
+        "utility": 6
+    },
+    "Nocturne": {
+        "role": "Assassin",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 4,
+        "damage": 9,
+        "toughness": 5,
+        "control": 7,
+        "mobility": 6,
+        "utility": 6
+    },
+    "Nunu & Willump": {
+        "role": "Tank",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 4,
+        "damage": 5,
+        "toughness": 6,
+        "control": 8,
+        "mobility": 5,
+        "utility": 7
+    },
+    "Olaf": {
+        "role": "Fighter",
+        "positions": [
+            "Top",
+            "Jungle"
+        ],
+        "difficulty": 3,
+        "damage": 8,
+        "toughness": 5,
+        "control": 3,
+        "mobility": 6,
+        "utility": 4
+    },
+    "Ornn": {
+        "role": "Tank",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 5,
+        "damage": 6,
+        "toughness": 8,
+        "control": 7,
+        "mobility": 3,
+        "utility": 8
+    },
+    "Pantheon": {
+        "role": "Fighter",
+        "positions": [
+            "Top",
+            "Mid",
+            "Support"
+        ],
+        "difficulty": 4,
+        "damage": 7,
+        "toughness": 4,
+        "control": 6,
+        "mobility": 6,
+        "utility": 7
+    },
+    "Poppy": {
+        "role": "Tank",
+        "positions": [
+            "Top",
+            "Jungle"
+        ],
+        "difficulty": 6,
+        "damage": 6,
+        "toughness": 8,
+        "control": 8,
+        "mobility": 5,
+        "utility": 6
+    },
+    "Qiyana": {
+        "role": "Assassin",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 9,
+        "damage": 8,
+        "toughness": 2,
+        "control": 6,
+        "mobility": 6,
+        "utility": 4
+    },
+    "Quinn": {
+        "role": "Marksman",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 5,
+        "damage": 8,
+        "toughness": 4,
+        "control": 5,
+        "mobility": 9,
+        "utility": 6
+    },
+    "Rakan": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 7,
+        "damage": 2,
+        "toughness": 4,
+        "control": 9,
+        "mobility": 8,
+        "utility": 10
+    },
+    "Rammus": {
+        "role": "Tank",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 4,
+        "damage": 4,
+        "toughness": 9,
+        "control": 7,
+        "mobility": 6,
+        "utility": 5
+    },
+    "Rek'Sai": {
+        "role": "Fighter",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 5,
+        "control": 7,
+        "mobility": 7,
+        "utility": 6
+    },
+    "Rell": {
+        "role": "Tank",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 7,
+        "damage": 4,
+        "toughness": 8,
+        "control": 9,
+        "mobility": 2,
+        "utility": 8
+    },
+    "Rengar": {
+        "role": "Assassin",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 8,
+        "damage": 9,
+        "toughness": 4,
+        "control": 4,
+        "mobility": 6,
+        "utility": 4
+    },
+    "Rumble": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 10,
+        "damage": 8,
+        "toughness": 4,
+        "control": 6,
+        "mobility": 3,
+        "utility": 6
+    },
+    "Ryze": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 2,
+        "control": 6,
+        "mobility": 6,
+        "utility": 6
+    },
+    "Samira": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 8,
+        "damage": 8,
+        "toughness": 3,
+        "control": 5,
+        "mobility": 6,
+        "utility": 5
+    },
+    "Sejuani": {
+        "role": "Tank",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 4,
+        "damage": 5,
+        "toughness": 7,
+        "control": 8,
+        "mobility": 6,
+        "utility": 7
+    },
+    "Seraphine": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 4,
+        "damage": 7,
+        "toughness": 2,
+        "control": 8,
+        "mobility": 2,
+        "utility": 9
+    },
+    "Sett": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 2,
+        "damage": 8,
+        "toughness": 6,
+        "control": 6,
+        "mobility": 5,
+        "utility": 5
+    },
+    "Shaco": {
+        "role": "Assassin",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 8,
+        "damage": 8,
+        "toughness": 2,
+        "control": 6,
+        "mobility": 7,
+        "utility": 8
+    },
+    "Shen": {
+        "role": "Tank",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 3,
+        "damage": 3,
+        "toughness": 9,
+        "control": 6,
+        "mobility": 5,
+        "utility": 10
+    },
+    "Shyvana": {
+        "role": "Fighter",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 4,
+        "damage": 8,
+        "toughness": 6,
+        "control": 5,
+        "mobility": 6,
+        "utility": 4
+    },
+    "Singed": {
+        "role": "Tank",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 5,
+        "damage": 6,
+        "toughness": 8,
+        "control": 6,
+        "mobility": 6,
+        "utility": 7
+    },
+    "Sion": {
+        "role": "Tank",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 4,
+        "damage": 6,
+        "toughness": 9,
+        "control": 6,
+        "mobility": 4,
+        "utility": 5
+    },
+    "Sivir": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 4,
+        "damage": 7,
+        "toughness": 3,
+        "control": 4,
+        "mobility": 5,
+        "utility": 6
+    },
+    "Skarner": {
+        "role": "Fighter",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 5,
+        "damage": 7,
+        "toughness": 6,
+        "control": 8,
+        "mobility": 5,
+        "utility": 6
+    },
+    "Smolder": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 5,
+        "damage": 7,
+        "toughness": 3,
+        "control": 5,
+        "mobility": 5,
+        "utility": 5
+    },
+    "Sona": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 4,
+        "damage": 5,
+        "toughness": 2,
+        "control": 5,
+        "mobility": 3,
+        "utility": 10
+    },
+    "Swain": {
+        "role": "Mage",
+        "positions": [
+            "Mid",
+            "Support"
+        ],
+        "difficulty": 8,
+        "damage": 8,
+        "toughness": 6,
+        "control": 8,
+        "mobility": 2,
+        "utility": 7
+    },
+    "Sylas": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 5,
+        "damage": 7,
+        "toughness": 4,
+        "control": 6,
+        "mobility": 4,
+        "utility": 7
+    },
+    "Tahm Kench": {
+        "role": "Tank",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 5,
+        "damage": 5,
+        "toughness": 9,
+        "control": 6,
+        "mobility": 4,
+        "utility": 8
+    },
+    "Taliyah": {
+        "role": "Mage",
+        "positions": [
+            "Mid",
+            "Jungle"
+        ],
+        "difficulty": 5,
+        "damage": 7,
+        "toughness": 2,
+        "control": 6,
+        "mobility": 6,
+        "utility": 6
+    },
+    "Talon": {
+        "role": "Assassin",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 7,
+        "damage": 9,
+        "toughness": 3,
+        "control": 4,
+        "mobility": 8,
+        "utility": 5
+    },
+    "Taric": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 5,
+        "damage": 4,
+        "toughness": 8,
+        "control": 5,
+        "mobility": 3,
+        "utility": 9
+    },
+    "Teemo": {
+        "role": "Marksman",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 6,
+        "damage": 5,
+        "toughness": 3,
+        "control": 6,
+        "mobility": 5,
+        "utility": 7
+    },
+    "Trundle": {
+        "role": "Fighter",
+        "positions": [
+            "Top",
+            "Jungle"
+        ],
+        "difficulty": 5,
+        "damage": 7,
+        "toughness": 6,
+        "control": 4,
+        "mobility": 5,
+        "utility": 6
+    },
+    "Tryndamere": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 5,
+        "damage": 9,
+        "toughness": 5,
+        "control": 2,
+        "mobility": 6,
+        "utility": 2
+    },
+    "Twisted Fate": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 9,
+        "damage": 6,
+        "toughness": 2,
+        "control": 8,
+        "mobility": 5,
+        "utility": 10
+    },
+    "Udyr": {
+        "role": "Fighter",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 6,
+        "damage": 6,
+        "toughness": 7,
+        "control": 4,
+        "mobility": 6,
+        "utility": 5
+    },
+    "Urgot": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 6,
+        "control": 7,
+        "mobility": 3,
+        "utility": 5
+    },
+    "Varus": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 2,
+        "damage": 7,
+        "toughness": 3,
+        "control": 7,
+        "mobility": 3,
+        "utility": 6
+    },
+    "Vel'Koz": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 8,
+        "damage": 9,
+        "toughness": 2,
+        "control": 8,
+        "mobility": 2,
+        "utility": 6
+    },
+    "Vex": {
+        "role": "Mage",
+        "positions": [
+            "Mid"
+        ],
+        "difficulty": 6,
+        "damage": 7,
+        "toughness": 3,
+        "control": 7,
+        "mobility": 4,
+        "utility": 5
+    },
+    "Vi": {
+        "role": "Fighter",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 4,
+        "damage": 8,
+        "toughness": 5,
+        "control": 7,
+        "mobility": 7,
+        "utility": 6
+    },
+    "Viego": {
+        "role": "Assassin",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 4,
+        "control": 6,
+        "mobility": 7,
+        "utility": 6
+    },
+    "Volibear": {
+        "role": "Fighter",
+        "positions": [
+            "Top",
+            "Jungle"
+        ],
+        "difficulty": 3,
+        "damage": 7,
+        "toughness": 7,
+        "control": 6,
+        "mobility": 6,
+        "utility": 5
+    },
+    "Warwick": {
+        "role": "Fighter",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 3,
+        "damage": 7,
+        "toughness": 7,
+        "control": 5,
+        "mobility": 6,
+        "utility": 6
+    },
+    "Xin Zhao": {
+        "role": "Fighter",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 2,
+        "damage": 8,
+        "toughness": 6,
+        "control": 5,
+        "mobility": 6,
+        "utility": 4
+    },
+    "Yorick": {
+        "role": "Fighter",
+        "positions": [
+            "Top"
+        ],
+        "difficulty": 6,
+        "damage": 7,
+        "toughness": 6,
+        "control": 6,
+        "mobility": 3,
+        "utility": 7
+    },
+    "Yuumi": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 2,
+        "damage": 5,
+        "toughness": 2,
+        "control": 6,
+        "mobility": 10,
+        "utility": 8
+    },
+    "Zac": {
+        "role": "Tank",
+        "positions": [
+            "Jungle"
+        ],
+        "difficulty": 7,
+        "damage": 6,
+        "toughness": 7,
+        "control": 8,
+        "mobility": 8,
+        "utility": 7
+    },
+    "Zeri": {
+        "role": "Marksman",
+        "positions": [
+            "ADC"
+        ],
+        "difficulty": 8,
+        "damage": 7,
+        "toughness": 3,
+        "control": 4,
+        "mobility": 9,
+        "utility": 5
+    },
+    "Zilean": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 6,
+        "damage": 6,
+        "toughness": 5,
+        "control": 7,
+        "mobility": 5,
+        "utility": 10
+    },
+    "Zyra": {
+        "role": "Support",
+        "positions": [
+            "Support"
+        ],
+        "difficulty": 7,
+        "damage": 8,
+        "toughness": 2,
+        "control": 8,
+        "mobility": 3,
+        "utility": 6
+    }
+}
