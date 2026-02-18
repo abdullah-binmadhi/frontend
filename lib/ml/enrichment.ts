@@ -5,12 +5,13 @@ import type {
     EnrichmentStatus,
 } from './types';
 
-// ── Gender map for all LoL champions ──
+// ── Gender map for all LoL champions (DDragon 15.4.1 — 168 champions) ──
 // DDragon does not provide gender, so this is a curated static map.
 const GENDER_MAP: Record<string, string> = {
     Aatrox: 'Male', Ahri: 'Female', Akali: 'Female', Akshan: 'Male', Alistar: 'Male',
-    Ammu: 'Male', Anivia: 'Female', Annie: 'Female', Aphelios: 'Male', Ashe: 'Female',
-    'Aurelion Sol': 'Non-human', Azir: 'Male',
+    Ambessa: 'Female', Amumu: 'Male', Anivia: 'Female', Annie: 'Female',
+    Aphelios: 'Male', Ashe: 'Female', 'Aurelion Sol': 'Non-human', Aurora: 'Female',
+    Azir: 'Male',
     Bard: 'Non-human', "Bel'Veth": 'Female', Blitzcrank: 'Non-human', Brand: 'Male',
     Braum: 'Male', Briar: 'Female',
     Caitlyn: 'Female', Camille: 'Female', Cassiopeia: 'Female', "Cho'Gath": 'Non-human',
@@ -27,18 +28,19 @@ const GENDER_MAP: Record<string, string> = {
     "Kai'Sa": 'Female', Kalista: 'Female', Karma: 'Female', Karthus: 'Male',
     Kassadin: 'Male', Katarina: 'Female', Kayle: 'Female', Kayn: 'Male',
     Kennen: 'Male', "Kha'Zix": 'Non-human', Kindred: 'Female', Kled: 'Male',
-    "Kog'Maw": 'Non-human',
+    "Kog'Maw": 'Non-human', "K'Sante": 'Male',
     LeBlanc: 'Female', 'Lee Sin': 'Male', Leona: 'Female', Lillia: 'Female',
     Lissandra: 'Female', Lucian: 'Male', Lulu: 'Female', Lux: 'Female',
     Malphite: 'Non-human', Malzahar: 'Male', Maokai: 'Non-human', 'Master Yi': 'Male',
-    'Miss Fortune': 'Female', Mordekaiser: 'Male', Morgana: 'Female',
-    Nami: 'Female', Nasus: 'Male', Nautilus: 'Male', Neeko: 'Female',
+    Mel: 'Female', Milio: 'Male', 'Miss Fortune': 'Female', Mordekaiser: 'Male',
+    Morgana: 'Female',
+    Naafiri: 'Non-human', Nami: 'Female', Nasus: 'Male', Nautilus: 'Male', Neeko: 'Female',
     Nidalee: 'Female', Nilah: 'Female', Nocturne: 'Non-human', 'Nunu & Willump': 'Male',
     Olaf: 'Male', Orianna: 'Female', Ornn: 'Male',
     Pantheon: 'Male', Poppy: 'Female', Pyke: 'Male',
     Qiyana: 'Female', Quinn: 'Female',
     Rakan: 'Male', Rammus: 'Non-human', "Rek'Sai": 'Female', Rell: 'Female',
-    Renata: 'Female', Renekton: 'Non-human', Rengar: 'Non-human', Riven: 'Female',
+    'Renata Glasc': 'Female', Renekton: 'Non-human', Rengar: 'Non-human', Riven: 'Female',
     Rumble: 'Male', Ryze: 'Male',
     Samira: 'Female', Sejuani: 'Female', Senna: 'Female', Seraphine: 'Female',
     Sett: 'Male', Shaco: 'Male', Shen: 'Male', Shyvana: 'Female', Singed: 'Male',

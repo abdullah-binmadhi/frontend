@@ -11,6 +11,7 @@ import {
   Sword01Icon,
   FlashIcon,
   ArrowRight01Icon,
+  AiNetworkIcon,
 } from '@hugeicons/core-free-icons';
 import { Button } from '@/components/ui/button';
 
@@ -34,6 +35,12 @@ const features = [
     icon: Sword01Icon,
     title: 'Champion Analytics',
     desc: 'Matchups, power spikes, and counters at a glance.',
+  },
+  {
+    icon: AiNetworkIcon,
+    title: 'Champion Recommender',
+    desc: 'Take a quiz and let our ML ensemble find your perfect champion match.',
+    href: '/recommend',
   },
 ];
 
@@ -88,6 +95,12 @@ export default function LandingPage() {
                   Explore Champions
                 </Button>
               </Link>
+              <Link href="/recommend">
+                <Button variant="outline" className="border-gold/30 text-gold hover:bg-gold/10 gap-1.5 h-9 text-sm">
+                  <HugeiconsIcon icon={AiNetworkIcon} size={15} strokeWidth={1.5} />
+                  Find My Champion
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -120,21 +133,27 @@ export default function LandingPage() {
           </p>
         </div>
 
-        <div className="mt-8 grid gap-3 md:grid-cols-2">
-          {features.map((feature) => (
-            <div
-              key={feature.title}
-              className="group rounded-sm border border-border bg-card p-4 transition-colors duration-150 hover:border-primary/20"
-            >
-              <div className="flex h-9 w-9 items-center justify-center rounded-sm bg-gold/10 text-gold transition-colors group-hover:bg-gold/15">
-                <HugeiconsIcon icon={feature.icon} size={18} strokeWidth={1.5} />
+        <div className="mt-8 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+          {features.map((feature) => {
+            const inner = (
+              <div
+                className="group rounded-sm border border-border bg-card p-4 transition-colors duration-150 hover:border-primary/20 h-full"
+              >
+                <div className="flex h-9 w-9 items-center justify-center rounded-sm bg-gold/10 text-gold transition-colors group-hover:bg-gold/15">
+                  <HugeiconsIcon icon={feature.icon} size={18} strokeWidth={1.5} />
+                </div>
+                <h3 className="mt-3 text-sm font-semibold">{feature.title}</h3>
+                <p className="mt-1.5 text-sm text-muted-foreground leading-relaxed">
+                  {feature.desc}
+                </p>
               </div>
-              <h3 className="mt-3 text-sm font-semibold">{feature.title}</h3>
-              <p className="mt-1.5 text-sm text-muted-foreground leading-relaxed">
-                {feature.desc}
-              </p>
-            </div>
-          ))}
+            );
+            return (feature as any).href ? (
+              <Link key={feature.title} href={(feature as any).href}>{inner}</Link>
+            ) : (
+              <div key={feature.title}>{inner}</div>
+            );
+          })}
         </div>
       </section>
 
@@ -169,6 +188,7 @@ export default function LandingPage() {
             <div className="flex gap-5 text-xs text-muted-foreground">
               <Link href="/tier-list" className="hover:text-foreground transition-colors">Tier Lists</Link>
               <Link href="/champions" className="hover:text-foreground transition-colors">Champions</Link>
+              <Link href="/recommend" className="hover:text-foreground transition-colors">Recommender</Link>
               <Link href="/items" className="hover:text-foreground transition-colors">Items</Link>
               <Link href="/builds" className="hover:text-foreground transition-colors">Builds</Link>
             </div>

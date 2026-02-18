@@ -4,6 +4,9 @@ import { useQuizStore } from '@/lib/stores/quiz-store';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import type { EnrichedChampionData } from '@/lib/ml/types';
+import Link from 'next/link';
+import { api } from '@/lib/api/client';
+import { useQuery } from '@tanstack/react-query';
 
 const roleColors: Record<string, string> = {
     Fighter: 'bg-orange-500/15 text-orange-400 border-orange-500/30',
@@ -22,6 +25,7 @@ const algorithmColors = {
 
 export function ResultsView() {
     const { top10, reset, enrichedChampions, enrichmentStatus } = useQuizStore();
+    const { data: allChampions } = useQuery({ queryKey: ['champions'], queryFn: api.champions.getAll });
 
     // Use enriched data if available, fallback to static imports
     const getChampionData = (name: string): EnrichedChampionData | undefined => {
@@ -99,6 +103,8 @@ export function ResultsView() {
                     const roleClass = roleColors[data?.role || ''] || 'bg-muted text-muted-foreground';
                     const maxScore = Math.max(champion.randomForest, champion.decisionTree, champion.knn, 1);
                     const isFree = (data as EnrichedChampionData)?.isFreeRotation;
+                    // Resolve champion ID from name (using mock data for now as bridge)
+                    const championId = allChampions?.find(c => c.name === champion.championName || c.key === champion.championName)?.id;
 
                     return (
                         <motion.div
@@ -106,115 +112,120 @@ export function ResultsView() {
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.06 }}
-                            className={cn(
-                                'group relative overflow-hidden rounded-xl border bg-card p-4 card-hover',
-                                isFree ? 'border-sky-500/30' : 'border-border'
-                            )}
                         >
-                            {/* Rank badge */}
-                            <div className="absolute right-3 top-3 flex h-6 w-6 items-center justify-center rounded-full bg-gold/15 text-[10px] font-bold text-gold">
-                                #{index + 1}
-                            </div>
-
-                            {/* Free rotation badge */}
-                            {isFree && (
-                                <div className="absolute left-3 top-3">
-                                    <span className="rounded-full bg-sky-500/15 px-1.5 py-0.5 text-[9px] font-bold text-sky-400 border border-sky-500/30">
-                                        🆓 FREE
-                                    </span>
-                                </div>
-                            )}
-
-                            {/* Champion image */}
-                            <div className="mb-3 flex justify-center">
-                                <div className={cn(
-                                    'relative h-16 w-16 overflow-hidden rounded-full border-2',
-                                    isFree ? 'border-sky-400/50' : 'border-gold/30'
-                                )}>
-                                    {data?.image ? (
-                                        <img
-                                            src={data.image}
-                                            alt={champion.championName}
-                                            className="h-full w-full object-cover"
-                                        />
-                                    ) : (
-                                        <div className="flex h-full w-full items-center justify-center bg-muted text-lg font-bold text-muted-foreground">
-                                            {champion.championName[0]}
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-
-                            {/* Name & Role */}
-                            <div className="text-center mb-3">
-                                <h3 className="text-sm font-bold text-foreground truncate">
-                                    {champion.championName}
-                                </h3>
-                                <div className="flex items-center justify-center gap-1 mt-1 flex-wrap">
-                                    <span
-                                        className={cn(
-                                            'inline-block rounded-full border px-2 py-0.5 text-[10px] font-medium',
-                                            roleClass
-                                        )}
-                                    >
-                                        {data?.role}
-                                    </span>
-                                    {/* DDragon tags */}
-                                    {(data as EnrichedChampionData)?.tags?.map((tag) =>
-                                        tag !== data?.role ? (
-                                            <span
-                                                key={tag}
-                                                className="inline-block rounded-full bg-muted px-1.5 py-0.5 text-[9px] text-muted-foreground"
-                                            >
-                                                {tag}
-                                            </span>
-                                        ) : null
-                                    )}
-                                </div>
-                            </div>
-
-                            {/* Overall score */}
-                            <div className="text-center mb-3">
-                                <span className="text-2xl font-bold text-gold">{champion.average.toFixed(1)}</span>
-                                <span className="text-[10px] text-muted-foreground ml-0.5">%</span>
-                            </div>
-
-                            {/* Per-algorithm bars */}
-                            <div className="space-y-1.5">
-                                {(Object.entries(algorithmColors) as [keyof typeof algorithmColors, typeof algorithmColors[keyof typeof algorithmColors]][]).map(
-                                    ([key, algo]) => {
-                                        const score = champion[key as keyof typeof champion] as number;
-                                        return (
-                                            <div key={key} className="flex items-center gap-2">
-                                                <span className="w-6 text-[9px] text-muted-foreground text-right shrink-0">
-                                                    {algo.weight}
-                                                </span>
-                                                <div className="h-1.5 flex-1 rounded-full bg-muted overflow-hidden">
-                                                    <motion.div
-                                                        initial={{ width: 0 }}
-                                                        animate={{ width: `${(score / maxScore) * 100}%` }}
-                                                        transition={{ delay: index * 0.06 + 0.3, duration: 0.5 }}
-                                                        className="h-full rounded-full"
-                                                        style={{ backgroundColor: algo.color }}
-                                                    />
-                                                </div>
-                                                <span className="w-8 text-[9px] text-muted-foreground shrink-0">
-                                                    {score.toFixed(0)}
-                                                </span>
-                                            </div>
-                                        );
-                                    }
+                            <Link
+                                href={championId ? `/champions/${championId}` : '#'}
+                                className={cn(
+                                    'group relative block overflow-hidden rounded-xl border bg-card p-4 card-hover transition-colors',
+                                    isFree ? 'border-sky-500/30' : 'border-border',
+                                    !championId && 'cursor-default'
                                 )}
-                            </div>
-
-                            {/* Stats */}
-                            {data?.stats && (
-                                <div className="mt-3 pt-3 border-t border-border/50 flex justify-between text-[9px] text-muted-foreground">
-                                    <span>WR {data.stats.winRate}%</span>
-                                    <span>PR {data.stats.pickRate}%</span>
-                                    <span className="font-medium text-gold">{data.stats.tier}</span>
+                            >
+                                {/* Rank badge */}
+                                <div className="absolute right-3 top-3 flex h-6 w-6 items-center justify-center rounded-full bg-gold/15 text-[10px] font-bold text-gold">
+                                    #{index + 1}
                                 </div>
-                            )}
+
+                                {/* Free rotation badge */}
+                                {isFree && (
+                                    <div className="absolute left-3 top-3">
+                                        <span className="rounded-full bg-sky-500/15 px-1.5 py-0.5 text-[9px] font-bold text-sky-400 border border-sky-500/30">
+                                            🆓 FREE
+                                        </span>
+                                    </div>
+                                )}
+
+                                {/* Champion image */}
+                                <div className="mb-3 flex justify-center">
+                                    <div className={cn(
+                                        'relative h-16 w-16 overflow-hidden rounded-full border-2',
+                                        isFree ? 'border-sky-400/50' : 'border-gold/30'
+                                    )}>
+                                        {data?.image ? (
+                                            <img
+                                                src={data.image}
+                                                alt={champion.championName}
+                                                className="h-full w-full object-cover"
+                                            />
+                                        ) : (
+                                            <div className="flex h-full w-full items-center justify-center bg-muted text-lg font-bold text-muted-foreground">
+                                                {champion.championName[0]}
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+
+                                {/* Name & Role */}
+                                <div className="text-center mb-3">
+                                    <h3 className="text-sm font-bold text-foreground truncate">
+                                        {champion.championName}
+                                    </h3>
+                                    <div className="flex items-center justify-center gap-1 mt-1 flex-wrap">
+                                        <span
+                                            className={cn(
+                                                'inline-block rounded-full border px-2 py-0.5 text-[10px] font-medium',
+                                                roleClass
+                                            )}
+                                        >
+                                            {data?.role}
+                                        </span>
+                                        {/* DDragon tags */}
+                                        {(data as EnrichedChampionData)?.tags?.map((tag) =>
+                                            tag !== data?.role ? (
+                                                <span
+                                                    key={tag}
+                                                    className="inline-block rounded-full bg-muted px-1.5 py-0.5 text-[9px] text-muted-foreground"
+                                                >
+                                                    {tag}
+                                                </span>
+                                            ) : null
+                                        )}
+                                    </div>
+                                </div>
+
+                                {/* Overall score */}
+                                <div className="text-center mb-3">
+                                    <span className="text-2xl font-bold text-gold">{champion.average.toFixed(1)}</span>
+                                    <span className="text-[10px] text-muted-foreground ml-0.5">%</span>
+                                </div>
+
+                                {/* Per-algorithm bars */}
+                                <div className="space-y-1.5">
+                                    {(Object.entries(algorithmColors) as [keyof typeof algorithmColors, typeof algorithmColors[keyof typeof algorithmColors]][]).map(
+                                        ([key, algo]) => {
+                                            const score = champion[key as keyof typeof champion] as number;
+                                            return (
+                                                <div key={key} className="flex items-center gap-2">
+                                                    <span className="w-6 text-[9px] text-muted-foreground text-right shrink-0">
+                                                        {algo.weight}
+                                                    </span>
+                                                    <div className="h-1.5 flex-1 rounded-full bg-muted overflow-hidden">
+                                                        <motion.div
+                                                            initial={{ width: 0 }}
+                                                            animate={{ width: `${(score / maxScore) * 100}%` }}
+                                                            transition={{ delay: index * 0.06 + 0.3, duration: 0.5 }}
+                                                            className="h-full rounded-full"
+                                                            style={{ backgroundColor: algo.color }}
+                                                        />
+                                                    </div>
+                                                    <span className="w-8 text-[9px] text-muted-foreground shrink-0">
+                                                        {score.toFixed(0)}
+                                                    </span>
+                                                </div>
+                                            );
+                                        }
+                                    )}
+                                </div>
+
+                                {/* Stats */}
+                                {data?.stats && (
+                                    <div className="mt-3 pt-3 border-t border-border/50 flex justify-between text-[9px] text-muted-foreground">
+                                        <span>WR {data.stats.winRate}%</span>
+                                        <span>PR {data.stats.pickRate}%</span>
+                                        <span className="font-medium text-gold">{data.stats.tier}</span>
+                                    </div>
+                                )}
+                            </Link>
                         </motion.div>
                     );
                 })}
