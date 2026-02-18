@@ -73,9 +73,27 @@ export const api = {
             return data as any;
         },
         getById: async (id: string) => {
-            if (USE_MOCK) return mockBuilds.find((b) => b.id === id);
+            // Check if it's a mock build ID (e.g. "Ahri-1")
+            const mockBuild = mockBuilds.find((b) => b.id === id);
+
+            if (mockBuild) {
+                console.log('[API] Found mock build:', id);
+                return mockBuild;
+            }
+
+            console.log('[API] Mock build not found for:', id, 'Available mocked:', mockBuilds.length);
+
+            if (USE_MOCK) return undefined;
+
+            // Prevent Supabase error for non-UUIDs (mock IDs are usually short like 'Ahri-1')
+            if (id.length < 32 || !id.includes('-')) {
+                console.log('[API] ID is not a UUID, skipping Supabase:', id);
+                return undefined;
+            }
+
             const sb = createClient();
-            const { data } = await sb.from('builds').select('*').eq('id', id).single();
+            const { data, error } = await sb.from('builds').select('*').eq('id', id).single();
+            if (error) console.error('[API] Supabase error:', error);
             return data as any;
         },
         create: async (build: Partial<Build>) => {

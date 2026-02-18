@@ -78,6 +78,13 @@ export interface Build {
     views: number;
     createdAt: string;
     author?: string;
+    runes: {
+        primary: string;
+        keystone: string;
+        secondary: string;
+    };
+    skillOrder: string[];
+    tips: string[];
 }
 
 export interface Match {
