@@ -1,4 +1,5 @@
 import type {
+    ChampionData,
     ChampionDatabase,
     UserFeatures,
     ScoreMap,
@@ -26,6 +27,7 @@ export class ScoreAggregator {
         dtScores: ScoreMap,
         knnScores: ScoreMap,
         allChampions: ChampionDatabase,
+        userFeatures?: UserFeatures,
     ): Record<string, AggregatedScore> {
         const aggregated: Record<string, AggregatedScore> = {};
 
@@ -34,8 +36,38 @@ export class ScoreAggregator {
             const dt = dtScores[championName]?.score || 0;
             const knn = knnScores[championName]?.score || 0;
 
-            const average = rf * 0.4 + dt * 0.3 + knn * 0.3;
-            const weighted = Math.max(0, Math.min(100, rf * 0.4 + dt * 0.3 + knn * 0.3));
+            let average = rf * 0.4 + dt * 0.3 + knn * 0.3;
+
+            // Post-aggregation hard filter: cap score if critical mismatches exist
+            if (userFeatures) {
+                const champ = allChampions[championName] as ChampionData & {
+                    damageType?: string; attackRange?: string; gender?: string;
+                };
+                let criticalMismatches = 0;
+
+                if (userFeatures.role && userFeatures.role !== 'No Preference' && champ.role !== userFeatures.role) {
+                    criticalMismatches++;
+                }
+                if (userFeatures.damage_type && userFeatures.damage_type !== 'No Preference' &&
+                    champ.damageType && userFeatures.damage_type !== champ.damageType) {
+                    criticalMismatches++;
+                }
+                if (userFeatures.attack_range && userFeatures.attack_range !== 'No Preference' &&
+                    champ.attackRange && userFeatures.attack_range !== champ.attackRange) {
+                    criticalMismatches++;
+                }
+                if (userFeatures.character_identity && userFeatures.character_identity !== 'No preference' &&
+                    champ.gender && userFeatures.character_identity !== champ.gender) {
+                    criticalMismatches++;
+                }
+
+                // Cap score based on mismatch count
+                if (criticalMismatches >= 3) average = Math.min(average, 5);
+                else if (criticalMismatches >= 2) average = Math.min(average, 15);
+                else if (criticalMismatches >= 1) average = Math.min(average, 40);
+            }
+
+            const weighted = Math.max(0, Math.min(100, average));
 
             aggregated[championName] = {
                 championName,

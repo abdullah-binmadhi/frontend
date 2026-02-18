@@ -159,8 +159,8 @@ export const useQuizStore = create<QuizState>((set, get) => ({
             const dtScores = dt.predictAll(features);
             const knnScores = knn.predictAll(features);
 
-            // Aggregate scores
-            const aggregated = ScoreAggregator.aggregateScores(rfScores, dtScores, knnScores, champDB);
+            // Aggregate scores with post-aggregation hard filter
+            const aggregated = ScoreAggregator.aggregateScores(rfScores, dtScores, knnScores, champDB, features);
             const top10 = ScoreAggregator.selectTop10(aggregated, champDB);
 
             // Calculate quality metrics

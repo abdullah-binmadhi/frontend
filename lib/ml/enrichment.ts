@@ -5,16 +5,65 @@ import type {
     EnrichmentStatus,
 } from './types';
 
-// Champion name mapping: DDragon name → our champion name
+// ── Gender map for all LoL champions ──
+// DDragon does not provide gender, so this is a curated static map.
+const GENDER_MAP: Record<string, string> = {
+    Aatrox: 'Male', Ahri: 'Female', Akali: 'Female', Akshan: 'Male', Alistar: 'Male',
+    Ammu: 'Male', Anivia: 'Female', Annie: 'Female', Aphelios: 'Male', Ashe: 'Female',
+    'Aurelion Sol': 'Non-human', Azir: 'Male',
+    Bard: 'Non-human', "Bel'Veth": 'Female', Blitzcrank: 'Non-human', Brand: 'Male',
+    Braum: 'Male', Briar: 'Female',
+    Caitlyn: 'Female', Camille: 'Female', Cassiopeia: 'Female', "Cho'Gath": 'Non-human',
+    Corki: 'Male',
+    Darius: 'Male', Diana: 'Female', 'Dr. Mundo': 'Male', Draven: 'Male',
+    Ekko: 'Male', Elise: 'Female', Evelynn: 'Female', Ezreal: 'Male',
+    Fiddlesticks: 'Non-human', Fiora: 'Female', Fizz: 'Male',
+    Galio: 'Non-human', Gangplank: 'Male', Garen: 'Male', Gnar: 'Non-human',
+    Gragas: 'Male', Graves: 'Male', Gwen: 'Female',
+    Hecarim: 'Non-human', Heimerdinger: 'Male', Hwei: 'Male',
+    Illaoi: 'Female', Irelia: 'Female', Ivern: 'Male',
+    Janna: 'Female', 'Jarvan IV': 'Male', Jax: 'Male', Jayce: 'Male',
+    Jhin: 'Male', Jinx: 'Female',
+    "Kai'Sa": 'Female', Kalista: 'Female', Karma: 'Female', Karthus: 'Male',
+    Kassadin: 'Male', Katarina: 'Female', Kayle: 'Female', Kayn: 'Male',
+    Kennen: 'Male', "Kha'Zix": 'Non-human', Kindred: 'Female', Kled: 'Male',
+    "Kog'Maw": 'Non-human',
+    LeBlanc: 'Female', 'Lee Sin': 'Male', Leona: 'Female', Lillia: 'Female',
+    Lissandra: 'Female', Lucian: 'Male', Lulu: 'Female', Lux: 'Female',
+    Malphite: 'Non-human', Malzahar: 'Male', Maokai: 'Non-human', 'Master Yi': 'Male',
+    'Miss Fortune': 'Female', Mordekaiser: 'Male', Morgana: 'Female',
+    Nami: 'Female', Nasus: 'Male', Nautilus: 'Male', Neeko: 'Female',
+    Nidalee: 'Female', Nilah: 'Female', Nocturne: 'Non-human', 'Nunu & Willump': 'Male',
+    Olaf: 'Male', Orianna: 'Female', Ornn: 'Male',
+    Pantheon: 'Male', Poppy: 'Female', Pyke: 'Male',
+    Qiyana: 'Female', Quinn: 'Female',
+    Rakan: 'Male', Rammus: 'Non-human', "Rek'Sai": 'Female', Rell: 'Female',
+    Renata: 'Female', Renekton: 'Non-human', Rengar: 'Non-human', Riven: 'Female',
+    Rumble: 'Male', Ryze: 'Male',
+    Samira: 'Female', Sejuani: 'Female', Senna: 'Female', Seraphine: 'Female',
+    Sett: 'Male', Shaco: 'Male', Shen: 'Male', Shyvana: 'Female', Singed: 'Male',
+    Sion: 'Male', Sivir: 'Female', Skarner: 'Non-human', Smolder: 'Non-human',
+    Sona: 'Female', Soraka: 'Female', Swain: 'Male', Sylas: 'Male', Syndra: 'Female',
+    'Tahm Kench': 'Non-human', Taliyah: 'Female', Talon: 'Male', Taric: 'Male',
+    Teemo: 'Male', Thresh: 'Male', Tristana: 'Female', Trundle: 'Male',
+    Tryndamere: 'Male', 'Twisted Fate': 'Male', Twitch: 'Non-human',
+    Udyr: 'Male', Urgot: 'Male',
+    Varus: 'Male', Vayne: 'Female', Veigar: 'Male', "Vel'Koz": 'Non-human',
+    Vex: 'Female', Vi: 'Female', Viego: 'Male', Viktor: 'Male', Vladimir: 'Male',
+    Volibear: 'Non-human',
+    Warwick: 'Non-human', Wukong: 'Male',
+    Xayah: 'Female', Xerath: 'Non-human', 'Xin Zhao': 'Male',
+    Yasuo: 'Male', Yone: 'Male', Yorick: 'Male', Yuumi: 'Non-human',
+    Zac: 'Non-human', Zed: 'Male', Zeri: 'Female', Ziggs: 'Male',
+    Zilean: 'Male', Zoe: 'Female', Zyra: 'Female',
+};
+
+// DDragon name overrides
 const NAME_OVERRIDES: Record<string, string> = {
     'Nunu & Willump': 'Nunu',
     'Renata Glasc': 'Renata',
-    'Wukong': 'Wukong',
 };
 
-/**
- * Normalize real champion stats into 1-10 scale for ML features.
- */
 function normalizeStatToScale(value: number, min: number, max: number): number {
     const clamped = Math.max(min, Math.min(max, value));
     return Math.round(((clamped - min) / (max - min)) * 9 + 1);
@@ -36,9 +85,21 @@ function normalizeMobility(moveSpeed: number): number {
 }
 
 /**
- * Fetch enriched champion data from our API routes.
- * Blends live DDragon stats (40%) with existing hand-tuned values (60%).
+ * Derive damage type from DDragon info ratings.
+ * If magic > attack → "Magic", else → "Physical"
  */
+function deriveDamageType(info: { attack: number; magic: number }): string {
+    return info.magic > info.attack ? 'Magic' : 'Physical';
+}
+
+/**
+ * Derive attack range category from DDragon stats.
+ * Standard LoL: melee < 300, ranged >= 300
+ */
+function deriveAttackRange(attackRange: number): string {
+    return attackRange >= 300 ? 'Ranged' : 'Melee';
+}
+
 export async function enrichChampionsWithRiotData(
     staticChampions: ChampionDatabase,
 ): Promise<{ champions: EnrichedChampionDatabase; status: EnrichmentStatus }> {
@@ -51,20 +112,20 @@ export async function enrichChampionsWithRiotData(
         error: null,
     };
 
-    // Start with a copy of static data
     const enriched: EnrichedChampionDatabase = {};
     for (const [name, data] of Object.entries(staticChampions)) {
-        enriched[name] = { ...data };
+        enriched[name] = {
+            ...data,
+            gender: GENDER_MAP[name] || 'Other',
+        };
     }
 
     try {
-        // 1. Fetch DDragon and rotation data in parallel
         const [championsRes, rotationRes] = await Promise.allSettled([
             fetch('/api/riot/champions'),
             fetch('/api/riot/rotation'),
         ]);
 
-        // 2. Process DDragon data
         let patchVersion: string | null = null;
         const keyToName: Map<number, string> = new Map();
 
@@ -75,14 +136,11 @@ export async function enrichChampionsWithRiotData(
 
             for (const [ddragonName, ddragonInfo] of Object.entries(ddragonChampions)) {
                 const resolvedName = NAME_OVERRIDES[ddragonName] || ddragonName;
-
-                // Build numeric key → name map for rotation matching
                 keyToName.set(ddragonInfo.key, resolvedName);
 
                 if (enriched[resolvedName]) {
                     const champ = enriched[resolvedName];
 
-                    // Enrich with DDragon metadata
                     champ.ddragonId = ddragonInfo.ddragonId;
                     champ.tags = ddragonInfo.tags;
                     champ.title = ddragonInfo.title;
@@ -91,13 +149,16 @@ export async function enrichChampionsWithRiotData(
                     champ.image = ddragonInfo.image;
                     champ.isFreeRotation = false;
 
-                    // Enhance ML features: 60% hand-tuned + 40% real DDragon stats
+                    // ── Critical new fields from DDragon ──
+                    champ.damageType = deriveDamageType(ddragonInfo.info);
+                    champ.attackRange = deriveAttackRange(ddragonInfo.stats.attackRange);
+                    // Gender from static map (already set above)
+
+                    // Blend stats: 60% hand-tuned + 40% DDragon real
                     if (ddragonInfo.stats && ddragonInfo.info) {
                         const realDamage = normalizeDamage(ddragonInfo.stats.attackDamage, ddragonInfo.info.attack);
                         const realToughness = normalizeToughness(
-                            ddragonInfo.stats.armor,
-                            ddragonInfo.stats.hp,
-                            ddragonInfo.info.defense,
+                            ddragonInfo.stats.armor, ddragonInfo.stats.hp, ddragonInfo.info.defense,
                         );
                         const realMobility = normalizeMobility(ddragonInfo.stats.moveSpeed);
 
@@ -110,7 +171,6 @@ export async function enrichChampionsWithRiotData(
             }
         }
 
-        // 3. Process free rotation data
         let freeRotationCount = 0;
         if (rotationRes.status === 'fulfilled' && rotationRes.value.ok) {
             const rotationData = await rotationRes.value.json();
@@ -120,7 +180,6 @@ export async function enrichChampionsWithRiotData(
             ]);
             freeRotationCount = freeIds.size;
 
-            // Mark free rotation champions using numeric key mapping
             for (const freeId of freeIds) {
                 const champName = keyToName.get(freeId);
                 if (champName && enriched[champName]) {

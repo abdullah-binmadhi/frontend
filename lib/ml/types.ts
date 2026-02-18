@@ -139,6 +139,9 @@ export interface EnrichedChampionData extends ChampionData {
     ddragonId?: string;
     tags?: string[];
     title?: string;
+    gender?: string;
+    damageType?: string;
+    attackRange?: string;
     riotInfo?: { attack: number; defense: number; magic: number; difficulty: number };
     realStats?: {
         hp: number;
