@@ -209,21 +209,21 @@ export default function BuildDetailPage() {
                                     </div>
                                     <div className="p-3 rounded-md bg-muted/20 border border-border/50">
                                         <div className="flex items-center gap-3 mb-4">
-                                            <div className="h-10 w-10 flex items-center justify-center rounded-full bg-gold/10 border border-gold/30">
-                                                <span className="text-xs font-bold text-gold">{build.runes.primary.keystone[0]}</span>
+                                            <div className="relative h-10 w-10 flex items-center justify-center rounded-full bg-gold/10 border border-gold/30 overflow-hidden">
+                                                <Image src={`https://ddragon.leagueoflegends.com/cdn/img/${build.runes.primary.keystone.icon}`} alt={build.runes.primary.keystone.name} fill sizes="40px" className="object-cover scale-110" />
                                             </div>
                                             <div className="flex-1">
-                                                <span className="text-sm font-medium">{build.runes.primary.keystone}</span>
+                                                <span className="text-sm font-medium">{build.runes.primary.keystone.name}</span>
                                                 <p className="text-[10px] text-muted-foreground">Keystone</p>
                                             </div>
                                         </div>
                                         <div className="grid grid-cols-3 gap-2">
-                                            {build.runes.primary.perks.map((perk: string, i: number) => (
+                                            {build.runes.primary.perks.map((perk: { name: string, icon: string }, i: number) => (
                                                 <div key={i} className="flex flex-col items-center text-center gap-1.5 p-1">
-                                                    <div className="h-8 w-8 rounded-full bg-card border border-border flex items-center justify-center">
-                                                        <span className="text-[10px] text-muted-foreground font-medium">{perk[0]}</span>
+                                                    <div className="relative h-8 w-8 rounded-full bg-card border border-border flex items-center justify-center overflow-hidden">
+                                                        <Image src={`https://ddragon.leagueoflegends.com/cdn/img/${perk.icon}`} alt={perk.name} fill sizes="32px" className="object-cover" />
                                                     </div>
-                                                    <span className="text-[10px] leading-tight text-muted-foreground">{perk}</span>
+                                                    <span className="text-[10px] leading-tight text-muted-foreground">{perk.name}</span>
                                                 </div>
                                             ))}
                                         </div>
@@ -243,22 +243,22 @@ export default function BuildDetailPage() {
                                     </div>
                                     <div className="p-3 rounded-md bg-muted/10 border border-border/30">
                                         <div className="flex justify-around gap-2 mb-4">
-                                            {build.runes.secondary.perks.map((perk: string, i: number) => (
+                                            {build.runes.secondary.perks.map((perk: { name: string, icon: string }, i: number) => (
                                                 <div key={i} className="flex flex-col items-center text-center gap-1.5 p-1 w-1/2">
-                                                    <div className="h-8 w-8 rounded-full bg-card border border-border/50 flex items-center justify-center">
-                                                        <span className="text-[10px] text-muted-foreground font-medium">{perk[0]}</span>
+                                                    <div className="relative h-8 w-8 rounded-full bg-card border border-border/50 flex items-center justify-center overflow-hidden">
+                                                        <Image src={`https://ddragon.leagueoflegends.com/cdn/img/${perk.icon}`} alt={perk.name} fill sizes="32px" className="object-cover" />
                                                     </div>
-                                                    <span className="text-[10px] leading-tight text-muted-foreground">{perk}</span>
+                                                    <span className="text-[10px] leading-tight text-muted-foreground">{perk.name}</span>
                                                 </div>
                                             ))}
                                         </div>
 
                                         {/* Stat Mods */}
                                         <div className="pt-3 border-t border-border/30 flex justify-center gap-4">
-                                            {build.runes.statMods.map((mod: string, i: number) => (
+                                            {build.runes.statMods.map((mod: { name: string, icon: string }, i: number) => (
                                                 <div key={i} className="flex items-center gap-1.5">
-                                                    <div className="h-4 w-4 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
-                                                        <span className="text-[8px] text-primary">{mod[0]}</span>
+                                                    <div className="relative h-5 w-5 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
+                                                        <Image src={`https://ddragon.leagueoflegends.com/cdn/img/${mod.icon}`} alt={mod.name} fill sizes="20px" className="object-cover scale-75 grayscale contrast-200 opacity-80" />
                                                     </div>
                                                 </div>
                                             ))}

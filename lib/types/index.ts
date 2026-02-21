@@ -80,9 +80,9 @@ export interface Build {
     createdAt: string;
     author?: string;
     runes: {
-        primary: { path: string; keystone: string; perks: string[] };
-        secondary: { path: string; perks: string[] };
-        statMods: string[];
+        primary: { path: string; keystone: { name: string, icon: string }; perks: { name: string, icon: string }[] };
+        secondary: { path: string; perks: { name: string, icon: string }[] };
+        statMods: { name: string, icon: string }[];
     };
     skillOrder: string[];
     tips: string[];

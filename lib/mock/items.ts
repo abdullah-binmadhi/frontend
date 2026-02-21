@@ -13,7 +13,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellBlock', 'CooldownReduction', 'MagicResist', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3067, 1057], buildsInto: [],
-        imageUrl: `${BASE_IMG}/8020.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/8020.png`, patchVersion: '26.4',
     },
     {
         id: 2522,
@@ -24,7 +24,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'Mana', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [3802, 1026], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2522.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2522.png`, patchVersion: '26.4',
     },
     {
         id: 3113,
@@ -35,7 +35,7 @@ export const mockItems: Item[] = [
         tags: ['NonbootsMovement', 'SpellDamage'],
         roles: ['Mid', 'Support'],
         buildsFrom: [1052], buildsInto: [123430, 3100, 2065, 322065, 323504, 3504, 4629, 4646],
-        imageUrl: `${BASE_IMG}/3113.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3113.png`, patchVersion: '26.4',
     },
     {
         id: 1052,
@@ -46,7 +46,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage'],
         roles: ['Mid', 'Support'],
         buildsFrom: [], buildsInto: [3113, 2421, 2420, 3145, 124011, 4637, 3916, 6656, 324005, 3147, 3146, 3802, 2508, 326616, 3108, 3116, 3124, 323504, 4630, 4628, 4632, 4635, 4642, 4644],
-        imageUrl: `${BASE_IMG}/1052.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1052.png`, patchVersion: '26.4',
     },
     {
         id: 3003,
@@ -57,7 +57,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'Mana', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [3070, 3802, 3108], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3003.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3003.png`, patchVersion: '26.4',
     },
     {
         id: 3504,
@@ -68,7 +68,7 @@ export const mockItems: Item[] = [
         tags: ['AttackSpeed', 'SpellDamage', 'ManaRegen', 'NonbootsMovement'],
         roles: ['Mid', 'Support'],
         buildsFrom: [3113, 3114], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3504.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3504.png`, patchVersion: '26.4',
     },
     {
         id: 3174,
@@ -79,7 +79,7 @@ export const mockItems: Item[] = [
         tags: ['Armor', 'Boots'],
         roles: ['Top', 'Support', 'Jungle', 'Mid', 'ADC'],
         buildsFrom: [3047], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3174.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3174.png`, patchVersion: '26.4',
     },
     {
         id: 6696,
@@ -90,7 +90,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'ArmorPenetration', 'AbilityHaste'],
         roles: ['Mid', 'Jungle', 'Top', 'ADC'],
         buildsFrom: [2020, 3133], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6696.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6696.png`, patchVersion: '26.4',
     },
     {
         id: 1038,
@@ -101,7 +101,7 @@ export const mockItems: Item[] = [
         tags: ['Damage'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [], buildsInto: [3031, 3026, 3032, 3072, 3095, 3097, 4403, 6671],
-        imageUrl: `${BASE_IMG}/1038.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1038.png`, patchVersion: '26.4',
     },
     {
         id: 6660,
@@ -112,7 +112,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1028, 2022], buildsInto: [3068, 6664],
-        imageUrl: `${BASE_IMG}/6660.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6660.png`, patchVersion: '26.4',
     },
     {
         id: 4642,
@@ -123,7 +123,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'ManaRegen', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [1004, 1052, 2022], buildsInto: [2065, 322065, 6620, 326617, 324005, 4005, 6617, 326620],
-        imageUrl: `${BASE_IMG}/4642.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/4642.png`, patchVersion: '26.4',
     },
     {
         id: 2524,
@@ -134,7 +134,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellBlock', 'Armor', 'AttackSpeed', 'NonbootsMovement', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3067, 1029, 1033], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2524.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2524.png`, patchVersion: '26.4',
     },
     {
         id: 3102,
@@ -145,7 +145,7 @@ export const mockItems: Item[] = [
         tags: ['SpellBlock', 'SpellDamage'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [1058, 4632], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3102.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3102.png`, patchVersion: '26.4',
     },
     {
         id: 2520,
@@ -156,7 +156,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'ArmorPenetration', 'AbilityHaste'],
         roles: ['Mid', 'Jungle', 'Top', 'ADC'],
         buildsFrom: [2020, 3134], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2520.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2520.png`, patchVersion: '26.4',
     },
     {
         id: 3006,
@@ -167,7 +167,7 @@ export const mockItems: Item[] = [
         tags: ['AttackSpeed', 'Boots'],
         roles: ['Top', 'Jungle', 'Mid', 'ADC', 'Support'],
         buildsFrom: [1001, 1042, 1042], buildsInto: [3172],
-        imageUrl: `${BASE_IMG}/3006.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3006.png`, patchVersion: '26.4',
     },
     {
         id: 3071,
@@ -178,7 +178,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage', 'CooldownReduction', 'OnHit', 'NonbootsMovement', 'ArmorPenetration', 'AbilityHaste'],
         roles: ['Mid', 'Jungle', 'Top', 'Support'],
         buildsFrom: [3044, 3067, 1037], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3071.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3071.png`, patchVersion: '26.4',
     },
     {
         id: 2503,
@@ -189,7 +189,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'Mana', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [3802, 2508], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2503.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2503.png`, patchVersion: '26.4',
     },
     {
         id: 3153,
@@ -200,7 +200,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'AttackSpeed', 'LifeSteal', 'Slow', 'OnHit'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [1053, 1043, 1037], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3153.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3153.png`, patchVersion: '26.4',
     },
     {
         id: 1026,
@@ -211,7 +211,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage'],
         roles: ['Mid', 'Support'],
         buildsFrom: [], buildsInto: [2522, 3100, 326621, 4637, 3135, 3165, 3115, 2510, 3116, 3118, 326657, 6621, 6657],
-        imageUrl: `${BASE_IMG}/1026.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1026.png`, patchVersion: '26.4',
     },
     {
         id: 4630,
@@ -222,7 +222,7 @@ export const mockItems: Item[] = [
         tags: ['MagicPenetration', 'SpellDamage'],
         roles: ['Mid', 'Support'],
         buildsFrom: [1052], buildsInto: [3135, 3137],
-        imageUrl: `${BASE_IMG}/4630.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/4630.png`, patchVersion: '26.4',
     },
     {
         id: 8010,
@@ -233,7 +233,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellDamage', 'CooldownReduction', 'MagicPenetration'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3147, 3108], buildsInto: [],
-        imageUrl: `${BASE_IMG}/8010.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/8010.png`, patchVersion: '26.4',
     },
     {
         id: 3877,
@@ -244,7 +244,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen', 'ManaRegen', 'Vision', 'GoldPer', 'Lane'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3867], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3877.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3877.png`, patchVersion: '26.4',
     },
     {
         id: 3072,
@@ -255,7 +255,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'LifeSteal'],
         roles: ['Top', 'ADC'],
         buildsFrom: [1038, 1037, 1053], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3072.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3072.png`, patchVersion: '26.4',
     },
     {
         id: 1001,
@@ -266,7 +266,7 @@ export const mockItems: Item[] = [
         tags: ['Boots'],
         roles: ['Top', 'Jungle', 'Mid', 'ADC', 'Support'],
         buildsFrom: [], buildsInto: [3005, 3047, 3006, 3009, 3010, 3020, 3111, 3117, 3158],
-        imageUrl: `${BASE_IMG}/1001.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1001.png`, patchVersion: '26.4',
     },
     {
         id: 3009,
@@ -277,7 +277,7 @@ export const mockItems: Item[] = [
         tags: ['Boots'],
         roles: ['Top', 'Jungle', 'Mid', 'ADC', 'Support'],
         buildsFrom: [1001], buildsInto: [3170],
-        imageUrl: `${BASE_IMG}/3009.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3009.png`, patchVersion: '26.4',
     },
     {
         id: 3076,
@@ -288,7 +288,7 @@ export const mockItems: Item[] = [
         tags: ['Armor'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1029, 1029], buildsInto: [323075, 3075],
-        imageUrl: `${BASE_IMG}/3076.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3076.png`, patchVersion: '26.4',
     },
     {
         id: 2141,
@@ -299,7 +299,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'Consumable'],
         roles: ['Top', 'Jungle', 'Mid', 'ADC', 'Support'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2141.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2141.png`, patchVersion: '26.4',
     },
     {
         id: 3803,
@@ -310,7 +310,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen', 'Mana', 'ManaRegen'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [1028, 1028, 1027], buildsInto: [4402, 326657, 6657],
-        imageUrl: `${BASE_IMG}/3803.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3803.png`, patchVersion: '26.4',
     },
     {
         id: 3133,
@@ -321,7 +321,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [1036, 2022, 1036], buildsInto: [6333, 126697, 3156, 2517, 323004, 6693, 6697, 4402, 3004, 3508, 3074, 3179, 6691, 6609, 6610, 6632, 6692, 6694, 6696],
-        imageUrl: `${BASE_IMG}/3133.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3133.png`, patchVersion: '26.4',
     },
     {
         id: 3869,
@@ -332,7 +332,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen', 'ManaRegen', 'Vision', 'GoldPer', 'Lane'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3867], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3869.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3869.png`, patchVersion: '26.4',
     },
     {
         id: 1031,
@@ -343,7 +343,7 @@ export const mockItems: Item[] = [
         tags: ['Armor'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1029], buildsInto: [3742, 3068, 323002, 3109, 323075, 2502, 3002, 3075, 323109, 6665, 6662],
-        imageUrl: `${BASE_IMG}/1031.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1031.png`, patchVersion: '26.4',
     },
     {
         id: 3173,
@@ -354,7 +354,7 @@ export const mockItems: Item[] = [
         tags: ['SpellBlock', 'Boots', 'Tenacity', 'MagicResist'],
         roles: ['Top', 'Support', 'Jungle', 'Mid', 'ADC'],
         buildsFrom: [3111], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3173.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3173.png`, patchVersion: '26.4',
     },
     {
         id: 6609,
@@ -365,7 +365,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle', 'ADC'],
         buildsFrom: [3123, 1011, 3133], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6609.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6609.png`, patchVersion: '26.4',
     },
     {
         id: 1018,
@@ -376,7 +376,7 @@ export const mockItems: Item[] = [
         tags: ['CriticalStrike'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [], buildsInto: [123430, 667666, 3031, 3086, 6670, 3033, 3039, 3508, 3095, 3097, 6676],
-        imageUrl: `${BASE_IMG}/1018.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1018.png`, patchVersion: '26.4',
     },
     {
         id: 1029,
@@ -387,7 +387,7 @@ export const mockItems: Item[] = [
         tags: ['Armor'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [], buildsInto: [2421, 2420, 1031, 323050, 323190, 2019, 3193, 3047, 3024, 3050, 2524, 3023, 3076, 3082, 3105, 3190],
-        imageUrl: `${BASE_IMG}/1029.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1029.png`, patchVersion: '26.4',
     },
     {
         id: 2055,
@@ -398,7 +398,7 @@ export const mockItems: Item[] = [
         tags: ['Consumable', 'Lane', 'Stealth', 'Vision'],
         roles: ['Support', 'Top', 'Jungle', 'Mid', 'ADC'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2055.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2055.png`, patchVersion: '26.4',
     },
     {
         id: 4629,
@@ -409,7 +409,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellDamage', 'NonbootsMovement', 'AbilityHaste'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3067, 3113, 3108], buildsInto: [],
-        imageUrl: `${BASE_IMG}/4629.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/4629.png`, patchVersion: '26.4',
     },
     {
         id: 3171,
@@ -420,7 +420,7 @@ export const mockItems: Item[] = [
         tags: ['CooldownReduction', 'Boots'],
         roles: ['Top', 'Jungle', 'Mid', 'ADC', 'Support'],
         buildsFrom: [3158], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3171.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3171.png`, patchVersion: '26.4',
     },
     {
         id: 3137,
@@ -431,7 +431,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'MagicPenetration', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [4630, 3108, 3108], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3137.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3137.png`, patchVersion: '26.4',
     },
     {
         id: 3801,
@@ -442,7 +442,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1028, 1006], buildsInto: [3084, 3083],
-        imageUrl: `${BASE_IMG}/3801.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3801.png`, patchVersion: '26.4',
     },
     {
         id: 1083,
@@ -453,7 +453,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'OnHit', 'Lane'],
         roles: ['ADC', 'Top'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/1083.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1083.png`, patchVersion: '26.4',
     },
     {
         id: 1042,
@@ -464,7 +464,7 @@ export const mockItems: Item[] = [
         tags: ['AttackSpeed'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [], buildsInto: [1043, 3086, 2510, 3006, 3046, 3051, 3073, 3131, 3144, 6631, 6675, 6677],
-        imageUrl: `${BASE_IMG}/1042.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1042.png`, patchVersion: '26.4',
     },
     {
         id: 1082,
@@ -475,7 +475,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellDamage', 'Lane'],
         roles: ['Mid', 'Top', 'Support', 'Jungle'],
         buildsFrom: [], buildsInto: [3041],
-        imageUrl: `${BASE_IMG}/1082.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1082.png`, patchVersion: '26.4',
     },
     {
         id: 6621,
@@ -486,7 +486,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'ManaRegen'],
         roles: ['Mid', 'Support'],
         buildsFrom: [1026, 3114, 3114], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6621.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6621.png`, patchVersion: '26.4',
     },
     {
         id: 3742,
@@ -497,7 +497,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Armor', 'Slow', 'NonbootsMovement'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3066, 1028, 1031], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3742.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3742.png`, patchVersion: '26.4',
     },
     {
         id: 6333,
@@ -508,7 +508,7 @@ export const mockItems: Item[] = [
         tags: ['Armor', 'Damage', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle', 'ADC'],
         buildsFrom: [2019, 1037, 3133], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6333.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6333.png`, patchVersion: '26.4',
     },
     {
         id: 1055,
@@ -519,7 +519,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage', 'LifeSteal', 'SpellVamp', 'Lane'],
         roles: ['ADC', 'Top', 'Support', 'Jungle'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/1055.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1055.png`, patchVersion: '26.4',
     },
     {
         id: 1056,
@@ -530,7 +530,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Lane', 'ManaRegen', 'SpellDamage'],
         roles: ['Mid', 'Top', 'Support', 'Jungle'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/1056.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1056.png`, patchVersion: '26.4',
     },
     {
         id: 1054,
@@ -541,7 +541,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen', 'Lane'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/1054.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1054.png`, patchVersion: '26.4',
     },
     {
         id: 3870,
@@ -552,7 +552,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen', 'ManaRegen', 'Vision', 'GoldPer', 'Lane'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3867], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3870.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3870.png`, patchVersion: '26.4',
     },
     {
         id: 2510,
@@ -563,7 +563,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'AttackSpeed', 'SpellDamage', 'OnHit', 'AbilityHaste'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3057, 1026, 3067, 1042], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2510.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2510.png`, patchVersion: '26.4',
     },
     {
         id: 6620,
@@ -574,7 +574,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellDamage', 'ManaRegen', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3067, 4642], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6620.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6620.png`, patchVersion: '26.4',
     },
     {
         id: 6692,
@@ -585,7 +585,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Top', 'ADC'],
         buildsFrom: [3133, 1037, 1036], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6692.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6692.png`, patchVersion: '26.4',
     },
     {
         id: 3814,
@@ -596,7 +596,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage', 'ArmorPenetration'],
         roles: ['Mid', 'Jungle', 'Top', 'Support', 'ADC'],
         buildsFrom: [3134, 2021], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3814.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3814.png`, patchVersion: '26.4',
     },
     {
         id: 2138,
@@ -607,7 +607,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Consumable', 'NonbootsMovement', 'Tenacity'],
         roles: ['Top', 'Support', 'Jungle', 'Mid', 'ADC'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2138.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2138.png`, patchVersion: '26.4',
     },
     {
         id: 2139,
@@ -618,7 +618,7 @@ export const mockItems: Item[] = [
         tags: ['Consumable', 'ManaRegen', 'SpellDamage'],
         roles: ['Mid', 'Support', 'Top', 'Jungle', 'ADC'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2139.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2139.png`, patchVersion: '26.4',
     },
     {
         id: 2140,
@@ -629,7 +629,7 @@ export const mockItems: Item[] = [
         tags: ['Consumable', 'Damage', 'LifeSteal', 'SpellVamp'],
         roles: ['Top', 'Jungle', 'Mid', 'ADC', 'Support'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2140.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2140.png`, patchVersion: '26.4',
     },
     {
         id: 2517,
@@ -640,7 +640,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'LifeSteal', 'SpellVamp', 'Tenacity', 'AbilityHaste'],
         roles: ['Top', 'ADC'],
         buildsFrom: [3133, 1037, 1036], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2517.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2517.png`, patchVersion: '26.4',
     },
     {
         id: 3508,
@@ -651,7 +651,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'CriticalStrike', 'ManaRegen', 'CooldownReduction', 'OnHit', 'AbilityHaste'],
         roles: ['Mid', 'Support', 'Top', 'ADC'],
         buildsFrom: [3057, 3133, 1018], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3508.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3508.png`, patchVersion: '26.4',
     },
     {
         id: 3123,
@@ -662,7 +662,7 @@ export const mockItems: Item[] = [
         tags: ['Damage'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [1036], buildsInto: [3033, 6609],
-        imageUrl: `${BASE_IMG}/3123.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3123.png`, patchVersion: '26.4',
     },
     {
         id: 3073,
@@ -673,7 +673,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage', 'AttackSpeed', 'CooldownReduction', 'NonbootsMovement', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [2021, 3044, 1042], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3073.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3073.png`, patchVersion: '26.4',
     },
     {
         id: 1004,
@@ -684,7 +684,7 @@ export const mockItems: Item[] = [
         tags: ['ManaRegen'],
         roles: ['Mid', 'Support'],
         buildsFrom: [], buildsInto: [3114, 3012, 4642],
-        imageUrl: `${BASE_IMG}/1004.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1004.png`, patchVersion: '26.4',
     },
     {
         id: 3363,
@@ -695,7 +695,7 @@ export const mockItems: Item[] = [
         tags: ['Active', 'Trinket', 'Vision'],
         roles: ['Support'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3363.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3363.png`, patchVersion: '26.4',
     },
     {
         id: 2508,
@@ -706,7 +706,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage'],
         roles: ['Mid', 'Support'],
         buildsFrom: [1052], buildsInto: [2503, 6653],
-        imageUrl: `${BASE_IMG}/2508.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2508.png`, patchVersion: '26.4',
     },
     {
         id: 2512,
@@ -717,7 +717,7 @@ export const mockItems: Item[] = [
         tags: ['CriticalStrike', 'AttackSpeed', 'NonbootsMovement', 'AbilityHaste'],
         roles: ['ADC'],
         buildsFrom: [3086, 3144], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2512.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2512.png`, patchVersion: '26.4',
     },
     {
         id: 3108,
@@ -728,7 +728,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [1052, 2022], buildsInto: [123430, 4636, 3115, 323003, 324005, 4005, 3003, 326616, 3107, 3152, 3128, 3137, 8010, 6616, 4628, 4629, 4633],
-        imageUrl: `${BASE_IMG}/3108.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3108.png`, patchVersion: '26.4',
     },
     {
         id: 3114,
@@ -739,7 +739,7 @@ export const mockItems: Item[] = [
         tags: ['ManaRegen'],
         roles: ['Mid', 'Support'],
         buildsFrom: [1004], buildsInto: [124011, 326621, 223011, 323222, 323107, 322526, 2526, 3011, 326616, 3107, 3222, 323504, 3504, 6616, 6621],
-        imageUrl: `${BASE_IMG}/3114.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3114.png`, patchVersion: '26.4',
     },
     {
         id: 4401,
@@ -750,7 +750,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellBlock', 'NonbootsMovement'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1057, 1028, 3066], buildsInto: [],
-        imageUrl: `${BASE_IMG}/4401.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/4401.png`, patchVersion: '26.4',
     },
     {
         id: 3110,
@@ -761,7 +761,7 @@ export const mockItems: Item[] = [
         tags: ['Armor', 'Mana', 'Aura', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3082, 3024], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3110.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3110.png`, patchVersion: '26.4',
     },
     {
         id: 1011,
@@ -772,7 +772,7 @@ export const mockItems: Item[] = [
         tags: ['Health'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1028], buildsInto: [4637, 3084, 2525, 3039, 3083, 3116, 3119, 3143, 323119, 3748, 6665, 6609, 6667, 8001],
-        imageUrl: `${BASE_IMG}/1011.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1011.png`, patchVersion: '26.4',
     },
     {
         id: 3024,
@@ -783,7 +783,7 @@ export const mockItems: Item[] = [
         tags: ['Armor', 'Mana', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1029, 1027, 2022], buildsInto: [323110, 3110],
-        imageUrl: `${BASE_IMG}/3024.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3024.png`, patchVersion: '26.4',
     },
     {
         id: 2022,
@@ -794,7 +794,7 @@ export const mockItems: Item[] = [
         tags: ['CooldownReduction'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [], buildsInto: [2020, 3024, 3133, 3802, 3057, 3067, 3108, 3158, 4642, 6660],
-        imageUrl: `${BASE_IMG}/2022.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2022.png`, patchVersion: '26.4',
     },
     {
         id: 3026,
@@ -805,7 +805,7 @@ export const mockItems: Item[] = [
         tags: ['Armor', 'Damage'],
         roles: ['Top', 'Support', 'Jungle', 'ADC'],
         buildsFrom: [2019, 1038], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3026.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3026.png`, patchVersion: '26.4',
     },
     {
         id: 3177,
@@ -816,7 +816,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage', 'Lane', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3177.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3177.png`, patchVersion: '26.4',
     },
     {
         id: 3184,
@@ -827,7 +827,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage', 'LifeSteal', 'Lane'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3184.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3184.png`, patchVersion: '26.4',
     },
     {
         id: 2051,
@@ -838,7 +838,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen', 'Lane'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2051.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2051.png`, patchVersion: '26.4',
     },
     {
         id: 3112,
@@ -849,7 +849,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellDamage', 'ManaRegen', 'Lane'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3112.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3112.png`, patchVersion: '26.4',
     },
     {
         id: 3124,
@@ -860,7 +860,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'AttackSpeed', 'SpellDamage', 'OnHit'],
         roles: ['Mid', 'Support'],
         buildsFrom: [1052, 1043, 1037], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3124.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3124.png`, patchVersion: '26.4',
     },
     {
         id: 3172,
@@ -871,7 +871,7 @@ export const mockItems: Item[] = [
         tags: ['AttackSpeed', 'LifeSteal', 'NonbootsMovement'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [3006], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3172.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3172.png`, patchVersion: '26.4',
     },
     {
         id: 1102,
@@ -882,7 +882,7 @@ export const mockItems: Item[] = [
         tags: ['Jungle'],
         roles: ['Jungle'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/1102.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1102.png`, patchVersion: '26.4',
     },
     {
         id: 3147,
@@ -893,7 +893,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellDamage'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [1052, 1028], buildsInto: [8010, 4633, 6653],
-        imageUrl: `${BASE_IMG}/3147.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3147.png`, patchVersion: '26.4',
     },
     {
         id: 2003,
@@ -904,7 +904,7 @@ export const mockItems: Item[] = [
         tags: ['HealthRegen', 'Consumable', 'Lane', 'Jungle'],
         roles: ['Top', 'Jungle', 'Mid', 'ADC', 'Support'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2003.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2003.png`, patchVersion: '26.4',
     },
     {
         id: 3051,
@@ -915,7 +915,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'AttackSpeed'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [1036, 1042, 1036], buildsInto: [3078, 3302, 6672],
-        imageUrl: `${BASE_IMG}/3051.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3051.png`, patchVersion: '26.4',
     },
     {
         id: 3084,
@@ -926,7 +926,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1011, 3801, 1011], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3084.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3084.png`, patchVersion: '26.4',
     },
     {
         id: 3155,
@@ -937,7 +937,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'SpellBlock'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1036, 1033, 1036], buildsInto: [3156],
-        imageUrl: `${BASE_IMG}/3155.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3155.png`, patchVersion: '26.4',
     },
     {
         id: 2523,
@@ -948,7 +948,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'CriticalStrike'],
         roles: ['Top', 'ADC'],
         buildsFrom: [1037, 6670, 1036], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2523.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2523.png`, patchVersion: '26.4',
     },
     {
         id: 3145,
@@ -959,7 +959,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage'],
         roles: ['Mid', 'Support'],
         buildsFrom: [1052, 1052], buildsInto: [4645, 4636, 3146, 6655, 3152, 4646],
-        imageUrl: `${BASE_IMG}/3145.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3145.png`, patchVersion: '26.4',
     },
     {
         id: 3146,
@@ -970,7 +970,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'LifeSteal', 'SpellDamage', 'Active', 'SpellVamp'],
         roles: ['Mid', 'Support'],
         buildsFrom: [1053, 3145, 1052], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3146.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3146.png`, patchVersion: '26.4',
     },
     {
         id: 3152,
@@ -981,7 +981,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellDamage', 'Active', 'CooldownReduction', 'NonbootsMovement', 'AbilityHaste'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3145, 3108, 1028], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3152.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3152.png`, patchVersion: '26.4',
     },
     {
         id: 6664,
@@ -992,7 +992,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellBlock', 'HealthRegen', 'Aura', 'MagicResist', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [6660, 3211], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6664.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6664.png`, patchVersion: '26.4',
     },
     {
         id: 4628,
@@ -1003,7 +1003,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [3108, 3108, 1052], buildsInto: [],
-        imageUrl: `${BASE_IMG}/4628.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/4628.png`, patchVersion: '26.4',
     },
     {
         id: 6697,
@@ -1014,7 +1014,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'Active', 'CooldownReduction', 'ArmorPenetration', 'AbilityHaste'],
         roles: ['Mid', 'Jungle', 'Top', 'ADC'],
         buildsFrom: [3134, 3133], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6697.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6697.png`, patchVersion: '26.4',
     },
     {
         id: 3181,
@@ -1025,7 +1025,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage', 'NonbootsMovement'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [2021, 3066, 1037], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3181.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3181.png`, patchVersion: '26.4',
     },
     {
         id: 6662,
@@ -1036,7 +1036,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Armor', 'CooldownReduction', 'Slow', 'OnHit', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3057, 1028, 1031], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6662.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6662.png`, patchVersion: '26.4',
     },
     {
         id: 6673,
@@ -1047,7 +1047,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'CriticalStrike'],
         roles: ['Top', 'ADC'],
         buildsFrom: [1037, 6670], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6673.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6673.png`, patchVersion: '26.4',
     },
     {
         id: 4005,
@@ -1058,7 +1058,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'ManaRegen', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [3108, 4642], buildsInto: [],
-        imageUrl: `${BASE_IMG}/4005.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/4005.png`, patchVersion: '26.4',
     },
     {
         id: 3031,
@@ -1069,7 +1069,7 @@ export const mockItems: Item[] = [
         tags: ['CriticalStrike', 'Damage'],
         roles: ['Top', 'ADC'],
         buildsFrom: [1038, 1037, 1018], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3031.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3031.png`, patchVersion: '26.4',
     },
     {
         id: 3158,
@@ -1080,7 +1080,7 @@ export const mockItems: Item[] = [
         tags: ['Boots', 'CooldownReduction'],
         roles: ['Top', 'Jungle', 'Mid', 'ADC', 'Support'],
         buildsFrom: [1001, 2022], buildsInto: [3171],
-        imageUrl: `${BASE_IMG}/3158.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3158.png`, patchVersion: '26.4',
     },
     {
         id: 6665,
@@ -1091,7 +1091,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellBlock', 'Armor', 'MagicResist'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1011, 1031, 1057], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6665.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6665.png`, patchVersion: '26.4',
     },
     {
         id: 2504,
@@ -1102,7 +1102,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellBlock', 'HealthRegen'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3211, 1057], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2504.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2504.png`, patchVersion: '26.4',
     },
     {
         id: 3067,
@@ -1113,7 +1113,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1028, 2022], buildsInto: [3071, 8020, 323050, 328020, 124011, 323190, 323222, 3165, 6620, 3050, 3109, 6656, 326617, 323107, 2502, 2510, 2524, 2525, 6617, 3065, 3119, 3190, 3222, 323109, 323119, 326620, 4403, 4629, 4644, 6630, 6632, 8001],
-        imageUrl: `${BASE_IMG}/3067.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3067.png`, patchVersion: '26.4',
     },
     {
         id: 3109,
@@ -1124,7 +1124,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen', 'Armor', 'Aura', 'Active', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3067, 1031, 1006], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3109.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3109.png`, patchVersion: '26.4',
     },
     {
         id: 6672,
@@ -1135,7 +1135,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'AttackSpeed', 'OnHit', 'NonbootsMovement'],
         roles: ['Top', 'ADC'],
         buildsFrom: [6690, 3051, 1043], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6672.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6672.png`, patchVersion: '26.4',
     },
     {
         id: 3035,
@@ -1146,7 +1146,7 @@ export const mockItems: Item[] = [
         tags: ['ArmorPenetration', 'Damage'],
         roles: ['Mid', 'Jungle'],
         buildsFrom: [1036, 1036], buildsInto: [3033, 3036, 6694],
-        imageUrl: `${BASE_IMG}/3035.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3035.png`, patchVersion: '26.4',
     },
     {
         id: 6653,
@@ -1157,7 +1157,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellDamage'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3147, 2508], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6653.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6653.png`, patchVersion: '26.4',
     },
     {
         id: 3100,
@@ -1168,7 +1168,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'OnHit', 'NonbootsMovement', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [3057, 3113, 1026], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3100.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3100.png`, patchVersion: '26.4',
     },
     {
         id: 3190,
@@ -1179,7 +1179,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellBlock', 'Armor', 'Aura', 'Active', 'MagicResist', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3067, 1029, 1033], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3190.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3190.png`, patchVersion: '26.4',
     },
     {
         id: 1036,
@@ -1190,7 +1190,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'Lane'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [], buildsInto: [1053, 4003, 6701, 2015, 2019, 2021, 3077, 6670, 3133, 2517, 323004, 3142, 3004, 2523, 3032, 3035, 3044, 3051, 3155, 6690, 3123, 3134, 6699, 6671, 6692],
-        imageUrl: `${BASE_IMG}/1036.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1036.png`, patchVersion: '26.4',
     },
     {
         id: 3036,
@@ -1201,7 +1201,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'CriticalStrike', 'ArmorPenetration'],
         roles: ['Mid', 'Jungle'],
         buildsFrom: [3035, 6670], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3036.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3036.png`, patchVersion: '26.4',
     },
     {
         id: 3802,
@@ -1212,7 +1212,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'Mana', 'ManaRegen', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [1052, 1027, 2022], buildsInto: [2522, 6656, 323003, 3003, 6655, 2503, 3118, 4644],
-        imageUrl: `${BASE_IMG}/3802.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3802.png`, patchVersion: '26.4',
     },
     {
         id: 6655,
@@ -1223,7 +1223,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'Mana', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [3802, 3145], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6655.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6655.png`, patchVersion: '26.4',
     },
     {
         id: 3118,
@@ -1234,7 +1234,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'Mana', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [3802, 1026], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3118.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3118.png`, patchVersion: '26.4',
     },
     {
         id: 3004,
@@ -1245,7 +1245,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'Mana', 'CooldownReduction', 'OnHit', 'AbilityHaste'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [3070, 3133, 1036], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3004.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3004.png`, patchVersion: '26.4',
     },
     {
         id: 3156,
@@ -1256,7 +1256,7 @@ export const mockItems: Item[] = [
         tags: ['SpellBlock', 'Damage', 'LifeSteal', 'SpellVamp', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle', 'ADC'],
         buildsFrom: [3155, 3133], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3156.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3156.png`, patchVersion: '26.4',
     },
     {
         id: 3041,
@@ -1267,7 +1267,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellDamage', 'NonbootsMovement'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [1082], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3041.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3041.png`, patchVersion: '26.4',
     },
     {
         id: 3139,
@@ -1278,7 +1278,7 @@ export const mockItems: Item[] = [
         tags: ['SpellBlock', 'Damage', 'LifeSteal', 'Active', 'NonbootsMovement', 'Tenacity'],
         roles: ['Top', 'Support', 'Jungle', 'ADC'],
         buildsFrom: [3140, 1037, 1053], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3139.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3139.png`, patchVersion: '26.4',
     },
     {
         id: 3111,
@@ -1289,7 +1289,7 @@ export const mockItems: Item[] = [
         tags: ['Boots', 'SpellBlock', 'Tenacity'],
         roles: ['Top', 'Support', 'Jungle', 'Mid', 'ADC'],
         buildsFrom: [1001, 1033], buildsInto: [3173],
-        imageUrl: `${BASE_IMG}/3111.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3111.png`, patchVersion: '26.4',
     },
     {
         id: 3222,
@@ -1300,7 +1300,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'ManaRegen', 'Active', 'CooldownReduction', 'Tenacity', 'AbilityHaste'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3067, 3114], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3222.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3222.png`, patchVersion: '26.4',
     },
     {
         id: 6617,
@@ -1311,7 +1311,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellDamage', 'ManaRegen', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3067, 4642], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6617.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6617.png`, patchVersion: '26.4',
     },
     {
         id: 3165,
@@ -1322,7 +1322,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellDamage', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3916, 1026, 3067], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3165.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3165.png`, patchVersion: '26.4',
     },
     {
         id: 3033,
@@ -1333,7 +1333,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'CriticalStrike', 'ArmorPenetration'],
         roles: ['Mid', 'Jungle'],
         buildsFrom: [3123, 3035, 1018], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3033.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3033.png`, patchVersion: '26.4',
     },
     {
         id: 1103,
@@ -1344,7 +1344,7 @@ export const mockItems: Item[] = [
         tags: ['Jungle'],
         roles: ['Jungle'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/1103.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1103.png`, patchVersion: '26.4',
     },
     {
         id: 3115,
@@ -1355,7 +1355,7 @@ export const mockItems: Item[] = [
         tags: ['AttackSpeed', 'SpellDamage', 'OnHit', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [1043, 1026, 3108], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3115.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3115.png`, patchVersion: '26.4',
     },
     {
         id: 6675,
@@ -1366,7 +1366,7 @@ export const mockItems: Item[] = [
         tags: ['CriticalStrike', 'AttackSpeed', 'NonbootsMovement'],
         roles: ['ADC'],
         buildsFrom: [1042, 3086, 1042], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6675.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6675.png`, patchVersion: '26.4',
     },
     {
         id: 1058,
@@ -1377,7 +1377,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage'],
         roles: ['Mid', 'Support'],
         buildsFrom: [], buildsInto: [3157, 4645, 3089, 3102, 3128, 4403],
-        imageUrl: `${BASE_IMG}/1058.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1058.png`, patchVersion: '26.4',
     },
     {
         id: 1057,
@@ -1388,7 +1388,7 @@ export const mockItems: Item[] = [
         tags: ['SpellBlock'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1033], buildsInto: [2504, 8020, 328020, 3091, 6665, 4401],
-        imageUrl: `${BASE_IMG}/1057.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1057.png`, patchVersion: '26.4',
     },
     {
         id: 6670,
@@ -1399,7 +1399,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'CriticalStrike'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [1036, 1018], buildsInto: [2523, 3036, 6673],
-        imageUrl: `${BASE_IMG}/6670.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6670.png`, patchVersion: '26.4',
     },
     {
         id: 1033,
@@ -1410,7 +1410,7 @@ export const mockItems: Item[] = [
         tags: ['SpellBlock'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [], buildsInto: [1057, 3140, 323050, 323190, 3193, 3050, 3001, 3211, 2524, 3155, 3105, 3111, 3190, 4632],
-        imageUrl: `${BASE_IMG}/1033.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1033.png`, patchVersion: '26.4',
     },
     {
         id: 3916,
@@ -1421,7 +1421,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage'],
         roles: ['Mid', 'Support'],
         buildsFrom: [1052], buildsInto: [223011, 3165, 3011],
-        imageUrl: `${BASE_IMG}/3916.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3916.png`, patchVersion: '26.4',
     },
     {
         id: 6701,
@@ -1432,7 +1432,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'Active', 'NonbootsMovement', 'ArmorPenetration'],
         roles: ['Mid', 'Jungle', 'Top', 'ADC'],
         buildsFrom: [1037, 3134, 1036], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6701.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6701.png`, patchVersion: '26.4',
     },
     {
         id: 3364,
@@ -1443,7 +1443,7 @@ export const mockItems: Item[] = [
         tags: ['Active', 'Trinket', 'Vision'],
         roles: ['Support'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3364.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3364.png`, patchVersion: '26.4',
     },
     {
         id: 2501,
@@ -1454,7 +1454,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [2021, 2021], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2501.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2501.png`, patchVersion: '26.4',
     },
     {
         id: 3044,
@@ -1465,7 +1465,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage', 'NonbootsMovement'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1028, 1036], buildsInto: [3071, 3078, 3073, 6630, 6631],
-        imageUrl: `${BASE_IMG}/3044.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3044.png`, patchVersion: '26.4',
     },
     {
         id: 3046,
@@ -1476,7 +1476,7 @@ export const mockItems: Item[] = [
         tags: ['CriticalStrike', 'AttackSpeed', 'NonbootsMovement'],
         roles: ['ADC'],
         buildsFrom: [1042, 3086, 1042], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3046.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3046.png`, patchVersion: '26.4',
     },
     {
         id: 1037,
@@ -1487,7 +1487,7 @@ export const mockItems: Item[] = [
         tags: ['Damage'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [], buildsInto: [667666, 3071, 6333, 3031, 3153, 6701, 2020, 2517, 6695, 2523, 3053, 3072, 3087, 3124, 3181, 3139, 3161, 6029, 6035, 6673, 6676, 6692],
-        imageUrl: `${BASE_IMG}/1037.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1037.png`, patchVersion: '26.4',
     },
     {
         id: 3047,
@@ -1498,7 +1498,7 @@ export const mockItems: Item[] = [
         tags: ['Armor', 'Boots'],
         roles: ['Top', 'Support', 'Jungle', 'Mid', 'ADC'],
         buildsFrom: [1001, 1029], buildsInto: [3174],
-        imageUrl: `${BASE_IMG}/3047.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3047.png`, patchVersion: '26.4',
     },
     {
         id: 6698,
@@ -1509,7 +1509,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'Active', 'CooldownReduction', 'ArmorPenetration', 'AbilityHaste'],
         roles: ['Mid', 'Jungle', 'Top', 'ADC'],
         buildsFrom: [3077, 2020], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6698.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6698.png`, patchVersion: '26.4',
     },
     {
         id: 2525,
@@ -1520,7 +1520,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'NonbootsMovement', 'Tenacity', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3067, 1011], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2525.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2525.png`, patchVersion: '26.4',
     },
     {
         id: 3140,
@@ -1531,7 +1531,7 @@ export const mockItems: Item[] = [
         tags: ['Active', 'SpellBlock'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1033], buildsInto: [3139, 6035],
-        imageUrl: `${BASE_IMG}/3140.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3140.png`, patchVersion: '26.4',
     },
     {
         id: 3089,
@@ -1542,7 +1542,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage'],
         roles: ['Mid', 'Support'],
         buildsFrom: [1058, 1058], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3089.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3089.png`, patchVersion: '26.4',
     },
     {
         id: 3143,
@@ -1553,7 +1553,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Armor', 'Active', 'Slow'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3082, 1011], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3143.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3143.png`, patchVersion: '26.4',
     },
     {
         id: 3094,
@@ -1564,7 +1564,7 @@ export const mockItems: Item[] = [
         tags: ['CriticalStrike', 'AttackSpeed', 'NonbootsMovement'],
         roles: ['ADC'],
         buildsFrom: [3086, 3144], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3094.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3094.png`, patchVersion: '26.4',
     },
     {
         id: 3074,
@@ -1575,7 +1575,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'LifeSteal', 'CooldownReduction', 'OnHit', 'AbilityHaste'],
         roles: ['Top', 'ADC'],
         buildsFrom: [3077, 1053, 3133], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3074.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3074.png`, patchVersion: '26.4',
     },
     {
         id: 6690,
@@ -1586,7 +1586,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'NonbootsMovement'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [1036], buildsInto: [4003, 6700, 6672, 3142, 3087],
-        imageUrl: `${BASE_IMG}/6690.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6690.png`, patchVersion: '26.4',
     },
     {
         id: 1043,
@@ -1597,7 +1597,7 @@ export const mockItems: Item[] = [
         tags: ['AttackSpeed', 'OnHit'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [1042], buildsInto: [3302, 3153, 3115, 6672, 3091, 3124],
-        imageUrl: `${BASE_IMG}/1043.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1043.png`, patchVersion: '26.4',
     },
     {
         id: 3107,
@@ -1608,7 +1608,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'ManaRegen', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [3108, 3114], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3107.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3107.png`, patchVersion: '26.4',
     },
     {
         id: 2031,
@@ -1619,7 +1619,7 @@ export const mockItems: Item[] = [
         tags: ['HealthRegen', 'Consumable', 'Active', 'Lane', 'Jungle'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [], buildsInto: [2033],
-        imageUrl: `${BASE_IMG}/2031.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2031.png`, patchVersion: '26.4',
     },
     {
         id: 1006,
@@ -1630,7 +1630,7 @@ export const mockItems: Item[] = [
         tags: ['HealthRegen'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [], buildsInto: [3109, 3211, 323109, 3801],
-        imageUrl: `${BASE_IMG}/1006.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1006.png`, patchVersion: '26.4',
     },
     {
         id: 4633,
@@ -1641,7 +1641,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellDamage', 'CooldownReduction', 'SpellVamp'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3147, 3108], buildsInto: [],
-        imageUrl: `${BASE_IMG}/4633.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/4633.png`, patchVersion: '26.4',
     },
     {
         id: 6657,
@@ -1652,7 +1652,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen', 'SpellDamage', 'Mana', 'ManaRegen'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [1026, 3803], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6657.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6657.png`, patchVersion: '26.4',
     },
     {
         id: 1028,
@@ -1663,7 +1663,7 @@ export const mockItems: Item[] = [
         tags: ['Health'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [], buildsInto: [3742, 1011, 2021, 323222, 323075, 326617, 323107, 3012, 3147, 3211, 2502, 322526, 2526, 3023, 3044, 3053, 3066, 3067, 3075, 3152, 3161, 3801, 3803, 4401, 4635, 6035, 6610, 6660, 6662],
-        imageUrl: `${BASE_IMG}/1028.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1028.png`, patchVersion: '26.4',
     },
     {
         id: 3085,
@@ -1674,7 +1674,7 @@ export const mockItems: Item[] = [
         tags: ['CriticalStrike', 'AttackSpeed', 'OnHit', 'NonbootsMovement'],
         roles: ['ADC'],
         buildsFrom: [3086, 3144], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3085.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3085.png`, patchVersion: '26.4',
     },
     {
         id: 3116,
@@ -1685,7 +1685,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellDamage', 'Slow'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [1026, 1011, 1052], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3116.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3116.png`, patchVersion: '26.4',
     },
     {
         id: 1027,
@@ -1696,7 +1696,7 @@ export const mockItems: Item[] = [
         tags: ['Mana'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [], buildsInto: [3024, 3802, 3803],
-        imageUrl: `${BASE_IMG}/1027.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1027.png`, patchVersion: '26.4',
     },
     {
         id: 1101,
@@ -1707,7 +1707,7 @@ export const mockItems: Item[] = [
         tags: ['Jungle'],
         roles: ['Jungle'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/1101.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1101.png`, patchVersion: '26.4',
     },
     {
         id: 3144,
@@ -1718,7 +1718,7 @@ export const mockItems: Item[] = [
         tags: ['AttackSpeed'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [1042, 1042], buildsInto: [2512, 3094, 3032, 3085, 3087, 3095, 3097],
-        imageUrl: `${BASE_IMG}/3144.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3144.png`, patchVersion: '26.4',
     },
     {
         id: 2420,
@@ -1729,7 +1729,7 @@ export const mockItems: Item[] = [
         tags: ['Armor', 'SpellDamage', 'Active'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [1052, 1029, 1052], buildsInto: [3157],
-        imageUrl: `${BASE_IMG}/2420.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2420.png`, patchVersion: '26.4',
     },
     {
         id: 6695,
@@ -1740,7 +1740,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'ArmorPenetration'],
         roles: ['Mid', 'Jungle', 'Top', 'ADC'],
         buildsFrom: [3134, 1037], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6695.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6695.png`, patchVersion: '26.4',
     },
     {
         id: 3134,
@@ -1751,7 +1751,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'ArmorPenetration'],
         roles: ['Mid', 'Jungle'],
         buildsFrom: [1036, 1036], buildsInto: [3142, 667666, 126697, 6701, 6693, 2520, 6697, 4004, 6695, 3814, 3131, 3179, 6691, 6676],
-        imageUrl: `${BASE_IMG}/3134.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3134.png`, patchVersion: '26.4',
     },
     {
         id: 6694,
@@ -1762,7 +1762,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'CooldownReduction', 'ArmorPenetration', 'AbilityHaste'],
         roles: ['Mid', 'Jungle', 'Top', 'ADC'],
         buildsFrom: [3133, 3035], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6694.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6694.png`, patchVersion: '26.4',
     },
     {
         id: 4645,
@@ -1773,7 +1773,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'MagicPenetration'],
         roles: ['Mid', 'Support'],
         buildsFrom: [3145, 1058], buildsInto: [],
-        imageUrl: `${BASE_IMG}/4645.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/4645.png`, patchVersion: '26.4',
     },
     {
         id: 3057,
@@ -1784,7 +1784,7 @@ export const mockItems: Item[] = [
         tags: ['OnHit', 'AbilityHaste'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [2022], buildsInto: [3078, 3100, 2510, 3508, 6632, 6662],
-        imageUrl: `${BASE_IMG}/3057.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3057.png`, patchVersion: '26.4',
     },
     {
         id: 2065,
@@ -1795,7 +1795,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'ManaRegen', 'Active', 'CooldownReduction', 'NonbootsMovement', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [3113, 4642], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2065.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2065.png`, patchVersion: '26.4',
     },
     {
         id: 3876,
@@ -1806,7 +1806,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen', 'ManaRegen', 'Vision', 'GoldPer', 'Lane'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3867], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3876.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3876.png`, patchVersion: '26.4',
     },
     {
         id: 3020,
@@ -1817,7 +1817,7 @@ export const mockItems: Item[] = [
         tags: ['Boots', 'MagicPenetration'],
         roles: ['Top', 'Jungle', 'Mid', 'ADC', 'Support'],
         buildsFrom: [1001], buildsInto: [3175],
-        imageUrl: `${BASE_IMG}/3020.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3020.png`, patchVersion: '26.4',
     },
     {
         id: 3161,
@@ -1828,7 +1828,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle', 'ADC'],
         buildsFrom: [1037, 2021, 1028], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3161.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3161.png`, patchVersion: '26.4',
     },
     {
         id: 3211,
@@ -1839,7 +1839,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen', 'SpellBlock'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1028, 1033, 1006], buildsInto: [2504, 3065, 6664],
-        imageUrl: `${BASE_IMG}/3211.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3211.png`, patchVersion: '26.4',
     },
     {
         id: 3175,
@@ -1850,7 +1850,7 @@ export const mockItems: Item[] = [
         tags: ['Boots', 'MagicPenetration'],
         roles: ['Top', 'Jungle', 'Mid', 'ADC', 'Support'],
         buildsFrom: [3020], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3175.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3175.png`, patchVersion: '26.4',
     },
     {
         id: 3065,
@@ -1861,7 +1861,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellBlock', 'HealthRegen', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3211, 3067], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3065.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3065.png`, patchVersion: '26.4',
     },
     {
         id: 6616,
@@ -1872,7 +1872,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'ManaRegen', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Mid', 'Support'],
         buildsFrom: [3108, 3114], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6616.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6616.png`, patchVersion: '26.4',
     },
     {
         id: 3087,
@@ -1883,7 +1883,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'AttackSpeed', 'OnHit', 'NonbootsMovement'],
         roles: ['Top', 'ADC'],
         buildsFrom: [3144, 6690, 1037], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3087.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3087.png`, patchVersion: '26.4',
     },
     {
         id: 3340,
@@ -1894,7 +1894,7 @@ export const mockItems: Item[] = [
         tags: ['Active', 'Jungle', 'Lane', 'Trinket', 'Vision'],
         roles: ['Support'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3340.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3340.png`, patchVersion: '26.4',
     },
     {
         id: 2019,
@@ -1905,7 +1905,7 @@ export const mockItems: Item[] = [
         tags: ['Armor', 'Damage'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1029, 1036, 1029], buildsInto: [6333, 6700, 3026],
-        imageUrl: `${BASE_IMG}/2019.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2019.png`, patchVersion: '26.4',
     },
     {
         id: 3053,
@@ -1916,7 +1916,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage', 'Tenacity'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1037, 2021, 1028], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3053.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3053.png`, patchVersion: '26.4',
     },
     {
         id: 3097,
@@ -1927,7 +1927,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'CriticalStrike', 'AttackSpeed', 'NonbootsMovement'],
         roles: ['ADC', 'Top'],
         buildsFrom: [1038, 1018, 3144], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3097.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3097.png`, patchVersion: '26.4',
     },
     {
         id: 4646,
@@ -1938,7 +1938,7 @@ export const mockItems: Item[] = [
         tags: ['SpellDamage', 'GoldPer', 'NonbootsMovement', 'MagicPenetration'],
         roles: ['Mid', 'Support'],
         buildsFrom: [3145, 3113], buildsInto: [],
-        imageUrl: `${BASE_IMG}/4646.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/4646.png`, patchVersion: '26.4',
     },
     {
         id: 6631,
@@ -1949,7 +1949,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage', 'AttackSpeed', 'Slow'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3077, 3044, 1042], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6631.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6631.png`, patchVersion: '26.4',
     },
     {
         id: 6610,
@@ -1960,7 +1960,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle', 'ADC'],
         buildsFrom: [2021, 3133, 1028], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6610.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6610.png`, patchVersion: '26.4',
     },
     {
         id: 3068,
@@ -1971,7 +1971,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Armor', 'Aura', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [6660, 1031], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3068.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3068.png`, patchVersion: '26.4',
     },
     {
         id: 3170,
@@ -1982,7 +1982,7 @@ export const mockItems: Item[] = [
         tags: ['Boots'],
         roles: ['Top', 'Jungle', 'Mid', 'ADC', 'Support'],
         buildsFrom: [3009], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3170.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3170.png`, patchVersion: '26.4',
     },
     {
         id: 3070,
@@ -1993,7 +1993,7 @@ export const mockItems: Item[] = [
         tags: ['Mana', 'ManaRegen'],
         roles: ['Mid', 'Support'],
         buildsFrom: [], buildsInto: [3003, 3004, 2526, 3119],
-        imageUrl: `${BASE_IMG}/3070.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3070.png`, patchVersion: '26.4',
     },
     {
         id: 3302,
@@ -2004,7 +2004,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'AttackSpeed', 'OnHit', 'MagicPenetration', 'ArmorPenetration'],
         roles: ['Mid', 'Jungle'],
         buildsFrom: [3051, 1043], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3302.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3302.png`, patchVersion: '26.4',
     },
     {
         id: 2020,
@@ -2015,7 +2015,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'CooldownReduction', 'ArmorPenetration'],
         roles: ['Mid', 'Jungle'],
         buildsFrom: [2022, 1037], buildsInto: [6698, 2520, 6699, 6696],
-        imageUrl: `${BASE_IMG}/2020.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2020.png`, patchVersion: '26.4',
     },
     {
         id: 6676,
@@ -2026,7 +2026,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'CriticalStrike', 'ArmorPenetration'],
         roles: ['Mid', 'Jungle', 'Top', 'ADC'],
         buildsFrom: [1037, 3134, 1018], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6676.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6676.png`, patchVersion: '26.4',
     },
     {
         id: 3075,
@@ -2037,7 +2037,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Armor'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3076, 1031, 1028], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3075.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3075.png`, patchVersion: '26.4',
     },
     {
         id: 3077,
@@ -2048,7 +2048,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'OnHit'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [1036, 1036], buildsInto: [3074, 3748, 6698, 6631],
-        imageUrl: `${BASE_IMG}/3077.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3077.png`, patchVersion: '26.4',
     },
     {
         id: 3748,
@@ -2059,7 +2059,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen', 'Damage', 'OnHit'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3077, 2021, 1011], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3748.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3748.png`, patchVersion: '26.4',
     },
     {
         id: 3002,
@@ -2070,7 +2070,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Armor', 'NonbootsMovement'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3066, 1031], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3002.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3002.png`, patchVersion: '26.4',
     },
     {
         id: 3078,
@@ -2081,7 +2081,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage', 'AttackSpeed', 'CooldownReduction', 'OnHit', 'NonbootsMovement', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3057, 3044, 3051], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3078.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3078.png`, patchVersion: '26.4',
     },
     {
         id: 2021,
@@ -2092,7 +2092,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Damage'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1036, 1028], buildsInto: [2501, 3053, 3073, 3814, 3181, 3161, 3748, 6610],
-        imageUrl: `${BASE_IMG}/2021.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2021.png`, patchVersion: '26.4',
     },
     {
         id: 3179,
@@ -2103,7 +2103,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'Vision', 'CooldownReduction', 'ArmorPenetration', 'AbilityHaste'],
         roles: ['Mid', 'Jungle', 'Support', 'Top', 'ADC'],
         buildsFrom: [3134, 3133], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3179.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3179.png`, patchVersion: '26.4',
     },
     {
         id: 2502,
@@ -2114,7 +2114,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Armor', 'CooldownReduction', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1031, 3067, 1028], buildsInto: [],
-        imageUrl: `${BASE_IMG}/2502.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2502.png`, patchVersion: '26.4',
     },
     {
         id: 1053,
@@ -2125,7 +2125,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'LifeSteal'],
         roles: ['Top', 'Mid', 'Jungle', 'ADC', 'Support'],
         buildsFrom: [1036], buildsInto: [3153, 3146, 3072, 3074, 3139, 4403],
-        imageUrl: `${BASE_IMG}/1053.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/1053.png`, patchVersion: '26.4',
     },
     {
         id: 4632,
@@ -2136,7 +2136,7 @@ export const mockItems: Item[] = [
         tags: ['SpellBlock', 'SpellDamage'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [1052, 1033, 1052], buildsInto: [3102],
-        imageUrl: `${BASE_IMG}/4632.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/4632.png`, patchVersion: '26.4',
     },
     {
         id: 3135,
@@ -2147,7 +2147,7 @@ export const mockItems: Item[] = [
         tags: ['MagicPenetration', 'SpellDamage'],
         roles: ['Mid', 'Support'],
         buildsFrom: [4630, 1026], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3135.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3135.png`, patchVersion: '26.4',
     },
     {
         id: 6699,
@@ -2158,7 +2158,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'Active', 'CooldownReduction', 'ArmorPenetration', 'AbilityHaste'],
         roles: ['Mid', 'Jungle', 'Top', 'ADC'],
         buildsFrom: [2020, 1036, 1036], buildsInto: [],
-        imageUrl: `${BASE_IMG}/6699.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/6699.png`, patchVersion: '26.4',
     },
     {
         id: 3082,
@@ -2169,7 +2169,7 @@ export const mockItems: Item[] = [
         tags: ['Armor'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1029, 1029], buildsInto: [323110, 3110, 3143],
-        imageUrl: `${BASE_IMG}/3082.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3082.png`, patchVersion: '26.4',
     },
     {
         id: 3083,
@@ -2180,7 +2180,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1011, 1011, 3801], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3083.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3083.png`, patchVersion: '26.4',
     },
     {
         id: 2526,
@@ -2191,7 +2191,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Mana', 'ManaRegen'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3114, 1028, 3070], buildsInto: [2530],
-        imageUrl: `${BASE_IMG}/2526.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/2526.png`, patchVersion: '26.4',
     },
     {
         id: 3066,
@@ -2202,7 +2202,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'NonbootsMovement'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1028], buildsInto: [3742, 323002, 3002, 3181, 4401],
-        imageUrl: `${BASE_IMG}/3066.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3066.png`, patchVersion: '26.4',
     },
     {
         id: 3119,
@@ -2213,7 +2213,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'Mana', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3070, 1011, 3067], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3119.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3119.png`, patchVersion: '26.4',
     },
     {
         id: 3091,
@@ -2224,7 +2224,7 @@ export const mockItems: Item[] = [
         tags: ['SpellBlock', 'AttackSpeed', 'OnHit', 'Tenacity'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [1043, 1057, 1043], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3091.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3091.png`, patchVersion: '26.4',
     },
     {
         id: 3865,
@@ -2235,7 +2235,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'ManaRegen', 'Vision', 'GoldPer', 'Lane'],
         roles: ['Support', 'Mid', 'Top', 'Jungle'],
         buildsFrom: [], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3865.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3865.png`, patchVersion: '26.4',
     },
     {
         id: 3142,
@@ -2246,7 +2246,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'Active', 'NonbootsMovement', 'ArmorPenetration'],
         roles: ['Mid', 'Jungle', 'Top', 'ADC'],
         buildsFrom: [3134, 6690, 1036], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3142.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3142.png`, patchVersion: '26.4',
     },
     {
         id: 3032,
@@ -2257,7 +2257,7 @@ export const mockItems: Item[] = [
         tags: ['Damage', 'CriticalStrike', 'AttackSpeed'],
         roles: ['ADC', 'Top'],
         buildsFrom: [1038, 3144, 1036], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3032.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3032.png`, patchVersion: '26.4',
     },
     {
         id: 3871,
@@ -2268,7 +2268,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'HealthRegen', 'ManaRegen', 'Vision', 'GoldPer', 'Lane'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [3867], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3871.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3871.png`, patchVersion: '26.4',
     },
     {
         id: 3086,
@@ -2279,7 +2279,7 @@ export const mockItems: Item[] = [
         tags: ['CriticalStrike', 'AttackSpeed', 'NonbootsMovement'],
         roles: ['ADC'],
         buildsFrom: [1018, 1042], buildsInto: [2512, 3094, 3046, 3085, 4403, 6671, 6675],
-        imageUrl: `${BASE_IMG}/3086.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3086.png`, patchVersion: '26.4',
     },
     {
         id: 3050,
@@ -2290,7 +2290,7 @@ export const mockItems: Item[] = [
         tags: ['Health', 'SpellBlock', 'Armor', 'AbilityHaste'],
         roles: ['Top', 'Support', 'Jungle'],
         buildsFrom: [3067, 1029, 1033], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3050.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3050.png`, patchVersion: '26.4',
     },
     {
         id: 3157,
@@ -2301,7 +2301,7 @@ export const mockItems: Item[] = [
         tags: ['Armor', 'SpellDamage', 'Active'],
         roles: ['Mid', 'Support', 'Top', 'Jungle'],
         buildsFrom: [1058, 2420], buildsInto: [],
-        imageUrl: `${BASE_IMG}/3157.png`, patchVersion: '16.3',
+        imageUrl: `${BASE_IMG}/3157.png`, patchVersion: '26.4',
     },
 ];
 

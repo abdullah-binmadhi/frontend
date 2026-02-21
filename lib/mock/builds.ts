@@ -4,38 +4,118 @@ import { mockChampions } from '@/lib/mock/champions';
 const RUNES = {
     Precision: {
         primary: 'Precision',
-        keystones: ['Conqueror', 'Lethal Tempo', 'Press the Attack', 'Fleet Footwork'],
-        tier1: ['Triumph', 'Presence of Mind', 'Absorb Life'],
-        tier2: ['Legend: Alacrity', 'Legend: Haste', 'Legend: Bloodline'],
-        tier3: ['Coup de Grace', 'Cut Down', 'Last Stand'],
+        keystones: [
+            { name: 'Conqueror', icon: 'perk-images/Styles/Precision/Conqueror/Conqueror.png' },
+            { name: 'Lethal Tempo', icon: 'perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png' },
+            { name: 'Press the Attack', icon: 'perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png' },
+            { name: 'Fleet Footwork', icon: 'perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png' }
+        ],
+        tier1: [
+            { name: 'Triumph', icon: 'perk-images/Styles/Precision/Triumph.png' },
+            { name: 'Presence of Mind', icon: 'perk-images/Styles/Precision/PresenceOfMind/PresenceOfMind.png' },
+            { name: 'Absorb Life', icon: 'perk-images/Styles/Precision/AbsorbLife/AbsorbLife.png' }
+        ],
+        tier2: [
+            { name: 'Legend: Alacrity', icon: 'perk-images/Styles/Precision/LegendAlacrity/LegendAlacrity.png' },
+            { name: 'Legend: Haste', icon: 'perk-images/Styles/Precision/LegendHaste/LegendHaste.png' },
+            { name: 'Legend: Bloodline', icon: 'perk-images/Styles/Precision/LegendBloodline/LegendBloodline.png' }
+        ],
+        tier3: [
+            { name: 'Coup de Grace', icon: 'perk-images/Styles/Precision/CoupDeGrace/CoupDeGrace.png' },
+            { name: 'Cut Down', icon: 'perk-images/Styles/Precision/CutDown/CutDown.png' },
+            { name: 'Last Stand', icon: 'perk-images/Styles/Precision/LastStand/LastStand.png' }
+        ],
     },
     Domination: {
         primary: 'Domination',
-        keystones: ['Electrocute', 'Dark Harvest', 'Hail of Blades'],
-        tier1: ['Cheap Shot', 'Taste of Blood', 'Sudden Impact'],
-        tier2: ['Zombie Ward', 'Ghost Poro', 'Eyeball Collection'],
-        tier3: ['Treasure Hunter', 'Relentless Hunter', 'Ultimate Hunter'],
+        keystones: [
+            { name: 'Electrocute', icon: 'perk-images/Styles/Domination/Electrocute/Electrocute.png' },
+            { name: 'Dark Harvest', icon: 'perk-images/Styles/Domination/DarkHarvest/DarkHarvest.png' },
+            { name: 'Hail of Blades', icon: 'perk-images/Styles/Domination/HailOfBlades/HailOfBlades.png' }
+        ],
+        tier1: [
+            { name: 'Cheap Shot', icon: 'perk-images/Styles/Domination/CheapShot/CheapShot.png' },
+            { name: 'Taste of Blood', icon: 'perk-images/Styles/Domination/TasteOfBlood/GreenTerror_TasteOfBlood.png' },
+            { name: 'Sudden Impact', icon: 'perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png' }
+        ],
+        tier2: [
+            { name: 'Zombie Ward', icon: 'perk-images/Styles/Domination/ZombieWard/ZombieWard.png' },
+            { name: 'Ghost Poro', icon: 'perk-images/Styles/Domination/GhostPoro/GhostPoro.png' },
+            { name: 'Eyeball Collection', icon: 'perk-images/Styles/Domination/EyeballCollection/EyeballCollection.png' }
+        ],
+        tier3: [
+            { name: 'Treasure Hunter', icon: 'perk-images/Styles/Domination/TreasureHunter/TreasureHunter.png' },
+            { name: 'Relentless Hunter', icon: 'perk-images/Styles/Domination/RelentlessHunter/RelentlessHunter.png' },
+            { name: 'Ultimate Hunter', icon: 'perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png' }
+        ],
     },
     Sorcery: {
         primary: 'Sorcery',
-        keystones: ['Arcane Comet', 'Summon Aery', 'Phase Rush'],
-        tier1: ['Null-Mystifying Orb', 'Manaflow Band', 'Nimbus Cloak'],
-        tier2: ['Transcendence', 'Celerity', 'Absolute Focus'],
-        tier3: ['Scorch', 'Waterwalking', 'Gathering Storm'],
+        keystones: [
+            { name: 'Arcane Comet', icon: 'perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png' },
+            { name: 'Summon Aery', icon: 'perk-images/Styles/Sorcery/SummonAery/SummonAery.png' },
+            { name: 'Phase Rush', icon: 'perk-images/Styles/Sorcery/PhaseRush/PhaseRush.png' }
+        ],
+        tier1: [
+            { name: 'Null-Mystifying Orb', icon: 'perk-images/Styles/Sorcery/NullifyingOrb/Pokeshield.png' },
+            { name: 'Manaflow Band', icon: 'perk-images/Styles/Sorcery/ManaflowBand/ManaflowBand.png' },
+            { name: 'Nimbus Cloak', icon: 'perk-images/Styles/Sorcery/NimbusCloak/6361.png' }
+        ],
+        tier2: [
+            { name: 'Transcendence', icon: 'perk-images/Styles/Sorcery/Transcendence/Transcendence.png' },
+            { name: 'Celerity', icon: 'perk-images/Styles/Sorcery/Celerity/CelerityTemp.png' },
+            { name: 'Absolute Focus', icon: 'perk-images/Styles/Sorcery/AbsoluteFocus/AbsoluteFocus.png' }
+        ],
+        tier3: [
+            { name: 'Scorch', icon: 'perk-images/Styles/Sorcery/Scorch/Scorch.png' },
+            { name: 'Waterwalking', icon: 'perk-images/Styles/Sorcery/Waterwalking/Waterwalking.png' },
+            { name: 'Gathering Storm', icon: 'perk-images/Styles/Sorcery/GatheringStorm/GatheringStorm.png' }
+        ],
     },
     Resolve: {
         primary: 'Resolve',
-        keystones: ['Grasp of the Undying', 'Aftershock', 'Guardian'],
-        tier1: ['Demolish', 'Font of Life', 'Shield Bash'],
-        tier2: ['Conditioning', 'Second Wind', 'Bone Plating'],
-        tier3: ['Overgrowth', 'Revitalize', 'Unflinching'],
+        keystones: [
+            { name: 'Grasp of the Undying', icon: 'perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png' },
+            { name: 'Aftershock', icon: 'perk-images/Styles/Resolve/VeteranAftershock/VeteranAftershock.png' },
+            { name: 'Guardian', icon: 'perk-images/Styles/Resolve/Guardian/Guardian.png' }
+        ],
+        tier1: [
+            { name: 'Demolish', icon: 'perk-images/Styles/Resolve/Demolish/Demolish.png' },
+            { name: 'Font of Life', icon: 'perk-images/Styles/Resolve/FontOfLife/FontOfLife.png' },
+            { name: 'Shield Bash', icon: 'perk-images/Styles/Resolve/MirrorShell/MirrorShell.png' }
+        ],
+        tier2: [
+            { name: 'Conditioning', icon: 'perk-images/Styles/Resolve/Conditioning/Conditioning.png' },
+            { name: 'Second Wind', icon: 'perk-images/Styles/Resolve/SecondWind/SecondWind.png' },
+            { name: 'Bone Plating', icon: 'perk-images/Styles/Resolve/BonePlating/BonePlating.png' }
+        ],
+        tier3: [
+            { name: 'Overgrowth', icon: 'perk-images/Styles/Resolve/Overgrowth/Overgrowth.png' },
+            { name: 'Revitalize', icon: 'perk-images/Styles/Resolve/Revitalize/Revitalize.png' },
+            { name: 'Unflinching', icon: 'perk-images/Styles/Resolve/Unflinching/Unflinching.png' }
+        ],
     },
     Inspiration: {
         primary: 'Inspiration',
-        keystones: ['Glacial Augment', 'First Strike'],
-        tier1: ['Hextech Flashtraption', 'Magical Footwear', 'Cash Back'],
-        tier2: ['Triple Tonic', 'Time Warp Tonic', 'Biscuit Delivery'],
-        tier3: ['Cosmic Insight', 'Approach Velocity', 'Jack Of All Trades'],
+        keystones: [
+            { name: 'Glacial Augment', icon: 'perk-images/Styles/Inspiration/GlacialAugment/GlacialAugment.png' },
+            { name: 'First Strike', icon: 'perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png' }
+        ],
+        tier1: [
+            { name: 'Hextech Flashtraption', icon: 'perk-images/Styles/Inspiration/HextechFlashtraption/HextechFlashtraption.png' },
+            { name: 'Magical Footwear', icon: 'perk-images/Styles/Inspiration/MagicalFootwear/MagicalFootwear.png' },
+            { name: 'Cash Back', icon: 'perk-images/Styles/Inspiration/CashBack/CashBack.png' }
+        ],
+        tier2: [
+            { name: 'Triple Tonic', icon: 'perk-images/Styles/Inspiration/TripleTonic/TripleTonic.png' },
+            { name: 'Time Warp Tonic', icon: 'perk-images/Styles/Inspiration/TimeWarpTonic/TimeWarpTonic.png' },
+            { name: 'Biscuit Delivery', icon: 'perk-images/Styles/Inspiration/BiscuitDelivery/BiscuitDelivery.png' }
+        ],
+        tier3: [
+            { name: 'Cosmic Insight', icon: 'perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png' },
+            { name: 'Approach Velocity', icon: 'perk-images/Styles/Inspiration/ApproachVelocity/ApproachVelocity.png' },
+            { name: 'Jack Of All Trades', icon: 'perk-images/Styles/Inspiration/JackOfAllTrades/JackOfAllTrades.png' }
+        ],
     },
 };
 
@@ -155,7 +235,11 @@ function generateBuilds(): Build[] {
                             secondaryTree.tier2[(index * 2 + 1) % 3],
                         ]
                     },
-                    statMods: ['Adaptive Force', 'Adaptive Force', 'Armor']
+                    statMods: [
+                        { name: 'Adaptive Force', icon: 'perk-images/StatMods/StatModsAdaptiveForceIcon.png' },
+                        { name: 'Adaptive Force', icon: 'perk-images/StatMods/StatModsAdaptiveForceIcon.png' },
+                        { name: 'Armor', icon: 'perk-images/StatMods/StatModsArmorIcon.png' }
+                    ]
                 },
                 skillOrder: generateSkillOrder(primaryTag),
                 tips: [
