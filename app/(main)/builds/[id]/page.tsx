@@ -2,11 +2,11 @@
 
 import { useParams } from 'next/navigation';
 const RUNE_PATHS: Record<string, string> = {
-    'Precision': 'https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7200_Precision.png',
-    'Domination': 'https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7200_Domination.png',
-    'Sorcery': 'https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png',
-    'Resolve': 'https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png',
-    'Inspiration': 'https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png',
+    'Precision': '/img/perk-images/Styles/7200_Precision.png',
+    'Domination': '/img/perk-images/Styles/7200_Domination.png',
+    'Sorcery': '/img/perk-images/Styles/7202_Sorcery.png',
+    'Resolve': '/img/perk-images/Styles/7204_Resolve.png',
+    'Inspiration': '/img/perk-images/Styles/7203_Whimsy.png',
 };
 import { useBuild } from '@/lib/hooks/useBuilds';
 import { Item } from '@/lib/types';
@@ -210,7 +210,7 @@ export default function BuildDetailPage() {
                                     <div className="p-3 rounded-md bg-muted/20 border border-border/50">
                                         <div className="flex items-center gap-3 mb-4">
                                             <div className="relative h-10 w-10 flex items-center justify-center rounded-full bg-gold/10 border border-gold/30 overflow-hidden">
-                                                <Image src={`https://ddragon.leagueoflegends.com/cdn/img/${build.runes.primary.keystone.icon}`} alt={build.runes.primary.keystone.name} fill sizes="40px" className="object-cover scale-110" />
+                                                <Image src={`/img/${build.runes.primary.keystone.icon}`} alt={build.runes.primary.keystone.name} fill sizes="40px" className="object-cover scale-110" />
                                             </div>
                                             <div className="flex-1">
                                                 <span className="text-sm font-medium">{build.runes.primary.keystone.name}</span>
@@ -221,7 +221,7 @@ export default function BuildDetailPage() {
                                             {build.runes.primary.perks.map((perk: { name: string, icon: string }, i: number) => (
                                                 <div key={i} className="flex flex-col items-center text-center gap-1.5 p-1">
                                                     <div className="relative h-8 w-8 rounded-full bg-card border border-border flex items-center justify-center overflow-hidden">
-                                                        <Image src={`https://ddragon.leagueoflegends.com/cdn/img/${perk.icon}`} alt={perk.name} fill sizes="32px" className="object-cover" />
+                                                        <Image src={`/img/${perk.icon}`} alt={perk.name} fill sizes="32px" className="object-cover" />
                                                     </div>
                                                     <span className="text-[10px] leading-tight text-muted-foreground">{perk.name}</span>
                                                 </div>
@@ -246,7 +246,7 @@ export default function BuildDetailPage() {
                                             {build.runes.secondary.perks.map((perk: { name: string, icon: string }, i: number) => (
                                                 <div key={i} className="flex flex-col items-center text-center gap-1.5 p-1 w-1/2">
                                                     <div className="relative h-8 w-8 rounded-full bg-card border border-border/50 flex items-center justify-center overflow-hidden">
-                                                        <Image src={`https://ddragon.leagueoflegends.com/cdn/img/${perk.icon}`} alt={perk.name} fill sizes="32px" className="object-cover" />
+                                                        <Image src={`/img/${perk.icon}`} alt={perk.name} fill sizes="32px" className="object-cover" />
                                                     </div>
                                                     <span className="text-[10px] leading-tight text-muted-foreground">{perk.name}</span>
                                                 </div>
@@ -258,7 +258,7 @@ export default function BuildDetailPage() {
                                             {build.runes.statMods.map((mod: { name: string, icon: string }, i: number) => (
                                                 <div key={i} className="flex items-center gap-1.5">
                                                     <div className="relative h-5 w-5 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
-                                                        <Image src={`https://ddragon.leagueoflegends.com/cdn/img/${mod.icon}`} alt={mod.name} fill sizes="20px" className="object-cover scale-75 grayscale contrast-200 opacity-80" />
+                                                        <Image src={`/img/${mod.icon}`} alt={mod.name} fill sizes="20px" className="object-cover scale-75 grayscale contrast-200 opacity-80" />
                                                     </div>
                                                 </div>
                                             ))}

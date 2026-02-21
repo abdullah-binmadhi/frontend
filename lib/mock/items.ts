@@ -2309,16 +2309,51 @@ function generateTierList(): TierListEntry[] {
     const tiers: ('S' | 'A' | 'B' | 'C')[] = ['S', 'A', 'B', 'C'];
     // Filter for tier list: cost > 2000 to exclude components
     const tierItems = mockItems.filter(i => i.totalCost > 2000);
+    
+    // Create a deterministic pseudo-random algorithm for realistic Patch 26.4 stats
+    function pseudoRandom(seed: number) {
+        const x = Math.sin(seed) * 10000;
+        return x - Math.floor(x);
+    }
+    
     return tierItems.slice(0, Math.min(40, tierItems.length)).map((item, i) => {
+        // Tie seeded variance to the item ID natively!
+        const rand1 = pseudoRandom(item.id);
+        const rand2 = pseudoRandom(item.id * 1.5);
+        
+        // Items in S tier should cluster higher natively, C tier lower natively
+        // S = 0-7, A = 8-17, B = 18-29, C = 30-39
         const tierIndex = i < 8 ? 0 : i < 18 ? 1 : i < 30 ? 2 : 3;
-        const baseWpa = 0.07 - (i * 0.002);
+        
+        // Realistic WRs are heavily skewed between 47.0% and 54.5%
+        const baseWrRange = tierIndex === 0 ? [0.525, 0.545] :
+                            tierIndex === 1 ? [0.510, 0.524] :
+                            tierIndex === 2 ? [0.495, 0.509] :
+                                              [0.470, 0.494];
+                                              
+        const wrRand = rand1; 
+        const wr = baseWrRange[0] + wrRand * (baseWrRange[1] - baseWrRange[0]);
+        
+        // WPA is usually -2.0 to +3.0
+        const baseWpaRange = tierIndex === 0 ? [0.035, 0.050] :
+                             tierIndex === 1 ? [0.010, 0.034] :
+                             tierIndex === 2 ? [-0.015, 0.009] :
+                                               [-0.035, -0.016];
+                                               
+        const wpaRand = pseudoRandom(item.id * 3.14);
+        const wpa = baseWpaRange[0] + wpaRand * (baseWpaRange[1] - baseWpaRange[0]);
+        
+        // Games played scales exponentially downward
+        const gamesPlayedBase = 250000 * Math.pow(0.85, i);
+        const finalGamesPlayed = gamesPlayedBase * (0.8 + 0.4 * rand2);
+
         return {
             item,
             tier: tiers[tierIndex],
-            wpa: +baseWpa.toFixed(3),
-            winRate: +(0.58 - i * 0.003).toFixed(3),
-            pickRate: +(0.75 - i * 0.015).toFixed(3),
-            gamesPlayed: Math.round(200000 - i * 4000),
+            wpa: +wpa.toFixed(3),
+            winRate: +wr.toFixed(3),
+            pickRate: +(0.15 * (finalGamesPlayed / 250000)).toFixed(3),
+            gamesPlayed: Math.round(finalGamesPlayed),
         };
     });
 }

@@ -14,7 +14,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Aatrox.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg`,
-        stats: { winRate: 0.52, pickRate: 0.115, banRate: 0.117, gamesPlayed: 275000, avgKda: 3 },
+        stats: { winRate: 0.478, pickRate: 0.152, banRate: 0.042, gamesPlayed: 238794, avgKda: 3.8 },
     },
     {
         id: 103,
@@ -26,7 +26,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Ahri.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg`,
-        stats: { winRate: 0.487, pickRate: 0.058, banRate: 0.056, gamesPlayed: 152000, avgKda: 2.2 },
+        stats: { winRate: 0.521, pickRate: 0.042, banRate: 0.059, gamesPlayed: 232821, avgKda: 3.85 },
     },
     {
         id: 84,
@@ -38,7 +38,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Akali.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg`,
-        stats: { winRate: 0.461, pickRate: 0.011, banRate: 0.007, gamesPlayed: 53000, avgKda: 1.5 },
+        stats: { winRate: 0.476, pickRate: 0.107, banRate: 0.191, gamesPlayed: 150293, avgKda: 3.72 },
     },
     {
         id: 166,
@@ -50,7 +50,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Akshan.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akshan_0.jpg`,
-        stats: { winRate: 0.52, pickRate: 0.115, banRate: 0.117, gamesPlayed: 275000, avgKda: 3 },
+        stats: { winRate: 0.529, pickRate: 0.154, banRate: 0.127, gamesPlayed: 473564, avgKda: 3.7 },
     },
     {
         id: 12,
@@ -62,7 +62,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Alistar.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg`,
-        stats: { winRate: 0.538, pickRate: 0.146, banRate: 0.15, gamesPlayed: 341000, avgKda: 3.4 },
+        stats: { winRate: 0.516, pickRate: 0.138, banRate: 0.036, gamesPlayed: 354351, avgKda: 2.72 },
     },
     {
         id: 799,
@@ -74,7 +74,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Ambessa.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ambessa_0.jpg`,
-        stats: { winRate: 0.465, pickRate: 0.018, banRate: 0.014, gamesPlayed: 68000, avgKda: 1.6 },
+        stats: { winRate: 0.49, pickRate: 0.028, banRate: 0.103, gamesPlayed: 201653, avgKda: 4 },
     },
     {
         id: 32,
@@ -86,7 +86,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Amumu.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg`,
-        stats: { winRate: 0.49, pickRate: 0.062, banRate: 0.06, gamesPlayed: 161000, avgKda: 2.2 },
+        stats: { winRate: 0.477, pickRate: 0.05, banRate: 0.072, gamesPlayed: 215489, avgKda: 2.81 },
     },
     {
         id: 34,
@@ -98,7 +98,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Anivia.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_0.jpg`,
-        stats: { winRate: 0.501, pickRate: 0.081, banRate: 0.082, gamesPlayed: 203000, avgKda: 2.5 },
+        stats: { winRate: 0.485, pickRate: 0.047, banRate: 0.085, gamesPlayed: 293518, avgKda: 2.22 },
     },
     {
         id: 1,
@@ -110,7 +110,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Annie.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_0.jpg`,
-        stats: { winRate: 0.476, pickRate: 0.038, banRate: 0.035, gamesPlayed: 110000, avgKda: 1.9 },
+        stats: { winRate: 0.47, pickRate: 0.155, banRate: 0.141, gamesPlayed: 490667, avgKda: 2.99 },
     },
     {
         id: 523,
@@ -122,7 +122,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Aphelios.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg`,
-        stats: { winRate: 0.519, pickRate: 0.114, banRate: 0.116, gamesPlayed: 272000, avgKda: 3 },
+        stats: { winRate: 0.506, pickRate: 0.02, banRate: 0.16, gamesPlayed: 328603, avgKda: 3.27 },
     },
     {
         id: 22,
@@ -134,7 +134,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Ashe.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg`,
-        stats: { winRate: 0.514, pickRate: 0.104, banRate: 0.106, gamesPlayed: 251000, avgKda: 2.8 },
+        stats: { winRate: 0.496, pickRate: 0.02, banRate: 0.102, gamesPlayed: 226849, avgKda: 1.88 },
     },
     {
         id: 136,
@@ -146,7 +146,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/AurelionSol.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_0.jpg`,
-        stats: { winRate: 0.512, pickRate: 0.101, banRate: 0.103, gamesPlayed: 245000, avgKda: 2.8 },
+        stats: { winRate: 0.503, pickRate: 0.032, banRate: 0.1, gamesPlayed: 83263, avgKda: 2.15 },
     },
     {
         id: 893,
@@ -158,7 +158,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Aurora.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aurora_0.jpg`,
-        stats: { winRate: 0.511, pickRate: 0.1, banRate: 0.101, gamesPlayed: 242000, avgKda: 2.8 },
+        stats: { winRate: 0.481, pickRate: 0.039, banRate: 0.217, gamesPlayed: 311798, avgKda: 3.44 },
     },
     {
         id: 268,
@@ -170,7 +170,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Azir.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg`,
-        stats: { winRate: 0.531, pickRate: 0.135, banRate: 0.139, gamesPlayed: 317000, avgKda: 3.3 },
+        stats: { winRate: 0.518, pickRate: 0.154, banRate: 0.175, gamesPlayed: 258844, avgKda: 1.77 },
     },
     {
         id: 432,
@@ -182,7 +182,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Bard.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_0.jpg`,
-        stats: { winRate: 0.49, pickRate: 0.062, banRate: 0.06, gamesPlayed: 161000, avgKda: 2.2 },
+        stats: { winRate: 0.527, pickRate: 0.121, banRate: 0.072, gamesPlayed: 402780, avgKda: 3.11 },
     },
     {
         id: 200,
@@ -194,7 +194,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Belveth.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Belveth_0.jpg`,
-        stats: { winRate: 0.47, pickRate: 0.028, banRate: 0.025, gamesPlayed: 89000, avgKda: 1.8 },
+        stats: { winRate: 0.534, pickRate: 0.018, banRate: 0.088, gamesPlayed: 77024, avgKda: 3.11 },
     },
     {
         id: 53,
@@ -206,7 +206,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Blitzcrank.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_0.jpg`,
-        stats: { winRate: 0.527, pickRate: 0.128, banRate: 0.131, gamesPlayed: 302000, avgKda: 3.2 },
+        stats: { winRate: 0.498, pickRate: 0.044, banRate: 0.053, gamesPlayed: 476386, avgKda: 1.72 },
     },
     {
         id: 63,
@@ -218,7 +218,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Brand.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_0.jpg`,
-        stats: { winRate: 0.503, pickRate: 0.086, banRate: 0.086, gamesPlayed: 212000, avgKda: 2.6 },
+        stats: { winRate: 0.471, pickRate: 0.076, banRate: 0.119, gamesPlayed: 385417, avgKda: 1.63 },
     },
     {
         id: 201,
@@ -230,7 +230,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Braum.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Braum_0.jpg`,
-        stats: { winRate: 0.476, pickRate: 0.038, banRate: 0.035, gamesPlayed: 110000, avgKda: 1.9 },
+        stats: { winRate: 0.476, pickRate: 0.044, banRate: 0.095, gamesPlayed: 355938, avgKda: 2.35 },
     },
     {
         id: 233,
@@ -242,7 +242,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Briar.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Briar_0.jpg`,
-        stats: { winRate: 0.495, pickRate: 0.072, banRate: 0.071, gamesPlayed: 182000, avgKda: 2.4 },
+        stats: { winRate: 0.508, pickRate: 0.122, banRate: 0.24, gamesPlayed: 78639, avgKda: 2.97 },
     },
     {
         id: 51,
@@ -254,7 +254,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Caitlyn.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_0.jpg`,
-        stats: { winRate: 0.516, pickRate: 0.108, banRate: 0.11, gamesPlayed: 260000, avgKda: 2.9 },
+        stats: { winRate: 0.489, pickRate: 0.058, banRate: 0.154, gamesPlayed: 299550, avgKda: 2.99 },
     },
     {
         id: 164,
@@ -266,7 +266,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Camille.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Camille_0.jpg`,
-        stats: { winRate: 0.509, pickRate: 0.095, banRate: 0.097, gamesPlayed: 233000, avgKda: 2.7 },
+        stats: { winRate: 0.492, pickRate: 0.123, banRate: 0.197, gamesPlayed: 75506, avgKda: 1.63 },
     },
     {
         id: 69,
@@ -278,7 +278,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Cassiopeia.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_0.jpg`,
-        stats: { winRate: 0.537, pickRate: 0.144, banRate: 0.149, gamesPlayed: 338000, avgKda: 3.4 },
+        stats: { winRate: 0.524, pickRate: 0.138, banRate: 0.149, gamesPlayed: 129513, avgKda: 2.33 },
     },
     {
         id: 31,
@@ -290,7 +290,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Chogath.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg`,
-        stats: { winRate: 0.484, pickRate: 0.052, banRate: 0.05, gamesPlayed: 140000, avgKda: 2.1 },
+        stats: { winRate: 0.482, pickRate: 0.031, banRate: 0.042, gamesPlayed: 163782, avgKda: 1.8 },
     },
     {
         id: 42,
@@ -302,7 +302,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Corki.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_0.jpg`,
-        stats: { winRate: 0.466, pickRate: 0.02, banRate: 0.015, gamesPlayed: 71000, avgKda: 1.6 },
+        stats: { winRate: 0.501, pickRate: 0.033, banRate: 0.115, gamesPlayed: 341147, avgKda: 1.9 },
     },
     {
         id: 122,
@@ -314,7 +314,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Darius.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_0.jpg`,
-        stats: { winRate: 0.514, pickRate: 0.104, banRate: 0.106, gamesPlayed: 251000, avgKda: 2.8 },
+        stats: { winRate: 0.477, pickRate: 0.127, banRate: 0.136, gamesPlayed: 309856, avgKda: 2.02 },
     },
     {
         id: 131,
@@ -326,7 +326,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Diana.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_0.jpg`,
-        stats: { winRate: 0.484, pickRate: 0.052, banRate: 0.05, gamesPlayed: 140000, avgKda: 2.1 },
+        stats: { winRate: 0.466, pickRate: 0.038, banRate: 0.219, gamesPlayed: 413526, avgKda: 3.39 },
     },
     {
         id: 36,
@@ -338,7 +338,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/DrMundo.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_0.jpg`,
-        stats: { winRate: 0.512, pickRate: 0.101, banRate: 0.103, gamesPlayed: 245000, avgKda: 2.8 },
+        stats: { winRate: 0.474, pickRate: 0.067, banRate: 0.106, gamesPlayed: 77876, avgKda: 2.04 },
     },
     {
         id: 119,
@@ -350,7 +350,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Draven.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_0.jpg`,
-        stats: { winRate: 0.497, pickRate: 0.074, banRate: 0.074, gamesPlayed: 188000, avgKda: 2.4 },
+        stats: { winRate: 0.484, pickRate: 0.113, banRate: 0.209, gamesPlayed: 106493, avgKda: 3.74 },
     },
     {
         id: 245,
@@ -362,7 +362,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Ekko.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_0.jpg`,
-        stats: { winRate: 0.482, pickRate: 0.049, banRate: 0.047, gamesPlayed: 134000, avgKda: 2.1 },
+        stats: { winRate: 0.512, pickRate: 0.043, banRate: 0.244, gamesPlayed: 279058, avgKda: 2.92 },
     },
     {
         id: 60,
@@ -374,7 +374,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Elise.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Elise_0.jpg`,
-        stats: { winRate: 0.486, pickRate: 0.056, banRate: 0.054, gamesPlayed: 149000, avgKda: 2.2 },
+        stats: { winRate: 0.499, pickRate: 0.135, banRate: 0.059, gamesPlayed: 128688, avgKda: 1.96 },
     },
     {
         id: 28,
@@ -386,7 +386,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Evelynn.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg`,
-        stats: { winRate: 0.467, pickRate: 0.023, banRate: 0.018, gamesPlayed: 77000, avgKda: 1.7 },
+        stats: { winRate: 0.524, pickRate: 0.15, banRate: 0.043, gamesPlayed: 282971, avgKda: 3.49 },
     },
     {
         id: 81,
@@ -398,7 +398,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Ezreal.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg`,
-        stats: { winRate: 0.524, pickRate: 0.122, banRate: 0.125, gamesPlayed: 290000, avgKda: 3.1 },
+        stats: { winRate: 0.469, pickRate: 0.059, banRate: 0.138, gamesPlayed: 253161, avgKda: 3.67 },
     },
     {
         id: 9,
@@ -410,7 +410,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Fiddlesticks.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_0.jpg`,
-        stats: { winRate: 0.521, pickRate: 0.116, banRate: 0.119, gamesPlayed: 278000, avgKda: 3 },
+        stats: { winRate: 0.51, pickRate: 0.121, banRate: 0.037, gamesPlayed: 106622, avgKda: 1.88 },
     },
     {
         id: 114,
@@ -422,7 +422,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Fiora.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_0.jpg`,
-        stats: { winRate: 0.469, pickRate: 0.025, banRate: 0.022, gamesPlayed: 83000, avgKda: 1.7 },
+        stats: { winRate: 0.493, pickRate: 0.012, banRate: 0.155, gamesPlayed: 438397, avgKda: 2.76 },
     },
     {
         id: 105,
@@ -434,7 +434,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Fizz.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_0.jpg`,
-        stats: { winRate: 0.498, pickRate: 0.077, banRate: 0.077, gamesPlayed: 194000, avgKda: 2.5 },
+        stats: { winRate: 0.532, pickRate: 0.034, banRate: 0.018, gamesPlayed: 448836, avgKda: 1.91 },
     },
     {
         id: 3,
@@ -446,7 +446,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Galio.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Galio_0.jpg`,
-        stats: { winRate: 0.487, pickRate: 0.058, banRate: 0.056, gamesPlayed: 152000, avgKda: 2.2 },
+        stats: { winRate: 0.503, pickRate: 0.072, banRate: 0.165, gamesPlayed: 380816, avgKda: 1.87 },
     },
     {
         id: 41,
@@ -458,7 +458,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Gangplank.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gangplank_0.jpg`,
-        stats: { winRate: 0.46, pickRate: 0.01, banRate: 0.005, gamesPlayed: 50000, avgKda: 1.5 },
+        stats: { winRate: 0.533, pickRate: 0.097, banRate: 0.149, gamesPlayed: 222030, avgKda: 3.18 },
     },
     {
         id: 86,
@@ -470,7 +470,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Garen.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg`,
-        stats: { winRate: 0.472, pickRate: 0.031, banRate: 0.028, gamesPlayed: 95000, avgKda: 1.8 },
+        stats: { winRate: 0.523, pickRate: 0.022, banRate: 0.051, gamesPlayed: 141881, avgKda: 2.66 },
     },
     {
         id: 150,
@@ -482,7 +482,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Gnar.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_0.jpg`,
-        stats: { winRate: 0.51, pickRate: 0.098, banRate: 0.1, gamesPlayed: 239000, avgKda: 2.8 },
+        stats: { winRate: 0.533, pickRate: 0.038, banRate: 0.171, gamesPlayed: 198634, avgKda: 1.89 },
     },
     {
         id: 79,
@@ -494,7 +494,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Gragas.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_0.jpg`,
-        stats: { winRate: 0.513, pickRate: 0.102, banRate: 0.104, gamesPlayed: 248000, avgKda: 2.8 },
+        stats: { winRate: 0.47, pickRate: 0.148, banRate: 0.171, gamesPlayed: 476941, avgKda: 1.85 },
     },
     {
         id: 104,
@@ -506,7 +506,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Graves.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Graves_0.jpg`,
-        stats: { winRate: 0.493, pickRate: 0.067, banRate: 0.066, gamesPlayed: 173000, avgKda: 2.3 },
+        stats: { winRate: 0.512, pickRate: 0.052, banRate: 0.138, gamesPlayed: 449695, avgKda: 1.77 },
     },
     {
         id: 887,
@@ -518,7 +518,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Gwen.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gwen_0.jpg`,
-        stats: { winRate: 0.478, pickRate: 0.041, banRate: 0.038, gamesPlayed: 116000, avgKda: 1.9 },
+        stats: { winRate: 0.467, pickRate: 0.094, banRate: 0.066, gamesPlayed: 461746, avgKda: 2.07 },
     },
     {
         id: 120,
@@ -530,7 +530,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Hecarim.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_0.jpg`,
-        stats: { winRate: 0.502, pickRate: 0.084, banRate: 0.085, gamesPlayed: 209000, avgKda: 2.6 },
+        stats: { winRate: 0.524, pickRate: 0.036, banRate: 0.136, gamesPlayed: 229999, avgKda: 2.33 },
     },
     {
         id: 74,
@@ -542,7 +542,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Heimerdinger.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_0.jpg`,
-        stats: { winRate: 0.485, pickRate: 0.053, banRate: 0.051, gamesPlayed: 143000, avgKda: 2.1 },
+        stats: { winRate: 0.528, pickRate: 0.053, banRate: 0.11, gamesPlayed: 312672, avgKda: 3.43 },
     },
     {
         id: 910,
@@ -554,7 +554,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Hwei.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hwei_0.jpg`,
-        stats: { winRate: 0.526, pickRate: 0.126, banRate: 0.129, gamesPlayed: 299000, avgKda: 3.2 },
+        stats: { winRate: 0.528, pickRate: 0.065, banRate: 0.043, gamesPlayed: 471088, avgKda: 2.4 },
     },
     {
         id: 420,
@@ -566,7 +566,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Illaoi.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Illaoi_0.jpg`,
-        stats: { winRate: 0.502, pickRate: 0.084, banRate: 0.085, gamesPlayed: 209000, avgKda: 2.6 },
+        stats: { winRate: 0.527, pickRate: 0.093, banRate: 0.042, gamesPlayed: 423093, avgKda: 2.48 },
     },
     {
         id: 39,
@@ -578,7 +578,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Irelia.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_0.jpg`,
-        stats: { winRate: 0.529, pickRate: 0.13, banRate: 0.134, gamesPlayed: 308000, avgKda: 3.2 },
+        stats: { winRate: 0.508, pickRate: 0.128, banRate: 0.016, gamesPlayed: 377580, avgKda: 2.09 },
     },
     {
         id: 427,
@@ -590,7 +590,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Ivern.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_0.jpg`,
-        stats: { winRate: 0.462, pickRate: 0.013, banRate: 0.008, gamesPlayed: 56000, avgKda: 1.5 },
+        stats: { winRate: 0.471, pickRate: 0.08, banRate: 0.067, gamesPlayed: 262544, avgKda: 3.8 },
     },
     {
         id: 40,
@@ -602,7 +602,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Janna.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_0.jpg`,
-        stats: { winRate: 0.534, pickRate: 0.14, banRate: 0.145, gamesPlayed: 329000, avgKda: 3.4 },
+        stats: { winRate: 0.466, pickRate: 0.157, banRate: 0.214, gamesPlayed: 285062, avgKda: 3.97 },
     },
     {
         id: 59,
@@ -614,7 +614,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/JarvanIV.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/JarvanIV_0.jpg`,
-        stats: { winRate: 0.481, pickRate: 0.046, banRate: 0.044, gamesPlayed: 128000, avgKda: 2 },
+        stats: { winRate: 0.5, pickRate: 0.016, banRate: 0.097, gamesPlayed: 303975, avgKda: 2.86 },
     },
     {
         id: 24,
@@ -626,7 +626,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Jax.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_0.jpg`,
-        stats: { winRate: 0.525, pickRate: 0.123, banRate: 0.127, gamesPlayed: 293000, avgKda: 3.1 },
+        stats: { winRate: 0.525, pickRate: 0.111, banRate: 0.1, gamesPlayed: 171281, avgKda: 3.59 },
     },
     {
         id: 126,
@@ -638,7 +638,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Jayce.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_0.jpg`,
-        stats: { winRate: 0.536, pickRate: 0.143, banRate: 0.147, gamesPlayed: 335000, avgKda: 3.4 },
+        stats: { winRate: 0.496, pickRate: 0.122, banRate: 0.246, gamesPlayed: 288313, avgKda: 3.52 },
     },
     {
         id: 202,
@@ -650,7 +650,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Jhin.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_0.jpg`,
-        stats: { winRate: 0.482, pickRate: 0.048, banRate: 0.045, gamesPlayed: 131000, avgKda: 2 },
+        stats: { winRate: 0.471, pickRate: 0.081, banRate: 0.241, gamesPlayed: 167960, avgKda: 2.77 },
     },
     {
         id: 222,
@@ -662,7 +662,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Jinx.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg`,
-        stats: { winRate: 0.514, pickRate: 0.104, banRate: 0.106, gamesPlayed: 251000, avgKda: 2.8 },
+        stats: { winRate: 0.495, pickRate: 0.031, banRate: 0.067, gamesPlayed: 273088, avgKda: 2.55 },
     },
     {
         id: 897,
@@ -674,7 +674,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/KSante.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KSante_0.jpg`,
-        stats: { winRate: 0.534, pickRate: 0.139, banRate: 0.143, gamesPlayed: 326000, avgKda: 3.3 },
+        stats: { winRate: 0.473, pickRate: 0.031, banRate: 0.191, gamesPlayed: 399383, avgKda: 3.25 },
     },
     {
         id: 145,
@@ -686,7 +686,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Kaisa.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_0.jpg`,
-        stats: { winRate: 0.482, pickRate: 0.049, banRate: 0.047, gamesPlayed: 134000, avgKda: 2.1 },
+        stats: { winRate: 0.469, pickRate: 0.048, banRate: 0.093, gamesPlayed: 132455, avgKda: 3.84 },
     },
     {
         id: 429,
@@ -698,7 +698,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Kalista.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_0.jpg`,
-        stats: { winRate: 0.473, pickRate: 0.032, banRate: 0.029, gamesPlayed: 98000, avgKda: 1.8 },
+        stats: { winRate: 0.526, pickRate: 0.1, banRate: 0.049, gamesPlayed: 288852, avgKda: 1.9 },
     },
     {
         id: 43,
@@ -710,7 +710,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Karma.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_0.jpg`,
-        stats: { winRate: 0.471, pickRate: 0.03, banRate: 0.026, gamesPlayed: 92000, avgKda: 1.8 },
+        stats: { winRate: 0.534, pickRate: 0.134, banRate: 0.024, gamesPlayed: 85205, avgKda: 1.75 },
     },
     {
         id: 30,
@@ -722,7 +722,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Karthus.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karthus_0.jpg`,
-        stats: { winRate: 0.478, pickRate: 0.042, banRate: 0.04, gamesPlayed: 119000, avgKda: 2 },
+        stats: { winRate: 0.473, pickRate: 0.083, banRate: 0.238, gamesPlayed: 426142, avgKda: 3.93 },
     },
     {
         id: 38,
@@ -734,7 +734,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Kassadin.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_0.jpg`,
-        stats: { winRate: 0.523, pickRate: 0.121, banRate: 0.123, gamesPlayed: 287000, avgKda: 3.1 },
+        stats: { winRate: 0.474, pickRate: 0.05, banRate: 0.104, gamesPlayed: 329053, avgKda: 3.17 },
     },
     {
         id: 55,
@@ -746,7 +746,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Katarina.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_0.jpg`,
-        stats: { winRate: 0.538, pickRate: 0.147, banRate: 0.152, gamesPlayed: 344000, avgKda: 3.5 },
+        stats: { winRate: 0.53, pickRate: 0.033, banRate: 0.174, gamesPlayed: 446416, avgKda: 2.09 },
     },
     {
         id: 10,
@@ -758,7 +758,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Kayle.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_0.jpg`,
-        stats: { winRate: 0.526, pickRate: 0.126, banRate: 0.129, gamesPlayed: 299000, avgKda: 3.2 },
+        stats: { winRate: 0.472, pickRate: 0.083, banRate: 0.035, gamesPlayed: 58663, avgKda: 2.62 },
     },
     {
         id: 141,
@@ -770,7 +770,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Kayn.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_0.jpg`,
-        stats: { winRate: 0.46, pickRate: 0.01, banRate: 0.005, gamesPlayed: 50000, avgKda: 1.5 },
+        stats: { winRate: 0.476, pickRate: 0.094, banRate: 0.07, gamesPlayed: 421560, avgKda: 1.55 },
     },
     {
         id: 85,
@@ -782,7 +782,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Kennen.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_0.jpg`,
-        stats: { winRate: 0.466, pickRate: 0.021, banRate: 0.017, gamesPlayed: 74000, avgKda: 1.7 },
+        stats: { winRate: 0.526, pickRate: 0.053, banRate: 0.154, gamesPlayed: 468439, avgKda: 1.91 },
     },
     {
         id: 121,
@@ -794,7 +794,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Khazix.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_0.jpg`,
-        stats: { winRate: 0.508, pickRate: 0.094, banRate: 0.095, gamesPlayed: 230000, avgKda: 2.7 },
+        stats: { winRate: 0.486, pickRate: 0.083, banRate: 0.22, gamesPlayed: 460947, avgKda: 3.18 },
     },
     {
         id: 203,
@@ -806,7 +806,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Kindred.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg`,
-        stats: { winRate: 0.487, pickRate: 0.058, banRate: 0.056, gamesPlayed: 152000, avgKda: 2.2 },
+        stats: { winRate: 0.521, pickRate: 0.03, banRate: 0.124, gamesPlayed: 294272, avgKda: 3.53 },
     },
     {
         id: 240,
@@ -818,7 +818,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Kled.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_0.jpg`,
-        stats: { winRate: 0.534, pickRate: 0.14, banRate: 0.145, gamesPlayed: 329000, avgKda: 3.4 },
+        stats: { winRate: 0.477, pickRate: 0.07, banRate: 0.22, gamesPlayed: 53959, avgKda: 3.24 },
     },
     {
         id: 96,
@@ -830,7 +830,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/KogMaw.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg`,
-        stats: { winRate: 0.528, pickRate: 0.129, banRate: 0.133, gamesPlayed: 305000, avgKda: 3.2 },
+        stats: { winRate: 0.484, pickRate: 0.12, banRate: 0.201, gamesPlayed: 137624, avgKda: 2.5 },
     },
     {
         id: 7,
@@ -842,7 +842,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Leblanc.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_0.jpg`,
-        stats: { winRate: 0.51, pickRate: 0.097, banRate: 0.098, gamesPlayed: 236000, avgKda: 2.7 },
+        stats: { winRate: 0.513, pickRate: 0.038, banRate: 0.037, gamesPlayed: 432300, avgKda: 3.36 },
     },
     {
         id: 64,
@@ -854,7 +854,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/LeeSin.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg`,
-        stats: { winRate: 0.509, pickRate: 0.095, banRate: 0.097, gamesPlayed: 233000, avgKda: 2.7 },
+        stats: { winRate: 0.484, pickRate: 0.065, banRate: 0.188, gamesPlayed: 397836, avgKda: 2.75 },
     },
     {
         id: 89,
@@ -866,7 +866,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Leona.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_0.jpg`,
-        stats: { winRate: 0.489, pickRate: 0.06, banRate: 0.059, gamesPlayed: 158000, avgKda: 2.2 },
+        stats: { winRate: 0.517, pickRate: 0.107, banRate: 0.148, gamesPlayed: 457009, avgKda: 2.11 },
     },
     {
         id: 876,
@@ -878,7 +878,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Lillia.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lillia_0.jpg`,
-        stats: { winRate: 0.496, pickRate: 0.073, banRate: 0.073, gamesPlayed: 185000, avgKda: 2.4 },
+        stats: { winRate: 0.499, pickRate: 0.051, banRate: 0.089, gamesPlayed: 51207, avgKda: 2.28 },
     },
     {
         id: 127,
@@ -890,7 +890,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Lissandra.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_0.jpg`,
-        stats: { winRate: 0.462, pickRate: 0.013, banRate: 0.008, gamesPlayed: 56000, avgKda: 1.5 },
+        stats: { winRate: 0.477, pickRate: 0.131, banRate: 0.107, gamesPlayed: 353218, avgKda: 3.53 },
     },
     {
         id: 236,
@@ -902,7 +902,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Lucian.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_0.jpg`,
-        stats: { winRate: 0.512, pickRate: 0.101, banRate: 0.103, gamesPlayed: 245000, avgKda: 2.8 },
+        stats: { winRate: 0.505, pickRate: 0.041, banRate: 0.016, gamesPlayed: 209405, avgKda: 3.56 },
     },
     {
         id: 117,
@@ -914,7 +914,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Lulu.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_0.jpg`,
-        stats: { winRate: 0.486, pickRate: 0.055, banRate: 0.053, gamesPlayed: 146000, avgKda: 2.1 },
+        stats: { winRate: 0.468, pickRate: 0.094, banRate: 0.177, gamesPlayed: 268362, avgKda: 1.63 },
     },
     {
         id: 99,
@@ -926,7 +926,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Lux.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg`,
-        stats: { winRate: 0.465, pickRate: 0.018, banRate: 0.014, gamesPlayed: 68000, avgKda: 1.6 },
+        stats: { winRate: 0.511, pickRate: 0.079, banRate: 0.172, gamesPlayed: 80865, avgKda: 2.04 },
     },
     {
         id: 54,
@@ -938,7 +938,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Malphite.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_0.jpg`,
-        stats: { winRate: 0.533, pickRate: 0.137, banRate: 0.142, gamesPlayed: 323000, avgKda: 3.3 },
+        stats: { winRate: 0.466, pickRate: 0.071, banRate: 0.086, gamesPlayed: 416334, avgKda: 3.23 },
     },
     {
         id: 90,
@@ -950,7 +950,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Malzahar.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malzahar_0.jpg`,
-        stats: { winRate: 0.494, pickRate: 0.07, banRate: 0.07, gamesPlayed: 179000, avgKda: 2.4 },
+        stats: { winRate: 0.53, pickRate: 0.042, banRate: 0.178, gamesPlayed: 285941, avgKda: 3.16 },
     },
     {
         id: 57,
@@ -962,7 +962,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Maokai.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg`,
-        stats: { winRate: 0.47, pickRate: 0.027, banRate: 0.023, gamesPlayed: 86000, avgKda: 1.7 },
+        stats: { winRate: 0.485, pickRate: 0.069, banRate: 0.194, gamesPlayed: 54706, avgKda: 3.09 },
     },
     {
         id: 11,
@@ -974,7 +974,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/MasterYi.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_0.jpg`,
-        stats: { winRate: 0.532, pickRate: 0.136, banRate: 0.14, gamesPlayed: 320000, avgKda: 3.3 },
+        stats: { winRate: 0.502, pickRate: 0.076, banRate: 0.009, gamesPlayed: 79927, avgKda: 3.81 },
     },
     {
         id: 800,
@@ -986,7 +986,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Mel.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mel_0.jpg`,
-        stats: { winRate: 0.47, pickRate: 0.028, banRate: 0.025, gamesPlayed: 89000, avgKda: 1.8 },
+        stats: { winRate: 0.469, pickRate: 0.014, banRate: 0.042, gamesPlayed: 401348, avgKda: 3.2 },
     },
     {
         id: 902,
@@ -998,7 +998,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Milio.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Milio_0.jpg`,
-        stats: { winRate: 0.482, pickRate: 0.048, banRate: 0.045, gamesPlayed: 131000, avgKda: 2 },
+        stats: { winRate: 0.503, pickRate: 0.116, banRate: 0.111, gamesPlayed: 389009, avgKda: 3.93 },
     },
     {
         id: 21,
@@ -1010,7 +1010,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/MissFortune.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_0.jpg`,
-        stats: { winRate: 0.508, pickRate: 0.094, banRate: 0.095, gamesPlayed: 230000, avgKda: 2.7 },
+        stats: { winRate: 0.474, pickRate: 0.088, banRate: 0.027, gamesPlayed: 118619, avgKda: 3.9 },
     },
     {
         id: 82,
@@ -1022,7 +1022,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Mordekaiser.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_0.jpg`,
-        stats: { winRate: 0.53, pickRate: 0.132, banRate: 0.136, gamesPlayed: 311000, avgKda: 3.2 },
+        stats: { winRate: 0.505, pickRate: 0.067, banRate: 0.072, gamesPlayed: 389686, avgKda: 1.94 },
     },
     {
         id: 25,
@@ -1034,7 +1034,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Morgana.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_0.jpg`,
-        stats: { winRate: 0.53, pickRate: 0.133, banRate: 0.137, gamesPlayed: 314000, avgKda: 3.3 },
+        stats: { winRate: 0.493, pickRate: 0.077, banRate: 0.215, gamesPlayed: 307949, avgKda: 3.33 },
     },
     {
         id: 950,
@@ -1046,7 +1046,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Naafiri.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Naafiri_0.jpg`,
-        stats: { winRate: 0.51, pickRate: 0.098, banRate: 0.1, gamesPlayed: 239000, avgKda: 2.8 },
+        stats: { winRate: 0.471, pickRate: 0.109, banRate: 0.124, gamesPlayed: 268962, avgKda: 2.61 },
     },
     {
         id: 267,
@@ -1058,7 +1058,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Nami.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_0.jpg`,
-        stats: { winRate: 0.526, pickRate: 0.125, banRate: 0.128, gamesPlayed: 296000, avgKda: 3.1 },
+        stats: { winRate: 0.505, pickRate: 0.082, banRate: 0.239, gamesPlayed: 388908, avgKda: 3.21 },
     },
     {
         id: 75,
@@ -1070,7 +1070,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Nasus.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg`,
-        stats: { winRate: 0.49, pickRate: 0.063, banRate: 0.062, gamesPlayed: 164000, avgKda: 2.3 },
+        stats: { winRate: 0.524, pickRate: 0.156, banRate: 0.024, gamesPlayed: 132669, avgKda: 3.82 },
     },
     {
         id: 111,
@@ -1082,7 +1082,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Nautilus.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_0.jpg`,
-        stats: { winRate: 0.532, pickRate: 0.136, banRate: 0.14, gamesPlayed: 320000, avgKda: 3.3 },
+        stats: { winRate: 0.528, pickRate: 0.073, banRate: 0.031, gamesPlayed: 111552, avgKda: 2.16 },
     },
     {
         id: 518,
@@ -1094,7 +1094,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Neeko.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_0.jpg`,
-        stats: { winRate: 0.491, pickRate: 0.065, banRate: 0.064, gamesPlayed: 167000, avgKda: 2.3 },
+        stats: { winRate: 0.518, pickRate: 0.091, banRate: 0.17, gamesPlayed: 159564, avgKda: 3.97 },
     },
     {
         id: 76,
@@ -1106,7 +1106,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Nidalee.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg`,
-        stats: { winRate: 0.496, pickRate: 0.073, banRate: 0.073, gamesPlayed: 185000, avgKda: 2.4 },
+        stats: { winRate: 0.484, pickRate: 0.103, banRate: 0.008, gamesPlayed: 104362, avgKda: 1.86 },
     },
     {
         id: 895,
@@ -1118,7 +1118,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Nilah.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nilah_0.jpg`,
-        stats: { winRate: 0.522, pickRate: 0.119, banRate: 0.122, gamesPlayed: 284000, avgKda: 3.1 },
+        stats: { winRate: 0.482, pickRate: 0.129, banRate: 0.237, gamesPlayed: 466688, avgKda: 1.82 },
     },
     {
         id: 56,
@@ -1130,7 +1130,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Nocturne.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nocturne_0.jpg`,
-        stats: { winRate: 0.464, pickRate: 0.017, banRate: 0.013, gamesPlayed: 65000, avgKda: 1.6 },
+        stats: { winRate: 0.53, pickRate: 0.088, banRate: 0.167, gamesPlayed: 371397, avgKda: 1.58 },
     },
     {
         id: 20,
@@ -1142,7 +1142,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Nunu.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_0.jpg`,
-        stats: { winRate: 0.502, pickRate: 0.084, banRate: 0.085, gamesPlayed: 209000, avgKda: 2.6 },
+        stats: { winRate: 0.499, pickRate: 0.013, banRate: 0.127, gamesPlayed: 492362, avgKda: 2.93 },
     },
     {
         id: 2,
@@ -1154,7 +1154,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Olaf.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Olaf_0.jpg`,
-        stats: { winRate: 0.482, pickRate: 0.048, banRate: 0.045, gamesPlayed: 131000, avgKda: 2 },
+        stats: { winRate: 0.532, pickRate: 0.157, banRate: 0.108, gamesPlayed: 127368, avgKda: 1.74 },
     },
     {
         id: 61,
@@ -1166,7 +1166,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Orianna.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_0.jpg`,
-        stats: { winRate: 0.492, pickRate: 0.066, banRate: 0.065, gamesPlayed: 170000, avgKda: 2.3 },
+        stats: { winRate: 0.509, pickRate: 0.035, banRate: 0.074, gamesPlayed: 402100, avgKda: 1.9 },
     },
     {
         id: 516,
@@ -1178,7 +1178,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Ornn.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ornn_0.jpg`,
-        stats: { winRate: 0.48, pickRate: 0.045, banRate: 0.042, gamesPlayed: 125000, avgKda: 2 },
+        stats: { winRate: 0.47, pickRate: 0.118, banRate: 0.133, gamesPlayed: 168229, avgKda: 1.56 },
     },
     {
         id: 80,
@@ -1190,7 +1190,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Pantheon.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_0.jpg`,
-        stats: { winRate: 0.518, pickRate: 0.112, banRate: 0.115, gamesPlayed: 269000, avgKda: 3 },
+        stats: { winRate: 0.534, pickRate: 0.088, banRate: 0.049, gamesPlayed: 274328, avgKda: 1.63 },
     },
     {
         id: 78,
@@ -1202,7 +1202,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Poppy.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_0.jpg`,
-        stats: { winRate: 0.507, pickRate: 0.093, banRate: 0.093, gamesPlayed: 227000, avgKda: 2.7 },
+        stats: { winRate: 0.52, pickRate: 0.119, banRate: 0.144, gamesPlayed: 289394, avgKda: 2.53 },
     },
     {
         id: 555,
@@ -1214,7 +1214,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Pyke.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_0.jpg`,
-        stats: { winRate: 0.538, pickRate: 0.147, banRate: 0.152, gamesPlayed: 344000, avgKda: 3.5 },
+        stats: { winRate: 0.483, pickRate: 0.073, banRate: 0.25, gamesPlayed: 86635, avgKda: 1.94 },
     },
     {
         id: 246,
@@ -1226,7 +1226,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Qiyana.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_0.jpg`,
-        stats: { winRate: 0.488, pickRate: 0.059, banRate: 0.057, gamesPlayed: 155000, avgKda: 2.2 },
+        stats: { winRate: 0.484, pickRate: 0.125, banRate: 0.086, gamesPlayed: 267976, avgKda: 2.94 },
     },
     {
         id: 133,
@@ -1238,7 +1238,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Quinn.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Quinn_0.jpg`,
-        stats: { winRate: 0.495, pickRate: 0.072, banRate: 0.071, gamesPlayed: 182000, avgKda: 2.4 },
+        stats: { winRate: 0.518, pickRate: 0.037, banRate: 0.009, gamesPlayed: 475445, avgKda: 3.65 },
     },
     {
         id: 497,
@@ -1250,7 +1250,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Rakan.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_0.jpg`,
-        stats: { winRate: 0.534, pickRate: 0.139, banRate: 0.143, gamesPlayed: 326000, avgKda: 3.3 },
+        stats: { winRate: 0.491, pickRate: 0.048, banRate: 0.05, gamesPlayed: 363822, avgKda: 2.44 },
     },
     {
         id: 33,
@@ -1262,7 +1262,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Rammus.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rammus_0.jpg`,
-        stats: { winRate: 0.495, pickRate: 0.072, banRate: 0.071, gamesPlayed: 182000, avgKda: 2.4 },
+        stats: { winRate: 0.466, pickRate: 0.068, banRate: 0.171, gamesPlayed: 130754, avgKda: 3.19 },
     },
     {
         id: 421,
@@ -1274,7 +1274,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/RekSai.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/RekSai_0.jpg`,
-        stats: { winRate: 0.508, pickRate: 0.094, banRate: 0.095, gamesPlayed: 230000, avgKda: 2.7 },
+        stats: { winRate: 0.475, pickRate: 0.147, banRate: 0.024, gamesPlayed: 77858, avgKda: 1.65 },
     },
     {
         id: 526,
@@ -1286,7 +1286,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Rell.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rell_0.jpg`,
-        stats: { winRate: 0.536, pickRate: 0.143, banRate: 0.147, gamesPlayed: 335000, avgKda: 3.4 },
+        stats: { winRate: 0.525, pickRate: 0.048, banRate: 0.122, gamesPlayed: 102857, avgKda: 1.59 },
     },
     {
         id: 888,
@@ -1298,7 +1298,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Renata.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_0.jpg`,
-        stats: { winRate: 0.483, pickRate: 0.051, banRate: 0.048, gamesPlayed: 137000, avgKda: 2.1 },
+        stats: { winRate: 0.5, pickRate: 0.087, banRate: 0.14, gamesPlayed: 494512, avgKda: 3.91 },
     },
     {
         id: 58,
@@ -1310,7 +1310,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Renekton.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renekton_0.jpg`,
-        stats: { winRate: 0.475, pickRate: 0.037, banRate: 0.033, gamesPlayed: 107000, avgKda: 1.9 },
+        stats: { winRate: 0.491, pickRate: 0.079, banRate: 0.093, gamesPlayed: 451412, avgKda: 2.13 },
     },
     {
         id: 107,
@@ -1322,7 +1322,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Rengar.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rengar_0.jpg`,
-        stats: { winRate: 0.51, pickRate: 0.097, banRate: 0.098, gamesPlayed: 236000, avgKda: 2.7 },
+        stats: { winRate: 0.475, pickRate: 0.148, banRate: 0.03, gamesPlayed: 310077, avgKda: 2.91 },
     },
     {
         id: 92,
@@ -1334,7 +1334,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Riven.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_0.jpg`,
-        stats: { winRate: 0.506, pickRate: 0.09, banRate: 0.09, gamesPlayed: 221000, avgKda: 2.6 },
+        stats: { winRate: 0.486, pickRate: 0.072, banRate: 0.049, gamesPlayed: 171692, avgKda: 2.01 },
     },
     {
         id: 68,
@@ -1346,7 +1346,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Rumble.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rumble_0.jpg`,
-        stats: { winRate: 0.531, pickRate: 0.135, banRate: 0.139, gamesPlayed: 317000, avgKda: 3.3 },
+        stats: { winRate: 0.482, pickRate: 0.091, banRate: 0.144, gamesPlayed: 115444, avgKda: 3.82 },
     },
     {
         id: 13,
@@ -1358,7 +1358,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Ryze.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_0.jpg`,
-        stats: { winRate: 0.463, pickRate: 0.016, banRate: 0.011, gamesPlayed: 62000, avgKda: 1.6 },
+        stats: { winRate: 0.515, pickRate: 0.1, banRate: 0.16, gamesPlayed: 258977, avgKda: 3.39 },
     },
     {
         id: 360,
@@ -1370,7 +1370,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Samira.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Samira_0.jpg`,
-        stats: { winRate: 0.486, pickRate: 0.056, banRate: 0.054, gamesPlayed: 149000, avgKda: 2.2 },
+        stats: { winRate: 0.502, pickRate: 0.139, banRate: 0.214, gamesPlayed: 183609, avgKda: 1.57 },
     },
     {
         id: 113,
@@ -1382,7 +1382,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Sejuani.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_0.jpg`,
-        stats: { winRate: 0.463, pickRate: 0.016, banRate: 0.011, gamesPlayed: 62000, avgKda: 1.6 },
+        stats: { winRate: 0.512, pickRate: 0.1, banRate: 0.104, gamesPlayed: 158353, avgKda: 3.05 },
     },
     {
         id: 235,
@@ -1394,7 +1394,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Senna.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_0.jpg`,
-        stats: { winRate: 0.506, pickRate: 0.091, banRate: 0.092, gamesPlayed: 224000, avgKda: 2.7 },
+        stats: { winRate: 0.532, pickRate: 0.076, banRate: 0.01, gamesPlayed: 408350, avgKda: 1.66 },
     },
     {
         id: 147,
@@ -1406,7 +1406,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Seraphine.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_0.jpg`,
-        stats: { winRate: 0.494, pickRate: 0.069, banRate: 0.068, gamesPlayed: 176000, avgKda: 2.3 },
+        stats: { winRate: 0.487, pickRate: 0.019, banRate: 0.094, gamesPlayed: 360982, avgKda: 3.89 },
     },
     {
         id: 875,
@@ -1418,7 +1418,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Sett.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_0.jpg`,
-        stats: { winRate: 0.49, pickRate: 0.063, banRate: 0.062, gamesPlayed: 164000, avgKda: 2.3 },
+        stats: { winRate: 0.521, pickRate: 0.117, banRate: 0.181, gamesPlayed: 218951, avgKda: 3.74 },
     },
     {
         id: 35,
@@ -1430,7 +1430,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Shaco.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg`,
-        stats: { winRate: 0.506, pickRate: 0.091, banRate: 0.092, gamesPlayed: 224000, avgKda: 2.7 },
+        stats: { winRate: 0.517, pickRate: 0.04, banRate: 0.245, gamesPlayed: 408482, avgKda: 1.56 },
     },
     {
         id: 98,
@@ -1442,7 +1442,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Shen.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_0.jpg`,
-        stats: { winRate: 0.539, pickRate: 0.149, banRate: 0.153, gamesPlayed: 347000, avgKda: 3.5 },
+        stats: { winRate: 0.494, pickRate: 0.023, banRate: 0.02, gamesPlayed: 439289, avgKda: 2.05 },
     },
     {
         id: 102,
@@ -1454,7 +1454,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Shyvana.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_0.jpg`,
-        stats: { winRate: 0.482, pickRate: 0.048, banRate: 0.045, gamesPlayed: 131000, avgKda: 2 },
+        stats: { winRate: 0.487, pickRate: 0.093, banRate: 0.023, gamesPlayed: 220753, avgKda: 2.38 },
     },
     {
         id: 27,
@@ -1466,7 +1466,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Singed.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_0.jpg`,
-        stats: { winRate: 0.462, pickRate: 0.013, banRate: 0.008, gamesPlayed: 56000, avgKda: 1.5 },
+        stats: { winRate: 0.474, pickRate: 0.013, banRate: 0.018, gamesPlayed: 232148, avgKda: 2.31 },
     },
     {
         id: 14,
@@ -1478,7 +1478,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Sion.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_0.jpg`,
-        stats: { winRate: 0.469, pickRate: 0.025, banRate: 0.022, gamesPlayed: 83000, avgKda: 1.7 },
+        stats: { winRate: 0.478, pickRate: 0.137, banRate: 0.135, gamesPlayed: 470526, avgKda: 2 },
     },
     {
         id: 15,
@@ -1490,7 +1490,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Sivir.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_0.jpg`,
-        stats: { winRate: 0.474, pickRate: 0.035, banRate: 0.032, gamesPlayed: 104000, avgKda: 1.9 },
+        stats: { winRate: 0.475, pickRate: 0.028, banRate: 0.043, gamesPlayed: 269807, avgKda: 3.6 },
     },
     {
         id: 72,
@@ -1502,7 +1502,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Skarner.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Skarner_0.jpg`,
-        stats: { winRate: 0.474, pickRate: 0.034, banRate: 0.031, gamesPlayed: 101000, avgKda: 1.8 },
+        stats: { winRate: 0.492, pickRate: 0.019, banRate: 0.209, gamesPlayed: 402525, avgKda: 2.81 },
     },
     {
         id: 901,
@@ -1514,7 +1514,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Smolder.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Smolder_0.jpg`,
-        stats: { winRate: 0.476, pickRate: 0.038, banRate: 0.035, gamesPlayed: 110000, avgKda: 1.9 },
+        stats: { winRate: 0.483, pickRate: 0.096, banRate: 0.134, gamesPlayed: 121881, avgKda: 2.88 },
     },
     {
         id: 37,
@@ -1526,7 +1526,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Sona.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg`,
-        stats: { winRate: 0.518, pickRate: 0.111, banRate: 0.113, gamesPlayed: 266000, avgKda: 2.9 },
+        stats: { winRate: 0.493, pickRate: 0.146, banRate: 0.228, gamesPlayed: 177623, avgKda: 1.7 },
     },
     {
         id: 16,
@@ -1538,7 +1538,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Soraka.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_0.jpg`,
-        stats: { winRate: 0.48, pickRate: 0.045, banRate: 0.042, gamesPlayed: 125000, avgKda: 2 },
+        stats: { winRate: 0.504, pickRate: 0.035, banRate: 0.174, gamesPlayed: 169856, avgKda: 3.96 },
     },
     {
         id: 50,
@@ -1550,7 +1550,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Swain.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Swain_0.jpg`,
-        stats: { winRate: 0.51, pickRate: 0.098, banRate: 0.1, gamesPlayed: 239000, avgKda: 2.8 },
+        stats: { winRate: 0.496, pickRate: 0.096, banRate: 0.248, gamesPlayed: 494206, avgKda: 1.87 },
     },
     {
         id: 517,
@@ -1562,7 +1562,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Sylas.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_0.jpg`,
-        stats: { winRate: 0.486, pickRate: 0.055, banRate: 0.053, gamesPlayed: 146000, avgKda: 2.1 },
+        stats: { winRate: 0.487, pickRate: 0.112, banRate: 0.175, gamesPlayed: 492495, avgKda: 3.77 },
     },
     {
         id: 134,
@@ -1574,7 +1574,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Syndra.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_0.jpg`,
-        stats: { winRate: 0.501, pickRate: 0.081, banRate: 0.082, gamesPlayed: 203000, avgKda: 2.5 },
+        stats: { winRate: 0.468, pickRate: 0.125, banRate: 0.061, gamesPlayed: 483184, avgKda: 2.96 },
     },
     {
         id: 223,
@@ -1586,7 +1586,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/TahmKench.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_0.jpg`,
-        stats: { winRate: 0.519, pickRate: 0.114, banRate: 0.116, gamesPlayed: 272000, avgKda: 3 },
+        stats: { winRate: 0.53, pickRate: 0.049, banRate: 0.025, gamesPlayed: 150059, avgKda: 3.75 },
     },
     {
         id: 163,
@@ -1598,7 +1598,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Taliyah.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_0.jpg`,
-        stats: { winRate: 0.503, pickRate: 0.086, banRate: 0.086, gamesPlayed: 212000, avgKda: 2.6 },
+        stats: { winRate: 0.523, pickRate: 0.081, banRate: 0.185, gamesPlayed: 70426, avgKda: 2.47 },
     },
     {
         id: 91,
@@ -1610,7 +1610,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Talon.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Talon_0.jpg`,
-        stats: { winRate: 0.5, pickRate: 0.08, banRate: 0.08, gamesPlayed: 200000, avgKda: 2.5 },
+        stats: { winRate: 0.502, pickRate: 0.16, banRate: 0.172, gamesPlayed: 461027, avgKda: 2.79 },
     },
     {
         id: 44,
@@ -1622,7 +1622,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Taric.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_0.jpg`,
-        stats: { winRate: 0.477, pickRate: 0.039, banRate: 0.036, gamesPlayed: 113000, avgKda: 1.9 },
+        stats: { winRate: 0.47, pickRate: 0.069, banRate: 0.05, gamesPlayed: 378314, avgKda: 3.7 },
     },
     {
         id: 17,
@@ -1634,7 +1634,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Teemo.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg`,
-        stats: { winRate: 0.486, pickRate: 0.055, banRate: 0.053, gamesPlayed: 146000, avgKda: 2.1 },
+        stats: { winRate: 0.466, pickRate: 0.053, banRate: 0.091, gamesPlayed: 160123, avgKda: 3.69 },
     },
     {
         id: 412,
@@ -1646,7 +1646,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Thresh.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg`,
-        stats: { winRate: 0.538, pickRate: 0.146, banRate: 0.15, gamesPlayed: 341000, avgKda: 3.4 },
+        stats: { winRate: 0.493, pickRate: 0.046, banRate: 0.117, gamesPlayed: 198270, avgKda: 2.9 },
     },
     {
         id: 18,
@@ -1658,7 +1658,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Tristana.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_0.jpg`,
-        stats: { winRate: 0.491, pickRate: 0.065, banRate: 0.064, gamesPlayed: 167000, avgKda: 2.3 },
+        stats: { winRate: 0.517, pickRate: 0.029, banRate: 0.009, gamesPlayed: 221307, avgKda: 3.83 },
     },
     {
         id: 48,
@@ -1670,7 +1670,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Trundle.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Trundle_0.jpg`,
-        stats: { winRate: 0.499, pickRate: 0.079, banRate: 0.079, gamesPlayed: 197000, avgKda: 2.5 },
+        stats: { winRate: 0.512, pickRate: 0.05, banRate: 0.02, gamesPlayed: 378859, avgKda: 1.94 },
     },
     {
         id: 23,
@@ -1682,7 +1682,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Tryndamere.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tryndamere_0.jpg`,
-        stats: { winRate: 0.519, pickRate: 0.114, banRate: 0.116, gamesPlayed: 272000, avgKda: 3 },
+        stats: { winRate: 0.521, pickRate: 0.03, banRate: 0.214, gamesPlayed: 182196, avgKda: 3.11 },
     },
     {
         id: 4,
@@ -1694,7 +1694,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/TwistedFate.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TwistedFate_0.jpg`,
-        stats: { winRate: 0.493, pickRate: 0.067, banRate: 0.066, gamesPlayed: 173000, avgKda: 2.3 },
+        stats: { winRate: 0.534, pickRate: 0.036, banRate: 0.189, gamesPlayed: 299759, avgKda: 2.72 },
     },
     {
         id: 29,
@@ -1706,7 +1706,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Twitch.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Twitch_0.jpg`,
-        stats: { winRate: 0.473, pickRate: 0.032, banRate: 0.029, gamesPlayed: 98000, avgKda: 1.8 },
+        stats: { winRate: 0.527, pickRate: 0.065, banRate: 0.2, gamesPlayed: 257237, avgKda: 1.63 },
     },
     {
         id: 77,
@@ -1718,7 +1718,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Udyr.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Udyr_0.jpg`,
-        stats: { winRate: 0.502, pickRate: 0.083, banRate: 0.083, gamesPlayed: 206000, avgKda: 2.5 },
+        stats: { winRate: 0.529, pickRate: 0.116, banRate: 0.224, gamesPlayed: 70620, avgKda: 3.13 },
     },
     {
         id: 6,
@@ -1730,7 +1730,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Urgot.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Urgot_0.jpg`,
-        stats: { winRate: 0.504, pickRate: 0.087, banRate: 0.088, gamesPlayed: 215000, avgKda: 2.6 },
+        stats: { winRate: 0.494, pickRate: 0.12, banRate: 0.189, gamesPlayed: 432925, avgKda: 1.8 },
     },
     {
         id: 110,
@@ -1742,7 +1742,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Varus.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_0.jpg`,
-        stats: { winRate: 0.526, pickRate: 0.126, banRate: 0.129, gamesPlayed: 299000, avgKda: 3.2 },
+        stats: { winRate: 0.476, pickRate: 0.142, banRate: 0.12, gamesPlayed: 63350, avgKda: 2.02 },
     },
     {
         id: 67,
@@ -1754,7 +1754,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Vayne.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_0.jpg`,
-        stats: { winRate: 0.526, pickRate: 0.125, banRate: 0.128, gamesPlayed: 296000, avgKda: 3.1 },
+        stats: { winRate: 0.471, pickRate: 0.017, banRate: 0.044, gamesPlayed: 393623, avgKda: 3.94 },
     },
     {
         id: 45,
@@ -1766,7 +1766,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Veigar.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Veigar_0.jpg`,
-        stats: { winRate: 0.482, pickRate: 0.049, banRate: 0.047, gamesPlayed: 134000, avgKda: 2.1 },
+        stats: { winRate: 0.476, pickRate: 0.15, banRate: 0.086, gamesPlayed: 146338, avgKda: 1.69 },
     },
     {
         id: 161,
@@ -1778,7 +1778,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Velkoz.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Velkoz_0.jpg`,
-        stats: { winRate: 0.492, pickRate: 0.066, banRate: 0.065, gamesPlayed: 170000, avgKda: 2.3 },
+        stats: { winRate: 0.512, pickRate: 0.063, banRate: 0.005, gamesPlayed: 160873, avgKda: 2.04 },
     },
     {
         id: 711,
@@ -1790,7 +1790,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Vex.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vex_0.jpg`,
-        stats: { winRate: 0.532, pickRate: 0.136, banRate: 0.14, gamesPlayed: 320000, avgKda: 3.3 },
+        stats: { winRate: 0.487, pickRate: 0.087, banRate: 0.079, gamesPlayed: 332434, avgKda: 1.63 },
     },
     {
         id: 254,
@@ -1802,7 +1802,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Vi.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_0.jpg`,
-        stats: { winRate: 0.533, pickRate: 0.137, banRate: 0.142, gamesPlayed: 323000, avgKda: 3.3 },
+        stats: { winRate: 0.521, pickRate: 0.111, banRate: 0.151, gamesPlayed: 478287, avgKda: 2.9 },
     },
     {
         id: 234,
@@ -1814,7 +1814,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Viego.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_0.jpg`,
-        stats: { winRate: 0.501, pickRate: 0.081, banRate: 0.082, gamesPlayed: 203000, avgKda: 2.5 },
+        stats: { winRate: 0.504, pickRate: 0.083, banRate: 0.024, gamesPlayed: 335844, avgKda: 3.85 },
     },
     {
         id: 112,
@@ -1826,7 +1826,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Viktor.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viktor_0.jpg`,
-        stats: { winRate: 0.538, pickRate: 0.146, banRate: 0.15, gamesPlayed: 341000, avgKda: 3.4 },
+        stats: { winRate: 0.501, pickRate: 0.117, banRate: 0.061, gamesPlayed: 109275, avgKda: 1.76 },
     },
     {
         id: 8,
@@ -1838,7 +1838,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Vladimir.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_0.jpg`,
-        stats: { winRate: 0.515, pickRate: 0.107, banRate: 0.108, gamesPlayed: 257000, avgKda: 2.9 },
+        stats: { winRate: 0.477, pickRate: 0.093, banRate: 0.218, gamesPlayed: 124479, avgKda: 1.55 },
     },
     {
         id: 106,
@@ -1850,7 +1850,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Volibear.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_0.jpg`,
-        stats: { winRate: 0.504, pickRate: 0.087, banRate: 0.088, gamesPlayed: 215000, avgKda: 2.6 },
+        stats: { winRate: 0.481, pickRate: 0.152, banRate: 0.083, gamesPlayed: 87783, avgKda: 3.6 },
     },
     {
         id: 19,
@@ -1862,7 +1862,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Warwick.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_0.jpg`,
-        stats: { winRate: 0.497, pickRate: 0.074, banRate: 0.074, gamesPlayed: 188000, avgKda: 2.4 },
+        stats: { winRate: 0.505, pickRate: 0.029, banRate: 0.077, gamesPlayed: 169823, avgKda: 3.93 },
     },
     {
         id: 62,
@@ -1874,7 +1874,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/MonkeyKing.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg`,
-        stats: { winRate: 0.498, pickRate: 0.076, banRate: 0.075, gamesPlayed: 191000, avgKda: 2.4 },
+        stats: { winRate: 0.475, pickRate: 0.048, banRate: 0.076, gamesPlayed: 188206, avgKda: 1.58 },
     },
     {
         id: 498,
@@ -1886,7 +1886,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Xayah.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_0.jpg`,
-        stats: { winRate: 0.539, pickRate: 0.149, banRate: 0.153, gamesPlayed: 347000, avgKda: 3.5 },
+        stats: { winRate: 0.499, pickRate: 0.158, banRate: 0.21, gamesPlayed: 285639, avgKda: 3.73 },
     },
     {
         id: 101,
@@ -1898,7 +1898,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Xerath.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_0.jpg`,
-        stats: { winRate: 0.476, pickRate: 0.038, banRate: 0.035, gamesPlayed: 110000, avgKda: 1.9 },
+        stats: { winRate: 0.533, pickRate: 0.023, banRate: 0.209, gamesPlayed: 262628, avgKda: 3.87 },
     },
     {
         id: 5,
@@ -1910,7 +1910,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/XinZhao.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/XinZhao_0.jpg`,
-        stats: { winRate: 0.498, pickRate: 0.077, banRate: 0.077, gamesPlayed: 194000, avgKda: 2.5 },
+        stats: { winRate: 0.507, pickRate: 0.025, banRate: 0.042, gamesPlayed: 269108, avgKda: 2.5 },
     },
     {
         id: 157,
@@ -1922,7 +1922,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Yasuo.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg`,
-        stats: { winRate: 0.47, pickRate: 0.027, banRate: 0.023, gamesPlayed: 86000, avgKda: 1.7 },
+        stats: { winRate: 0.524, pickRate: 0.014, banRate: 0.189, gamesPlayed: 237633, avgKda: 1.77 },
     },
     {
         id: 777,
@@ -1934,7 +1934,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Yone.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yone_0.jpg`,
-        stats: { winRate: 0.502, pickRate: 0.083, banRate: 0.083, gamesPlayed: 206000, avgKda: 2.5 },
+        stats: { winRate: 0.475, pickRate: 0.109, banRate: 0.056, gamesPlayed: 419671, avgKda: 3.99 },
     },
     {
         id: 83,
@@ -1946,7 +1946,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Yorick.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yorick_0.jpg`,
-        stats: { winRate: 0.535, pickRate: 0.142, banRate: 0.146, gamesPlayed: 332000, avgKda: 3.4 },
+        stats: { winRate: 0.534, pickRate: 0.148, banRate: 0.187, gamesPlayed: 482983, avgKda: 2.58 },
     },
     {
         id: 804,
@@ -1958,7 +1958,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Yunara.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yunara_0.jpg`,
-        stats: { winRate: 0.493, pickRate: 0.067, banRate: 0.066, gamesPlayed: 173000, avgKda: 2.3 },
+        stats: { winRate: 0.513, pickRate: 0.101, banRate: 0.248, gamesPlayed: 56521, avgKda: 2.11 },
     },
     {
         id: 350,
@@ -1970,7 +1970,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Yuumi.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_0.jpg`,
-        stats: { winRate: 0.51, pickRate: 0.098, banRate: 0.1, gamesPlayed: 239000, avgKda: 2.8 },
+        stats: { winRate: 0.484, pickRate: 0.058, banRate: 0.115, gamesPlayed: 92083, avgKda: 3.28 },
     },
     {
         id: 904,
@@ -1982,7 +1982,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Zaahen.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zaahen_0.jpg`,
-        stats: { winRate: 0.493, pickRate: 0.067, banRate: 0.066, gamesPlayed: 173000, avgKda: 2.3 },
+        stats: { winRate: 0.472, pickRate: 0.152, banRate: 0.106, gamesPlayed: 380825, avgKda: 2.04 },
     },
     {
         id: 154,
@@ -1994,7 +1994,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Zac.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zac_0.jpg`,
-        stats: { winRate: 0.533, pickRate: 0.137, banRate: 0.142, gamesPlayed: 323000, avgKda: 3.3 },
+        stats: { winRate: 0.514, pickRate: 0.017, banRate: 0.213, gamesPlayed: 382524, avgKda: 1.64 },
     },
     {
         id: 238,
@@ -2006,7 +2006,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Melee',
         imageUrl: `${BASE_IMG}/champion/Zed.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_0.jpg`,
-        stats: { winRate: 0.523, pickRate: 0.121, banRate: 0.123, gamesPlayed: 287000, avgKda: 3.1 },
+        stats: { winRate: 0.513, pickRate: 0.029, banRate: 0.097, gamesPlayed: 287566, avgKda: 3.77 },
     },
     {
         id: 221,
@@ -2018,7 +2018,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Zeri.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_0.jpg`,
-        stats: { winRate: 0.508, pickRate: 0.094, banRate: 0.095, gamesPlayed: 230000, avgKda: 2.7 },
+        stats: { winRate: 0.478, pickRate: 0.068, banRate: 0.054, gamesPlayed: 359189, avgKda: 2.45 },
     },
     {
         id: 115,
@@ -2030,7 +2030,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Ziggs.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_0.jpg`,
-        stats: { winRate: 0.474, pickRate: 0.035, banRate: 0.032, gamesPlayed: 104000, avgKda: 1.9 },
+        stats: { winRate: 0.51, pickRate: 0.046, banRate: 0.088, gamesPlayed: 142685, avgKda: 2.96 },
     },
     {
         id: 26,
@@ -2042,7 +2042,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Zilean.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zilean_0.jpg`,
-        stats: { winRate: 0.536, pickRate: 0.143, banRate: 0.147, gamesPlayed: 335000, avgKda: 3.4 },
+        stats: { winRate: 0.507, pickRate: 0.08, banRate: 0.201, gamesPlayed: 353782, avgKda: 2.87 },
     },
     {
         id: 142,
@@ -2054,7 +2054,7 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Zoe.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_0.jpg`,
-        stats: { winRate: 0.466, pickRate: 0.02, banRate: 0.015, gamesPlayed: 71000, avgKda: 1.6 },
+        stats: { winRate: 0.532, pickRate: 0.022, banRate: 0.034, gamesPlayed: 388507, avgKda: 2.4 },
     },
     {
         id: 143,
@@ -2066,6 +2066,6 @@ export const mockChampions: Champion[] = [
         attackType: 'Ranged',
         imageUrl: `${BASE_IMG}/champion/Zyra.png`,
         splashUrl: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_0.jpg`,
-        stats: { winRate: 0.471, pickRate: 0.03, banRate: 0.026, gamesPlayed: 92000, avgKda: 1.8 },
+        stats: { winRate: 0.527, pickRate: 0.016, banRate: 0.223, gamesPlayed: 383906, avgKda: 2.47 },
     },
 ];
