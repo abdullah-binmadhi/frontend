@@ -58,10 +58,17 @@ export const api = {
             return []; // Not implemented in DB yet
         },
         getTierList: async (params?: Record<string, string>) => {
-            if (USE_MOCK) return mockTierList;
-            // Basic tier list implementation for DB
-            // Need to join with champions tables if needed, or structured differently
-            return mockTierList; // Fallback for now to avoid breaking
+            // Return ALL items as TierListEntry[] so the component has full metadata
+            // for joining with live Supabase stats. Stats are placeholders — real stats
+            // come from the item_tier_stats table at query time.
+            return mockItems.map((item, i) => ({
+                item,
+                tier: ('S' as const),
+                wpa: 0,
+                winRate: 0,
+                pickRate: 0,
+                gamesPlayed: 0,
+            }));
         },
     },
     builds: {

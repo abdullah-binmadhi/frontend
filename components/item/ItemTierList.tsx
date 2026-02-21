@@ -46,7 +46,7 @@ export function ItemTierList({ entries }: ItemTierListProps) {
                     .eq('slot', slot)
                     .eq('role', role)
                     .order('wpa', { ascending: false })
-                    .limit(40);
+                    .limit(200);
 
                 if (error) throw error;
 
