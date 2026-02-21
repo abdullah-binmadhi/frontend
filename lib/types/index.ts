@@ -71,6 +71,7 @@ export interface Build {
     description: string;
     position: string;
     coreItems: number[];
+    fullBuildItems: number[];
     situationalItems: number[];
     startingItems: number[];
     isPublic: boolean;

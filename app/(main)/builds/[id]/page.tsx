@@ -28,6 +28,7 @@ export default function BuildDetailPage() {
 
     const champion = mockChampions.find((c) => c.id === build.championId);
     const coreItemData: Item[] = build.coreItems.map((id: number) => mockItems.find((i) => i.id === id)).filter((i: any): i is Item => !!i);
+    const fullBuildItemData: Item[] = (build.fullBuildItems || []).map((id: number) => mockItems.find((i) => i.id === id)).filter((i: any): i is Item => !!i);
     const situationalItemData: Item[] = build.situationalItems.map((id: number) => mockItems.find((i) => i.id === id)).filter((i: any): i is Item => !!i);
 
     return (
@@ -97,7 +98,7 @@ export default function BuildDetailPage() {
                                 <div className="flex flex-wrap gap-2.5">
                                     {coreItemData.map((item) =>
                                         item ? (
-                                            <div key={item.id} className="flex flex-col items-center gap-1 group relative">
+                                            <div key={`core-${item.id}`} className="flex flex-col items-center gap-1 group relative">
                                                 <div className="relative h-12 w-12 overflow-hidden rounded-sm border border-gold/40 shadow-sm transition-colors group-hover:border-gold">
                                                     <Image src={item.imageUrl} alt={item.name} fill sizes="48px" className="object-cover" />
                                                 </div>
@@ -108,6 +109,26 @@ export default function BuildDetailPage() {
                                     )}
                                 </div>
                             </div>
+
+                            {/* Full Build Items */}
+                            {fullBuildItemData.length > 0 && (
+                                <div>
+                                    <h4 className="text-xs font-semibold text-muted-foreground mb-2">Full Build</h4>
+                                    <div className="flex flex-wrap gap-2.5">
+                                        {fullBuildItemData.map((item) =>
+                                            item ? (
+                                                <div key={`full-${item.id}`} className="flex flex-col items-center gap-1 group relative">
+                                                    <div className="relative h-12 w-12 overflow-hidden rounded-sm border border-border shadow-sm transition-colors group-hover:border-primary/50">
+                                                        <Image src={item.imageUrl} alt={item.name} fill sizes="48px" className="object-cover" />
+                                                    </div>
+                                                    <span className="text-[10px] text-center leading-tight max-w-[48px] truncate">{item.name}</span>
+                                                    <span className="text-[10px] text-muted-foreground">{item.totalCost}g</span>
+                                                </div>
+                                            ) : null
+                                        )}
+                                    </div>
+                                </div>
+                            )}
 
                             {/* Situational Items */}
                             <div>
