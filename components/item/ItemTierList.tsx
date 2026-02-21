@@ -1,10 +1,16 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { TierListEntry } from '@/lib/types';
 import { WPABar } from '@/components/charts/WPABar';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
+import { createClient } from '@supabase/supabase-js';
+
+// Initialize Supabase client
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 interface ItemTierListProps {
     entries: TierListEntry[];
@@ -23,12 +29,50 @@ export function ItemTierList({ entries }: ItemTierListProps) {
     const [slot, setSlot] = useState<SlotFilter>('All');
     const [role, setRole] = useState<RoleFilter>('All');
 
-    // Currently mocked dynamic filtering processing
-    const filteredEntries = useMemo(() => {
-        // Here we would filter the `entries` array by the active state variables
-        // if the upstream data supports it. For now, we simulate sorting by WPA descended.
-        return [...entries].sort((a, b) => b.wpa - a.wpa);
-    }, [entries, category, slot, role]);
+    // State to hold dynamically fetched database stats
+    const [dbStats, setDbStats] = useState<any[]>([]);
+    const [isLoading, setIsLoading] = useState(false);
+
+    // Fetch accurate live data from Supabase pg_cron table when filters change
+    useEffect(() => {
+        const fetchStats = async () => {
+            setIsLoading(true);
+            try {
+                const { data, error } = await supabase
+                    .from('item_tier_stats')
+                    .select('*')
+                    .eq('patch', '26.4')
+                    .eq('category', category)
+                    .eq('slot', slot)
+                    .eq('role', role)
+                    .order('wpa', { ascending: false })
+                    .limit(40);
+
+                if (error) throw error;
+
+                // Merge real db stats with the static item metadata (like images)
+                const mergedData = data.map((row: any) => {
+                    const match = entries.find(e => e.item.id === row.item_id);
+                    if (!match) return null;
+                    return {
+                        item: match.item,
+                        wpa: row.wpa,
+                        winRate: row.win_rate,
+                        pickRate: row.pick_rate,
+                        gamesPlayed: row.games_played
+                    };
+                }).filter(Boolean);
+
+                setDbStats(mergedData);
+            } catch (err) {
+                console.error("Error fetching stats:", err);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
+        fetchStats();
+    }, [category, slot, role, entries]);
 
     return (
         <div className="space-y-6">
@@ -99,8 +143,22 @@ export function ItemTierList({ entries }: ItemTierListProps) {
                             <th className="px-4 pb-2 pt-1 font-normal text-right w-[120px]">Win Rate</th>
                         </tr>
                     </thead>
-                    <tbody className="divide-y divide-border/20">
-                        {filteredEntries.map((entry) => {
+                    <tbody className="divide-y divide-border/20 relative min-h-[500px]">
+                        {isLoading && (
+                            <tr>
+                                <td colSpan={7} className="text-center py-10 text-muted-foreground animate-pulse">
+                                    Loading dynamic statistics...
+                                </td>
+                            </tr>
+                        )}
+                        {!isLoading && dbStats.length === 0 && (
+                            <tr>
+                                <td colSpan={7} className="text-center py-10 text-muted-foreground">
+                                    No reliable data for this specific filter combination yet.
+                                </td>
+                            </tr>
+                        )}
+                        {!isLoading && dbStats.map((entry) => {
                             // Derive the Pre-buy Win Probability
                             const preBuyWP = entry.winRate - entry.wpa;
 
