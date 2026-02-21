@@ -161,7 +161,7 @@ export const useQuizStore = create<QuizState>((set, get) => ({
 
             // Aggregate scores with post-aggregation hard filter
             const aggregated = ScoreAggregator.aggregateScores(rfScores, dtScores, knnScores, champDB, features);
-            const top10 = ScoreAggregator.selectTop10(aggregated, champDB);
+            const top10 = ScoreAggregator.selectTop10(aggregated, champDB, features);
 
             // Calculate quality metrics
             const relevantSet = EvaluationMetrics.calculateUserRelevance(features, champDB, { top10 });

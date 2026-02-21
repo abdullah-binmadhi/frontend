@@ -41,13 +41,22 @@ export class ScoreAggregator {
             // Post-aggregation hard filter: cap score if critical mismatches exist
             if (userFeatures) {
                 const champ = allChampions[championName] as ChampionData & {
-                    damageType?: string; attackRange?: string; gender?: string;
+                    damageType?: string; attackRange?: string; gender?: string; tags?: string[];
                 };
+                
+                // --- STRICT HARD FILTER: ROLE/CLASS ---
+                // If the user requested a specific class, the champion MUST have it (either as primary role or in tags)
+                if (userFeatures.role && userFeatures.role !== 'No Preference') {
+                    const primaryRoleMatches = champ.role === userFeatures.role;
+                    const tagMatches = champ.tags?.includes(userFeatures.role) || false;
+                    
+                    if (!primaryRoleMatches && !tagMatches) {
+                        continue; // Completely exclude this champion from recommendations
+                    }
+                }
+
                 let criticalMismatches = 0;
 
-                if (userFeatures.role && userFeatures.role !== 'No Preference' && champ.role !== userFeatures.role) {
-                    criticalMismatches++;
-                }
                 if (userFeatures.damage_type && userFeatures.damage_type !== 'No Preference' &&
                     champ.damageType && userFeatures.damage_type !== champ.damageType) {
                     criticalMismatches++;
@@ -90,12 +99,17 @@ export class ScoreAggregator {
     static selectTop10(
         aggregatedScores: Record<string, AggregatedScore>,
         allChampions: ChampionDatabase,
+        userFeatures?: UserFeatures,
         diversityFilter = true,
     ): AggregatedScore[] {
         let champions = Object.values(aggregatedScores);
         champions.sort((a, b) => b.average - a.average);
 
-        if (diversityFilter) {
+        // If the user actively picked a specific role, we DO NOT want diversity (which forces 
+        // a maximum of 3 champions per role). We explicitly want ALL top champions to be that role.
+        const shouldApplyDiversity = diversityFilter && (!userFeatures?.role || userFeatures.role === 'No Preference');
+        
+        if (shouldApplyDiversity) {
             champions = this.applyDiversityFilter(champions, allChampions);
         }
 
