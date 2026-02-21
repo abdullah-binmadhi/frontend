@@ -5,22 +5,37 @@ const RUNES = {
     Precision: {
         primary: 'Precision',
         keystones: ['Conqueror', 'Lethal Tempo', 'Press the Attack', 'Fleet Footwork'],
+        tier1: ['Triumph', 'Presence of Mind', 'Absorb Life'],
+        tier2: ['Legend: Alacrity', 'Legend: Haste', 'Legend: Bloodline'],
+        tier3: ['Coup de Grace', 'Cut Down', 'Last Stand'],
     },
     Domination: {
         primary: 'Domination',
         keystones: ['Electrocute', 'Dark Harvest', 'Hail of Blades'],
+        tier1: ['Cheap Shot', 'Taste of Blood', 'Sudden Impact'],
+        tier2: ['Zombie Ward', 'Ghost Poro', 'Eyeball Collection'],
+        tier3: ['Treasure Hunter', 'Relentless Hunter', 'Ultimate Hunter'],
     },
     Sorcery: {
         primary: 'Sorcery',
         keystones: ['Arcane Comet', 'Summon Aery', 'Phase Rush'],
+        tier1: ['Null-Mystifying Orb', 'Manaflow Band', 'Nimbus Cloak'],
+        tier2: ['Transcendence', 'Celerity', 'Absolute Focus'],
+        tier3: ['Scorch', 'Waterwalking', 'Gathering Storm'],
     },
     Resolve: {
         primary: 'Resolve',
         keystones: ['Grasp of the Undying', 'Aftershock', 'Guardian'],
+        tier1: ['Demolish', 'Font of Life', 'Shield Bash'],
+        tier2: ['Conditioning', 'Second Wind', 'Bone Plating'],
+        tier3: ['Overgrowth', 'Revitalize', 'Unflinching'],
     },
     Inspiration: {
         primary: 'Inspiration',
         keystones: ['Glacial Augment', 'First Strike'],
+        tier1: ['Hextech Flashtraption', 'Magical Footwear', 'Cash Back'],
+        tier2: ['Triple Tonic', 'Time Warp Tonic', 'Biscuit Delivery'],
+        tier3: ['Cosmic Insight', 'Approach Velocity', 'Jack Of All Trades'],
     },
 };
 
@@ -104,7 +119,9 @@ function generateBuilds(): Build[] {
             const runeTreeKeys = Object.keys(RUNES);
             const primaryTreeKey = runeTreeKeys[index % runeTreeKeys.length];
             const primaryTree = RUNES[primaryTreeKey as keyof typeof RUNES];
-            const secondaryTreeKey = SECONDARY_PATHS[(index + 2) % SECONDARY_PATHS.length];
+
+            const secondaryTreeKey = SECONDARY_PATHS[(index + 2) % SECONDARY_PATHS.length] as keyof typeof RUNES;
+            const secondaryTree = RUNES[secondaryTreeKey];
 
             builds.push({
                 id: `${champ.key}-${index + 1}`,
@@ -122,9 +139,23 @@ function generateBuilds(): Build[] {
                 createdAt: new Date(Date.now() - Math.floor(Math.random() * 10000000000)).toISOString(),
                 author: `Player${Math.floor(Math.random() * 9000) + 1000}`,
                 runes: {
-                    primary: primaryTree.primary,
-                    keystone: primaryTree.keystones[index % primaryTree.keystones.length],
-                    secondary: secondaryTreeKey,
+                    primary: {
+                        path: primaryTree.primary,
+                        keystone: primaryTree.keystones[index % primaryTree.keystones.length],
+                        perks: [
+                            primaryTree.tier1[index % 3],
+                            primaryTree.tier2[(index + 1) % 3],
+                            primaryTree.tier3[(index + 2) % 3],
+                        ]
+                    },
+                    secondary: {
+                        path: secondaryTree.primary,
+                        perks: [
+                            secondaryTree.tier1[(index * 2) % 3],
+                            secondaryTree.tier2[(index * 2 + 1) % 3],
+                        ]
+                    },
+                    statMods: ['Adaptive Force', 'Adaptive Force', 'Armor']
                 },
                 skillOrder: generateSkillOrder(primaryTag),
                 tips: [

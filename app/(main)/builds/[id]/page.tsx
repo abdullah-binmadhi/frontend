@@ -1,6 +1,13 @@
 'use client';
 
 import { useParams } from 'next/navigation';
+const RUNE_PATHS: Record<string, string> = {
+    'Precision': 'https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7200_Precision.png',
+    'Domination': 'https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7200_Domination.png',
+    'Sorcery': 'https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png',
+    'Resolve': 'https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png',
+    'Inspiration': 'https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png',
+};
 import { useBuild } from '@/lib/hooks/useBuilds';
 import { Item } from '@/lib/types';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -188,27 +195,74 @@ export default function BuildDetailPage() {
                                 <HugeiconsIcon icon={FlashIcon} size={16} strokeWidth={1.5} className="text-muted-foreground" />
                                 <CardTitle className="text-sm">Runes</CardTitle>
                             </CardHeader>
-                            <CardContent className="space-y-4">
-                                <div>
-                                    <div className="flex items-center justify-between mb-2">
-                                        <span className="text-xs font-semibold text-primary">{build.runes.primary}</span>
+                            <CardContent className="space-y-6">
+                                {/* Primary Tree */}
+                                <div className="space-y-3">
+                                    <div className="flex items-center justify-between mb-1">
+                                        <div className="flex items-center gap-2">
+                                            <div className="relative h-6 w-6">
+                                                <Image src={RUNE_PATHS[build.runes.primary.path]} alt={build.runes.primary.path} fill className="object-cover" />
+                                            </div>
+                                            <span className="text-sm font-semibold text-primary">{build.runes.primary.path}</span>
+                                        </div>
                                         <Badge variant="secondary" className="text-[10px] h-4">Primary</Badge>
                                     </div>
-                                    <div className="flex items-center gap-3 p-2 rounded-sm bg-muted/30 border border-border/50">
-                                        <div className="h-10 w-10 flex items-center justify-center rounded-full bg-gold/10 border border-gold/30">
-                                            {/* Ideally use rune icons here, fallback to text */}
-                                            <span className="text-xs font-bold text-gold">{build.runes.keystone[0]}</span>
+                                    <div className="p-3 rounded-md bg-muted/20 border border-border/50">
+                                        <div className="flex items-center gap-3 mb-4">
+                                            <div className="h-10 w-10 flex items-center justify-center rounded-full bg-gold/10 border border-gold/30">
+                                                <span className="text-xs font-bold text-gold">{build.runes.primary.keystone[0]}</span>
+                                            </div>
+                                            <div className="flex-1">
+                                                <span className="text-sm font-medium">{build.runes.primary.keystone}</span>
+                                                <p className="text-[10px] text-muted-foreground">Keystone</p>
+                                            </div>
                                         </div>
-                                        <div className="flex-1">
-                                            <span className="text-sm font-medium">{build.runes.keystone}</span>
-                                            <p className="text-[10px] text-muted-foreground">Keystone</p>
+                                        <div className="grid grid-cols-3 gap-2">
+                                            {build.runes.primary.perks.map((perk: string, i: number) => (
+                                                <div key={i} className="flex flex-col items-center text-center gap-1.5 p-1">
+                                                    <div className="h-8 w-8 rounded-full bg-card border border-border flex items-center justify-center">
+                                                        <span className="text-[10px] text-muted-foreground font-medium">{perk[0]}</span>
+                                                    </div>
+                                                    <span className="text-[10px] leading-tight text-muted-foreground">{perk}</span>
+                                                </div>
+                                            ))}
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div className="flex items-center justify-between mb-2">
-                                        <span className="text-xs font-semibold text-muted-foreground">{build.runes.secondary}</span>
+
+                                {/* Secondary Tree */}
+                                <div className="space-y-3">
+                                    <div className="flex items-center justify-between mb-1">
+                                        <div className="flex items-center gap-2">
+                                            <div className="relative h-6 w-6 opacity-80">
+                                                <Image src={RUNE_PATHS[build.runes.secondary.path]} alt={build.runes.secondary.path} fill className="object-cover grayscale hover:grayscale-0 transition-all" />
+                                            </div>
+                                            <span className="text-sm font-semibold text-muted-foreground">{build.runes.secondary.path}</span>
+                                        </div>
                                         <Badge variant="outline" className="text-[10px] h-4">Secondary</Badge>
+                                    </div>
+                                    <div className="p-3 rounded-md bg-muted/10 border border-border/30">
+                                        <div className="flex justify-around gap-2 mb-4">
+                                            {build.runes.secondary.perks.map((perk: string, i: number) => (
+                                                <div key={i} className="flex flex-col items-center text-center gap-1.5 p-1 w-1/2">
+                                                    <div className="h-8 w-8 rounded-full bg-card border border-border/50 flex items-center justify-center">
+                                                        <span className="text-[10px] text-muted-foreground font-medium">{perk[0]}</span>
+                                                    </div>
+                                                    <span className="text-[10px] leading-tight text-muted-foreground">{perk}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+
+                                        {/* Stat Mods */}
+                                        <div className="pt-3 border-t border-border/30 flex justify-center gap-4">
+                                            {build.runes.statMods.map((mod: string, i: number) => (
+                                                <div key={i} className="flex items-center gap-1.5">
+                                                    <div className="h-4 w-4 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
+                                                        <span className="text-[8px] text-primary">{mod[0]}</span>
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
                             </CardContent>
