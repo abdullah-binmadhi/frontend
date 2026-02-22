@@ -22,8 +22,6 @@ for (const line of envContent.split('\n')) {
 }
 
 const supabase = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY);
-const DD_VERSION = '16.4.1';
-const PATCH = '16.4';
 
 // Tag → category mapping for items
 function classifyItem(item) {
@@ -119,7 +117,12 @@ function cleanDescription(html) {
 
 async function main() {
     console.log('🔗 Supabase:', env.NEXT_PUBLIC_SUPABASE_URL);
-    console.log(`📦 Data Dragon: v${DD_VERSION}\n`);
+
+    // ─── Step 0: Get latest version ───
+    const versions = await (await fetch('https://ddragon.leagueoflegends.com/api/versions.json')).json();
+    const DD_VERSION = versions[0];
+    const PATCH = DD_VERSION.split('.').slice(0, 2).join('.');
+    console.log(`📦 Data Dragon: v${DD_VERSION} (Patch ${PATCH})\n`);
 
     // ─── Step 1: Fetch ALL items from Data Dragon ───
     console.log('━━━ Step 1: Fetching items from Data Dragon ━━━');
@@ -132,12 +135,22 @@ async function main() {
     const srItems = allItems.filter(([id, item]) => {
         // Must be available on Summoner's Rift (map 11)
         if (item.maps && item.maps['11'] !== true) return false;
-        // Must be purchasable
+        
+        // Must be purchasable (exclude hidden items)
         if (item.gold && !item.gold.purchasable) return false;
-        // Skip items with requiredAlly/requiredChampion (champion-specific)
+        
+        // Skip items with requiredAlly/requiredChampion (champion-specific like GP/Fiddle/Viktor)
         if (item.requiredAlly || item.requiredChampion) return false;
-        // Skip Ornn items (special masterwork items)
-        if (item.description && item.description.includes('Ornn')) return false;
+        
+        // Skip Ornn items (special masterwork items usually have 'Ornn' in desc or name or description)
+        if ((item.description && item.description.includes('Ornn')) || (item.colloq && item.colloq.includes('Ornn'))) return false;
+
+        // Skip Arena/Augment specific items if they leak into SR map data (rare but happens)
+        if (item.name.includes('Prismatic') || item.name.includes('Augment')) return false;
+
+        // Skip items that are "removed" or "placeholder" (sometimes have empty desc or stats)
+        if (!item.stats && !item.description) return false;
+
         return true;
     });
 
@@ -192,8 +205,20 @@ async function main() {
     }
     console.log('\n  ✅ Items synced');
 
-    // ─── Step 5: Generate tier stats for ALL items ───
-    console.log('\n━━━ Step 5: Generating item tier stats ━━━');
+    // ─── Step 5: Clean up old items (Optional) ───
+    // If an item is NOT in the current SR list but exists in DB, it might be removed.
+    // We can delete them to keep the DB clean.
+    const currentIds = new Set(itemRows.map(i => i.id));
+    const toDelete = [...existingIds].filter(id => !currentIds.has(id));
+    if (toDelete.length > 0) {
+        console.log(`\n━━━ Step 5: Removing ${toDelete.length} outdated items from DB ━━━`);
+        const { error } = await supabase.from('items').delete().in('id', toDelete);
+        if (error) console.error('  ⚠ Error deleting:', error.message);
+        else console.log('  ✅ Outdated items removed');
+    }
+
+    // ─── Step 6: Generate tier stats for ALL items ───
+    console.log('\n━━━ Step 6: Generating item tier stats ━━━');
 
     // Clear old stats
     await supabase.from('item_tier_stats').delete().neq('item_id', 0);
@@ -257,7 +282,7 @@ async function main() {
     }
     console.log('\n  ✅ Item tier stats inserted');
 
-    // ─── Step 6: Summary ───
+    // ─── Step 7: Summary ───
     const { count: finalItems } = await supabase.from('items').select('id', { count: 'exact', head: true });
     const { count: finalStats } = await supabase.from('item_tier_stats').select('item_id', { count: 'exact', head: true });
     const { data: distinctItems } = await supabase.from('item_tier_stats').select('item_id').limit(1000);

@@ -192,7 +192,7 @@ export function ItemTierList({ entries }: ItemTierListProps) {
                                     </td>
                                     <td className="px-4 py-2">
                                         <div className="flex justify-center">
-                                            <WPABar wpa={entry.wpa} />
+                                            <WPABar wpa={entry.wpa * 100} />
                                         </div>
                                     </td>
                                     <td className="px-4 py-2 text-right">
