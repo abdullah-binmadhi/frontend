@@ -104,17 +104,17 @@ const RUNES = {
         tier1: [
             { name: 'Hextech Flashtraption', icon: 'perk-images/Styles/Inspiration/HextechFlashtraption/HextechFlashtraption.png' },
             { name: 'Magical Footwear', icon: 'perk-images/Styles/Inspiration/MagicalFootwear/MagicalFootwear.png' },
-            { name: 'Cash Back', icon: 'perk-images/Styles/Inspiration/CashBack/CashBack.png' }
+            { name: 'Cash Back', icon: 'perk-images/Styles/Inspiration/CashBack/CashBack2.png' }
         ],
         tier2: [
-            { name: 'Triple Tonic', icon: 'perk-images/Styles/Inspiration/TripleTonic/TripleTonic.png' },
+            { name: 'Triple Tonic', icon: 'perk-images/Styles/Inspiration/CelestialBody/CelestialBody.png' },
             { name: 'Time Warp Tonic', icon: 'perk-images/Styles/Inspiration/TimeWarpTonic/TimeWarpTonic.png' },
             { name: 'Biscuit Delivery', icon: 'perk-images/Styles/Inspiration/BiscuitDelivery/BiscuitDelivery.png' }
         ],
         tier3: [
             { name: 'Cosmic Insight', icon: 'perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png' },
-            { name: 'Approach Velocity', icon: 'perk-images/Styles/Inspiration/ApproachVelocity/ApproachVelocity.png' },
-            { name: 'Jack Of All Trades', icon: 'perk-images/Styles/Inspiration/JackOfAllTrades/JackOfAllTrades.png' }
+            { name: 'Approach Velocity', icon: 'perk-images/Styles/Resolve/ApproachVelocity/ApproachVelocity.png' },
+            { name: 'Jack Of All Trades', icon: 'perk-images/Styles/Inspiration/JackOfAllTrades/JackofAllTrades2.png' }
         ],
     },
 };

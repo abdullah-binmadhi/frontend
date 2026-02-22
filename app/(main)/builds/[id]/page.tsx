@@ -2,7 +2,7 @@
 
 import { useParams } from 'next/navigation';
 const RUNE_PATHS: Record<string, string> = {
-    'Precision': '/img/perk-images/Styles/7200_Precision.png',
+    'Precision': '/img/perk-images/Styles/7201_Precision.png',
     'Domination': '/img/perk-images/Styles/7200_Domination.png',
     'Sorcery': '/img/perk-images/Styles/7202_Sorcery.png',
     'Resolve': '/img/perk-images/Styles/7204_Resolve.png',
