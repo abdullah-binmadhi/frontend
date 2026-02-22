@@ -32,6 +32,7 @@ export function ItemTierList({ entries }: ItemTierListProps) {
     // State to hold dynamically fetched database stats
     const [dbStats, setDbStats] = useState<any[]>([]);
     const [isLoading, setIsLoading] = useState(false);
+    const [currentPatch, setCurrentPatch] = useState<string>('');
 
     // Fetch accurate live data from Supabase pg_cron table when filters change
     useEffect(() => {
@@ -56,6 +57,7 @@ export function ItemTierList({ entries }: ItemTierListProps) {
                 console.log(`Fetched ${data?.length} rows from DB.`);
 
                 if (data?.length > 0) {
+                    setCurrentPatch(data[0].patch);
                     const firstRow = data[0];
                     const entryMatch = entries.find(e => e.item.id === firstRow.item_id);
                     if (!entryMatch) {
@@ -93,6 +95,13 @@ export function ItemTierList({ entries }: ItemTierListProps) {
         <div className="space-y-6">
             {/* Multi-Tier Filtering Header */}
             <div className="flex flex-col gap-4">
+                
+                {/* Patch & Info Row */}
+                <div className="flex items-center justify-between">
+                    <div className="text-xs font-medium text-muted-foreground">
+                        Patch <span className="text-foreground font-semibold">{currentPatch || '...'}</span> • Summoner&apos;s Rift
+                    </div>
+                </div>
 
                 {/* Top Row: Categories + Slot Toggle */}
                 <div className="flex flex-wrap items-center justify-between gap-4">

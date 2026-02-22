@@ -133,6 +133,10 @@ async function main() {
 
     // Filter to SR purchasable items only
     const srItems = allItems.filter(([id, item]) => {
+        // Exclude high-ID items (Arena, Swarm, etc. usually use IDs > 50,000)
+        // Standard items are typically < 10,000. Ornn items are ~8000.
+        if (parseInt(id) > 50000) return false;
+
         // Must be available on Summoner's Rift (map 11)
         if (item.maps && item.maps['11'] !== true) return false;
         
@@ -212,9 +216,14 @@ async function main() {
     const toDelete = [...existingIds].filter(id => !currentIds.has(id));
     if (toDelete.length > 0) {
         console.log(`\n━━━ Step 5: Removing ${toDelete.length} outdated items from DB ━━━`);
-        const { error } = await supabase.from('items').delete().in('id', toDelete);
-        if (error) console.error('  ⚠ Error deleting:', error.message);
-        else console.log('  ✅ Outdated items removed');
+        
+        // Delete in batches to avoid URL length limits
+        for (let i = 0; i < toDelete.length; i += 100) {
+            const batch = toDelete.slice(i, i + 100);
+            const { error } = await supabase.from('items').delete().in('id', batch);
+            if (error) console.error('  ⚠ Error deleting:', error.message);
+        }
+        console.log('  ✅ Outdated items removed');
     }
 
     // ─── Step 6: Generate tier stats for ALL items ───
