@@ -1,6 +1,6 @@
 import { Item, TierListEntry, Role } from '@/lib/types';
 
-const DDRAGON_VERSION = '16.3.1';
+const DDRAGON_VERSION = '16.4.1';
 const BASE_IMG = `https://ddragon.leagueoflegends.com/cdn/${DDRAGON_VERSION}/img/item`;
 
 export const mockItems: Item[] = [

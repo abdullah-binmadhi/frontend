@@ -41,7 +41,6 @@ export function ItemTierList({ entries }: ItemTierListProps) {
                 const { data, error } = await supabase
                     .from('item_tier_stats')
                     .select('*')
-                    .eq('patch', '26.4')
                     .eq('category', category)
                     .eq('slot', slot)
                     .eq('role', role)
