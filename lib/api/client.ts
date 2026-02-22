@@ -4,7 +4,8 @@ import { mockItems, mockTierList } from '@/lib/mock/items';
 import { mockBuilds } from '@/lib/mock/builds';
 import { createClient } from '@/lib/supabase';
 
-const USE_MOCK = process.env.NEXT_PUBLIC_USE_MOCK !== 'false';
+// Default to REAL DATA (false) unless explicitly set to 'true'
+const USE_MOCK = process.env.NEXT_PUBLIC_USE_MOCK === 'true';
 
 // Helper to map DB snake_case to Frontend camelCase
 const mapChampion = (c: any): Champion => ({

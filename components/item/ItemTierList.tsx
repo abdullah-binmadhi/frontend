@@ -38,6 +38,7 @@ export function ItemTierList({ entries }: ItemTierListProps) {
         const fetchStats = async () => {
             setIsLoading(true);
             try {
+                console.log(`Fetching stats for: Category=${category}, Slot=${slot}, Role=${role}`);
                 const { data, error } = await supabase
                     .from('item_tier_stats')
                     .select('*')
@@ -47,7 +48,21 @@ export function ItemTierList({ entries }: ItemTierListProps) {
                     .order('wpa', { ascending: false })
                     .limit(200);
 
-                if (error) throw error;
+                if (error) {
+                    console.error("Supabase error:", error);
+                    throw error;
+                }
+                
+                console.log(`Fetched ${data?.length} rows from DB.`);
+
+                if (data?.length > 0) {
+                    const firstRow = data[0];
+                    const entryMatch = entries.find(e => e.item.id === firstRow.item_id);
+                    if (!entryMatch) {
+                        console.warn(`Mismatch! DB Item ID ${firstRow.item_id} not found in entries (size: ${entries.length}).`);
+                        console.log("Sample entries IDs:", entries.slice(0, 5).map(e => e.item.id));
+                    }
+                }
 
                 // Merge real db stats with the static item metadata (like images)
                 const mergedData = data.map((row: any) => {
@@ -62,6 +77,7 @@ export function ItemTierList({ entries }: ItemTierListProps) {
                     };
                 }).filter(Boolean);
 
+                console.log(`Merged ${mergedData.length} items.`);
                 setDbStats(mergedData);
             } catch (err) {
                 console.error("Error fetching stats:", err);
