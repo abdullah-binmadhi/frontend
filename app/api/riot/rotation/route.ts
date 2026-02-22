@@ -6,11 +6,16 @@ const RIOT_ROTATION_URL =
 export async function GET() {
     const apiKey = process.env.RIOT_API_KEY;
 
-    if (!apiKey) {
-        return NextResponse.json(
-            { error: 'RIOT_API_KEY not configured', fallback: true },
-            { status: 503 },
-        );
+    // Return mock data if key is missing or if in mock mode
+    if (!apiKey || process.env.NEXT_PUBLIC_USE_MOCK === 'true') {
+        console.warn('[Riot API] Key missing or mock mode enabled. Returning mock rotation data.');
+        return NextResponse.json({
+            freeChampionIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], // Example IDs: Annie, Olaf, Galio, etc.
+            freeChampionIdsForNewPlayers: [222, 254, 427, 82, 131, 147, 54, 17, 18, 37],
+            maxNewPlayerLevel: 10,
+            timestamp: new Date().toISOString(),
+            mock: true,
+        });
     }
 
     try {
@@ -20,10 +25,14 @@ export async function GET() {
         });
 
         if (res.status === 403) {
-            return NextResponse.json(
-                { error: 'API key expired or invalid', fallback: true },
-                { status: 403 },
-            );
+            console.warn('[Riot API] Key expired or invalid. Returning mock rotation data.');
+             return NextResponse.json({
+                freeChampionIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+                freeChampionIdsForNewPlayers: [222, 254, 427, 82, 131, 147, 54, 17, 18, 37],
+                maxNewPlayerLevel: 10,
+                timestamp: new Date().toISOString(),
+                mock: true,
+            });
         }
 
         if (!res.ok) {

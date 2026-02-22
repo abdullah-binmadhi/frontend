@@ -1,6 +1,6 @@
 'use client';
 
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { HugeiconsIcon } from '@hugeicons/react';
 import {
@@ -38,6 +38,10 @@ export function MobileNav() {
                     </Button>
                 </SheetTrigger>
                 <SheetContent side="left" className="w-56 bg-card p-0">
+                    <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                    <SheetDescription className="sr-only">
+                        Mobile navigation menu for accessing different sections of the application.
+                    </SheetDescription>
                     <div className="flex h-14 items-center px-5">
                         <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
                             <HugeiconsIcon icon={ChampionIcon} size={20} color="var(--color-gold)" strokeWidth={1.5} />

@@ -210,8 +210,8 @@ export function MetricsPanel() {
                         <p className="text-[10px] text-muted-foreground mb-4">
                             Performance metrics evaluated at different recommendation cutoffs
                         </p>
-                        <div className="h-[260px]">
-                            <ResponsiveContainer width="100%" height="100%">
+                        <div className="h-[260px] min-h-[260px] w-full">
+                            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                                 <BarChart data={barData} margin={{ top: 5, right: 10, left: -10, bottom: 5 }}>
                                     <CartesianGrid strokeDasharray="3 3" stroke="rgba(200,170,110,0.08)" />
                                     <XAxis dataKey="k" tick={{ fill: '#8B95A5', fontSize: 11 }} />
@@ -247,8 +247,8 @@ export function MetricsPanel() {
                         <p className="text-[10px] text-muted-foreground mb-4">
                             How each algorithm scored the top 5 recommended champions
                         </p>
-                        <div className="h-[260px]">
-                            <ResponsiveContainer width="100%" height="100%">
+                        <div className="h-[260px] min-h-[260px] w-full">
+                            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                                 <RadarChart data={radarData} cx="50%" cy="50%">
                                     <PolarGrid stroke="rgba(200,170,110,0.15)" />
                                     <PolarAngleAxis dataKey="champion" tick={{ fill: '#8B95A5', fontSize: 10 }} />
@@ -278,8 +278,8 @@ export function MetricsPanel() {
                         <p className="text-[10px] text-muted-foreground mb-4">
                             How the ensemble score decreases across recommendations — steeper = more confident picks
                         </p>
-                        <div className="h-[260px]">
-                            <ResponsiveContainer width="100%" height="100%">
+                        <div className="h-[260px] min-h-[260px] w-full">
+                            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                                 <AreaChart data={scoreDistData} margin={{ top: 5, right: 10, left: -10, bottom: 5 }}>
                                     <CartesianGrid strokeDasharray="3 3" stroke="rgba(200,170,110,0.08)" />
                                     <XAxis dataKey="rank" tick={{ fill: '#8B95A5', fontSize: 11 }} />
@@ -318,9 +318,9 @@ export function MetricsPanel() {
                         <p className="text-[10px] text-muted-foreground mb-4">
                             How many of top 10 champions match your key preference filters
                         </p>
-                        <div className="h-[260px] flex items-center justify-center">
+                        <div className="h-[260px] min-h-[260px] w-full flex items-center justify-center">
                             {pieData.length > 0 ? (
-                                <ResponsiveContainer width="100%" height="100%">
+                                <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                                     <PieChart>
                                         <Pie
                                             data={pieData}
@@ -361,8 +361,8 @@ export function MetricsPanel() {
                         <p className="text-[10px] text-muted-foreground mb-4">
                             Each algorithm&apos;s weighted contribution to the final score (RF×0.4 + DT×0.3 + KNN×0.3)
                         </p>
-                        <div className="h-[260px]">
-                            <ResponsiveContainer width="100%" height="100%">
+                        <div className="h-[260px] min-h-[260px] w-full">
+                            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                                 <BarChart data={contributionData} layout="vertical" margin={{ top: 5, right: 10, left: 20, bottom: 5 }}>
                                     <CartesianGrid strokeDasharray="3 3" stroke="rgba(200,170,110,0.08)" horizontal={false} />
                                     <XAxis type="number" tick={{ fill: '#8B95A5', fontSize: 11 }} tickFormatter={(v) => `${v}%`} />
@@ -390,8 +390,8 @@ export function MetricsPanel() {
                         <p className="text-[10px] text-muted-foreground mb-4">
                             How the top 3 champions compare across core gameplay attributes
                         </p>
-                        <div className="h-[260px]">
-                            <ResponsiveContainer width="100%" height="100%">
+                        <div className="h-[260px] min-h-[260px] w-full">
+                            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                                 <RadarChart data={statProfileData} cx="50%" cy="50%">
                                     <PolarGrid stroke="rgba(200,170,110,0.15)" />
                                     <PolarAngleAxis dataKey="stat" tick={{ fill: '#8B95A5', fontSize: 10 }} />
@@ -426,8 +426,8 @@ export function MetricsPanel() {
                     <p className="text-[10px] text-muted-foreground mb-4">
                         Individual algorithm scores across all 10 recommendations — reveals which algorithm drives each pick
                     </p>
-                    <div className="h-[280px]">
-                        <ResponsiveContainer width="100%" height="100%">
+                    <div className="h-[280px] min-h-[280px] w-full">
+                        <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                             <LineChart data={scoreDistData} margin={{ top: 5, right: 10, left: -10, bottom: 5 }}>
                                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(200,170,110,0.08)" />
                                 <XAxis dataKey="rank" tick={{ fill: '#8B95A5', fontSize: 11 }} />
