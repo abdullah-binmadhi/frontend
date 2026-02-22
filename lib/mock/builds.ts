@@ -23,7 +23,7 @@ const RUNES = {
         tier3: [
             { name: 'Coup de Grace', icon: 'perk-images/Styles/Precision/CoupDeGrace/CoupDeGrace.png' },
             { name: 'Cut Down', icon: 'perk-images/Styles/Precision/CutDown/CutDown.png' },
-            { name: 'Last Stand', icon: 'perk-images/Styles/Precision/LastStand/LastStand.png' }
+            { name: 'Last Stand', icon: 'perk-images/Styles/Sorcery/LastStand/LastStand.png' }
         ],
     },
     Domination: {
