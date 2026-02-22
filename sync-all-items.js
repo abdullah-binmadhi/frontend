@@ -29,11 +29,16 @@ const PATCH = '16.4';
 function classifyItem(item) {
     const tags = item.tags || [];
     const cost = item.gold?.total || 0;
+    const desc = (item.description || '').toLowerCase();
 
     if (tags.includes('Boots')) return 'Boots';
-    if (cost >= 2600) return 'Legendaries';
-    if (cost >= 1000) return 'Epic';
-    if (cost >= 300) return 'Components';
+    
+    // Support items (Gold income, Vision, Support quests)
+    if (tags.includes('GoldPer') || desc.includes('quest') || tags.includes('Vision') || desc.includes('ward')) return 'Support';
+
+    if (cost >= 2000) return 'Legendaries';
+    // Map intermediate items (Epics) to Components for UI simplicity, or strictly < 500 for Starter
+    if (cost >= 500) return 'Components';
     return 'Starter';
 }
 
